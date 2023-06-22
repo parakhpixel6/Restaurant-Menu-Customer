@@ -15,7 +15,7 @@ const swiper = new Swiper('.swiper-container', {
     
     //     }
     //   },
-    //spaceBetween: 30,
+    spaceBetween: 100,
     keyboard: {
       enabled: true,
     },

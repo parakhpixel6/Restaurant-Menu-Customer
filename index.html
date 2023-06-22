@@ -12,7 +12,9 @@
     <title>Restaurant Menu Customer</title>
 </head>
 <body>
+
     <main class="customer-container h-100 w-100">
+       
         <div class="container h-100 w-100">
             <div class="container-wrapper h-100 w-100">
                 <div class="swiper-container h-100 w-100">
@@ -23,9 +25,9 @@
                                 </div>
                                 <div class="page-2  d-flex justify-center ai-center">
                                     <img class="menu-cover h-100 w-100" src="./assets/customer-img/img/first-page.png" alt="menu-cover">
-                                    <div class="menu-cover-content">
+                                    <div class="menu-cover-content d-flex ai-center flex-d-col justify-space-around g-76">
                                         <h1>Food and Beverages Menu</h1>
-                                        <div class="restaurant-logo">
+                                        <div class="restaurant-logo d-flex ai-center flex-d-col justify-center g-16">
                                             <img src="assets/customer-img/img/image-16.png" alt="">
                                             <p>Pride Restaurant</p>
                                         </div>
@@ -35,9 +37,55 @@
                             </div>
                         </div>
                         <div class="swiper-slide justify-center ai-center d-flex">
+                            <nav class="accomplishments w-100 d-flex ai-center justify-flex-end">
+                                <div class="accomplishment justify-center ai-center d-flex">
+                                    <span class="person material-symbols-rounded">person</span>
+                                    <p>Call Waiter</p>
+                                </div>
+                                <div class="accomplishment justify-center ai-center d-flex">
+                                    <span class="material-symbols-rounded">local_drink</span>
+                                    <p>Get Water</p>
+                                </div>
+                                <div class="accomplishment justify-center ai-center d-flex">
+                                    <span class="help material-symbols-rounded">help</span>
+                                    <p>Need Help</p>
+                                </div>
+                            </nav>
                             <div class="open-menu h-100 w-100 d-flex justify-center ai-center">
-                                <div class="page-open d-flex justify-center ai-center">
+                                <div class="page-open h-100 d-flex justify-center ai-center">
                                     <img  class="menu-open h-100 w-100" src="./assets/customer-img/img/menu-page.png" alt="menu-open">
+                                    <div class="menu-items d-flex ai-center justify-center h-100">
+                                        <div class="menu-left">
+                                            <div class="menu-title d-flex ai-center justify-space-between">
+                                                <div class="menu-title-text d-flex ai-center">
+                                                    <p>Breakfast Items</p>
+                                                </div>
+                                                <div class="toggle-btns d-flex g-16">
+                                                    <label class="switch switch-red">
+                                                        <input type="checkbox" class="switch-input switch-input-red" checked>
+                                                        <span class="switch-label switch-label-red" data-on="Non-Veg" data-off="Non-Veg"></span>
+                                                        <span class="switch-handle"></span>
+                                                    </label>
+                                                    <label class="switch switch-green">
+                                                        <input type="checkbox" class="switch-input switch-input-green" checked>
+                                                        <span class="switch-label switch-label-green" data-on="Veg" data-off="Veg"></span>
+                                                        <span class="switch-handle"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="menu-content">
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="menu-right">
+                                            <div class="menu-title">
+                                                <div class="menu-title-text d-flex">
+                                                    <p>Drinks</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>                                    
                                 </div>
                                 <div class="food-navigation d-flex justify-center ai-center">
                                     <img class="menu-links" src="./assets/customer-img/img/category.png" alt="menu-navigation">

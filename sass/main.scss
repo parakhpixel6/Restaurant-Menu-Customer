@@ -1,3 +1,5 @@
+@import "./includes/variable";
+
 *,
 *::after,
 *::before {
@@ -14,6 +16,7 @@ body {
     font-family: 'Nunito', sans-serif;
     font-weight: 400;
     text-transform: capitalize;
+    overflow: hidden;
     //overflow-x: hidden;
 }
 
@@ -40,8 +43,24 @@ li {
     justify-content: center;
 }
 
+.justify-space-around{
+    justify-content: space-around;
+}
+
+.justify-space-between{
+    justify-content: space-between;
+}
+
+.justify-flex-end {
+    justify-content: flex-end;
+}
+
 .ai-center {
     align-items: center;
+}
+
+.flex-d-col {
+    flex-direction: column;
 }
 
 .h-100 {
@@ -52,26 +71,95 @@ li {
     width: 100%;
 }
 
+
+.g-76 {
+    gap: 76px;
+}
+
+.g-16 {
+    gap: 16px;
+}
+
 .customer-container {
+    position: relative;
     // /* max-width: 1242px; */
     background-image: url('../assets/customer-img/img/bg-img.png');
     background-position: center;
     background-size: cover;
 }
 
-
 .container {
     padding: 70px;
+    margin: 0px auto;
+    // margin: -10px auto;
 }
 
+
 .swiper-container {
-    overflow: hidden; /* Apply overflow: hidden to hide content exceeding dimensions */
+    // background-color: #fff;
+    // overflow: hidden; /* Apply overflow: hidden to hide content exceeding dimensions */
 
     .swiper-wrapper {
-
         .swiper-slide {
             position: relative;
             flex-shrink: 0; /* Prevent the slides from shrinking to fit */
+
+            nav {
+                position: absolute;
+                height: 10%;
+                padding: 0px 90px;
+                gap: 12px;
+                position: absolute;
+                top: -10%;
+                left: -10.5%;
+                // background: #fff;
+            
+                .accomplishment {
+                    gap: 4px;
+                    height: auto;
+                    width: auto;
+                    margin: 6px;
+                    position: relative;
+                    padding: 3px 12px;
+                    box-sizing: border-box;
+                    color: $dark-red;
+                    $border: -1px;
+                    background: linear-gradient(90deg, rgba(255,102,102,1) 40%, rgba(255,150,136,1) 100%);
+                    background-clip: padding-box; /* !importanté */
+                    border: solid $border transparent; /* !importanté */
+                    border-radius: 8px;
+                    z-index: 9;
+                  
+                    &:after {
+                      content: '';
+                      position: absolute;
+                      top: 0; right: 0; bottom: 0; left: 0;
+                      //z-index: 1;
+                      margin: -$border; /* !importanté */
+                      border-radius: inherit; /* !importanté */
+                      background: #cccccc;
+                    }
+            
+                    & p {
+                        z-index: 9;
+                        font-size: 14px;
+                        font-weight: 600;
+                    }
+                    
+                    & span {
+                        z-index: 9;
+                        font-size: 18px;
+                    }
+            
+                    & .person {
+                        font-size: 20px;
+                    }
+            
+                    & .help {
+                        font-size: 20px;
+                    }
+                  }
+            }
 
             .close-menu {
                 .page-0 {
@@ -87,12 +175,7 @@ li {
                     // background-color: #000;
 
                     .menu-cover-content {
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        justify-content: space-around;
-                        gap: 76px;
-                        padding: 84px;
+                        // padding: 84px;
                         position: absolute;
                         transform: translate(-50%, -50%);
                         left: 50%;
@@ -111,13 +194,6 @@ li {
                         }
 
                         .restaurant-logo {
-                            // height: 210px;
-                            display: flex;
-                            flex-direction: column;
-                            align-items: center;
-                            gap: 16px;
-                            justify-content: center;
-                            // width: 210px;
                             
                             & p {
                                 background-image: linear-gradient(90deg, rgba(255,102,102,1) 40%, rgba(255,150,136,1) 100%);
@@ -142,8 +218,50 @@ li {
             .open-menu {
                 .page-open {
                     width: 96%;
-                    height: 100%;
                     // background-color: red;
+
+                    .menu-items {
+                        position: absolute;
+                        // z-index: 99;
+                        width: 92%;
+                        top: 50%;
+                        left: 48.5%;
+                        transform: translate(-50%, -50%);
+                        gap: 55px;
+                        background-color: #dde5e378;
+
+                        .menu-right, .menu-left {
+                            height: 92%;
+                            width: 46%;
+                            background-color: rgba(136, 111, 160, 0.788);
+                            // padding: 0px 16px;
+
+                            @import './components/toggle';
+
+                            .menu-title {
+                                &-text {
+                                    justify-content: flex-start;
+                                    width: 340px;
+                                    height: 30px;
+                                    border-top-left-radius: 8px;
+                                    border-bottom-left-radius: 8px;
+                                    padding: 0px 12px;
+                                    background: rgb(255,102,102);
+                                    background: linear-gradient(90deg, rgba(255,102,102,1) 5%, rgba(255, 255, 255, 0) 100%);
+
+                                    & p {
+                                        color: #fff;
+                                        font-size: 16;
+                                        font-weight: 600;
+                                    }
+                                }
+                            }
+
+                            .menu-content {
+                                
+                            }
+                        }
+                    }
                 }
 
                 .food-navigation {
@@ -159,7 +277,7 @@ li {
                     }
 
                     .menu-links {
-                        margin-top: 100px;
+                        margin-top: 120px;
                     }
                 }
 

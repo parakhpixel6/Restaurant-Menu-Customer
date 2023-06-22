@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::after,
 *::before {
@@ -14,6 +15,7 @@ body {
   font-family: "Nunito", sans-serif;
   font-weight: 400;
   text-transform: capitalize;
+  overflow: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -39,8 +41,24 @@ li {
   justify-content: center;
 }
 
+.justify-space-around {
+  justify-content: space-around;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.justify-flex-end {
+  justify-content: flex-end;
+}
+
 .ai-center {
   align-items: center;
+}
+
+.flex-d-col {
+  flex-direction: column;
 }
 
 .h-100 {
@@ -51,7 +69,16 @@ li {
   width: 100%;
 }
 
+.g-76 {
+  gap: 76px;
+}
+
+.g-16 {
+  gap: 16px;
+}
+
 .customer-container {
+  position: relative;
   background-image: url("../assets/customer-img/img/bg-img.png");
   background-position: center;
   background-size: cover;
@@ -59,14 +86,62 @@ li {
 
 .container {
   padding: 70px;
+  margin: 0px auto;
 }
 
-.swiper-container {
-  overflow: hidden; /* Apply overflow: hidden to hide content exceeding dimensions */
-}
 .swiper-container .swiper-wrapper .swiper-slide {
   position: relative;
   flex-shrink: 0; /* Prevent the slides from shrinking to fit */
+}
+.swiper-container .swiper-wrapper .swiper-slide nav {
+  position: absolute;
+  height: 10%;
+  padding: 0px 90px;
+  gap: 12px;
+  position: absolute;
+  top: -10%;
+  left: -10.5%;
+}
+.swiper-container .swiper-wrapper .swiper-slide nav .accomplishment {
+  gap: 4px;
+  height: auto;
+  width: auto;
+  margin: 6px;
+  position: relative;
+  padding: 3px 12px;
+  box-sizing: border-box;
+  color: #FF4747;
+  background: linear-gradient(90deg, rgb(255, 102, 102) 40%, rgb(255, 150, 136) 100%);
+  background-clip: padding-box; /* !importanté */
+  border: solid -1px transparent; /* !importanté */
+  border-radius: 8px;
+  z-index: 9;
+}
+.swiper-container .swiper-wrapper .swiper-slide nav .accomplishment:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 1px; /* !importanté */
+  border-radius: inherit; /* !importanté */
+  background: #cccccc;
+}
+.swiper-container .swiper-wrapper .swiper-slide nav .accomplishment p {
+  z-index: 9;
+  font-size: 14px;
+  font-weight: 600;
+}
+.swiper-container .swiper-wrapper .swiper-slide nav .accomplishment span {
+  z-index: 9;
+  font-size: 18px;
+}
+.swiper-container .swiper-wrapper .swiper-slide nav .accomplishment .person {
+  font-size: 20px;
+}
+.swiper-container .swiper-wrapper .swiper-slide nav .accomplishment .help {
+  font-size: 20px;
 }
 .swiper-container .swiper-wrapper .swiper-slide .close-menu .page-0 {
   width: 50%;
@@ -78,12 +153,6 @@ li {
   height: 100%;
 }
 .swiper-container .swiper-wrapper .swiper-slide .close-menu .page-2 .menu-cover-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  gap: 76px;
-  padding: 84px;
   position: absolute;
   transform: translate(-50%, -50%);
   left: 50%;
@@ -99,13 +168,6 @@ li {
   background-image: linear-gradient(90deg, rgb(255, 102, 102) 40%, rgb(255, 150, 136) 100%);
   -webkit-background-clip: text;
   color: transparent;
-}
-.swiper-container .swiper-wrapper .swiper-slide .close-menu .page-2 .menu-cover-content .restaurant-logo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
-  justify-content: center;
 }
 .swiper-container .swiper-wrapper .swiper-slide .close-menu .page-2 .menu-cover-content .restaurant-logo p {
   background-image: linear-gradient(90deg, rgb(255, 102, 102) 40%, rgb(255, 150, 136) 100%);
@@ -123,7 +185,172 @@ li {
 }
 .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open {
   width: 96%;
-  height: 100%;
+}
+.swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items {
+  position: absolute;
+  width: 92%;
+  top: 50%;
+  left: 48.5%;
+  transform: translate(-50%, -50%);
+  gap: 55px;
+  background-color: rgba(221, 229, 227, 0.4705882353);
+}
+.swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right, .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-left {
+  height: 92%;
+  width: 46%;
+  background-color: rgba(136, 111, 160, 0.788);
+}
+.swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right .switch, .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-left .switch {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  background-color: white;
+  border-radius: 18px;
+  box-shadow: inset 0 -1px white, inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  background-image: -webkit-linear-gradient(top, #eeeeee, white 25px);
+  background-image: -moz-linear-gradient(top, #eeeeee, white 25px);
+  background-image: -o-linear-gradient(top, #eeeeee, white 25px);
+  background-image: linear-gradient(to bottom, #eeeeee, white 25px);
+}
+.swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right .switch-green, .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-left .switch-green {
+  width: 48px;
+  height: 22px;
+}
+.swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right .switch-red, .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-left .switch-red {
+  width: 76px;
+  height: 22px;
+}
+.swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right .switch-input, .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-left .switch-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right .switch-input-green:checked ~ .switch-handle, .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-left .switch-input-green:checked ~ .switch-handle {
+  left: 26px;
+  /* box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.2); */
+  top: 2px;
+}
+.swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right .switch-input-red:checked ~ .switch-handle, .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-left .switch-input-red:checked ~ .switch-handle {
+  left: 54px;
+  /* box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.2); */
+  top: 2px;
+}
+.swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right .switch-label, .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-left .switch-label {
+  position: relative;
+  display: block;
+  height: inherit;
+  font-size: 10px;
+  text-transform: uppercase;
+  background: #eceeef;
+  border-radius: inherit;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.15);
+  -webkit-transition: 0.15s ease-out;
+  -moz-transition: 0.15s ease-out;
+  -o-transition: 0.15s ease-out;
+  transition: 0.15s ease-out;
+  -webkit-transition-property: opacity background;
+  -moz-transition-property: opacity background;
+  -o-transition-property: opacity background;
+  transition-property: opacity background;
+}
+.swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right .switch-label:before, .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right .switch-label:after, .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-left .switch-label:before, .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-left .switch-label:after {
+  position: absolute;
+  top: 50%;
+  margin-top: -0.5em;
+  line-height: 1;
+  -webkit-transition: inherit;
+  -moz-transition: inherit;
+  -o-transition: inherit;
+  transition: inherit;
+}
+.swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right .switch-label-green:before, .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-left .switch-label-green:before {
+  content: attr(data-off);
+  right: 6px;
+  top: 12px;
+  color: #aaa;
+  font-size: 10px;
+  font-weight: 600;
+  /* text-shadow: 0 1px rgba(255, 255, 255, 0.5); */
+  text-transform: capitalize;
+}
+.swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right .switch-label-red:before, .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-left .switch-label-red:before {
+  content: attr(data-off);
+  right: 10px;
+  top: 12px;
+  color: #aaa;
+  font-size: 10px;
+  font-weight: 600;
+  /* text-shadow: 0 1px rgba(255, 255, 255, 0.5); */
+  text-transform: capitalize;
+}
+.swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right .switch-label-red:after, .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-left .switch-label-red:after {
+  content: attr(data-on);
+  left: 8px;
+  color: white;
+  opacity: 0;
+  text-transform: capitalize;
+  font-size: 10px;
+  font-weight: 600;
+}
+.swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right .switch-label-green:after, .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-left .switch-label-green:after {
+  content: attr(data-on);
+  left: 5px;
+  color: white;
+  opacity: 0;
+  text-transform: capitalize;
+  font-size: 10px;
+  font-weight: 600;
+}
+.swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right .switch-input:checked ~ .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right .switch-label, .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right .switch-input:checked ~ .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-left .switch-label, .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-left .switch-input:checked ~ .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right .switch-label, .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-left .switch-input:checked ~ .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-left .switch-label {
+  background: #47a8d8;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15), inset 0 0 3px rgba(0, 0, 0, 0.2);
+}
+.swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right .switch-input:checked ~ .switch-label:before, .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-left .switch-input:checked ~ .switch-label:before {
+  opacity: 0;
+}
+.swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right .switch-input:checked ~ .switch-label:after, .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-left .switch-input:checked ~ .switch-label:after {
+  opacity: 1;
+}
+.swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right .switch-handle, .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-left .switch-handle {
+  position: absolute;
+  top: 2px;
+  left: 4px;
+  width: 18px;
+  height: 18px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  background-image: -webkit-linear-gradient(top, white 40%, #f0f0f0);
+  background-image: -moz-linear-gradient(top, white 40%, #f0f0f0);
+  background-image: -o-linear-gradient(top, white 40%, #f0f0f0);
+  background-image: linear-gradient(to bottom, white 40%, #f0f0f0);
+  -webkit-transition: left 0.15s ease-out;
+  -moz-transition: left 0.15s ease-out;
+  -o-transition: left 0.15s ease-out;
+  transition: left 0.15s ease-out;
+}
+.swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right .switch-green > .switch-input:checked ~ .switch-label, .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-left .switch-green > .switch-input:checked ~ .switch-label {
+  background: #4fb845;
+}
+.swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right .switch-red > .switch-input:checked ~ .switch-label, .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-left .switch-red > .switch-input:checked ~ .switch-label {
+  background: red;
+}
+.swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right .menu-title-text, .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-left .menu-title-text {
+  justify-content: flex-start;
+  width: 340px;
+  height: 30px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  padding: 0px 12px;
+  background: rgb(255, 102, 102);
+  background: linear-gradient(90deg, rgb(255, 102, 102) 5%, rgba(255, 255, 255, 0) 100%);
+}
+.swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right .menu-title-text p, .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-left .menu-title-text p {
+  color: #fff;
+  font-size: 16;
+  font-weight: 600;
 }
 .swiper-container .swiper-wrapper .swiper-slide .open-menu .food-navigation {
   width: 4%;
@@ -136,7 +363,7 @@ li {
   display: none;
 }
 .swiper-container .swiper-wrapper .swiper-slide .open-menu .food-navigation .menu-links {
-  margin-top: 100px;
+  margin-top: 120px;
 }
 
 /*# sourceMappingURL=style.css.map */

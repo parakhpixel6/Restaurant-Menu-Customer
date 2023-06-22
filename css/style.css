@@ -53,6 +53,10 @@ li {
   justify-content: flex-end;
 }
 
+.justify-flex-start {
+  justify-content: flex-start;
+}
+
 .ai-center {
   align-items: center;
 }
@@ -193,12 +197,10 @@ li {
   left: 48.5%;
   transform: translate(-50%, -50%);
   gap: 55px;
-  background-color: rgba(221, 229, 227, 0.4705882353);
 }
 .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right, .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-left {
   height: 92%;
   width: 46%;
-  background-color: rgba(136, 111, 160, 0.788);
 }
 .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right .switch, .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-left .switch {
   position: relative;
@@ -338,7 +340,6 @@ li {
   background: red;
 }
 .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right .menu-title-text, .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-left .menu-title-text {
-  justify-content: flex-start;
   width: 340px;
   height: 30px;
   border-top-left-radius: 8px;

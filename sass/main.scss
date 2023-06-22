@@ -55,6 +55,11 @@ li {
     justify-content: flex-end;
 }
 
+
+.justify-flex-start {
+    justify-content: flex-start;
+}
+
 .ai-center {
     align-items: center;
 }
@@ -228,19 +233,18 @@ li {
                         left: 48.5%;
                         transform: translate(-50%, -50%);
                         gap: 55px;
-                        background-color: #dde5e378;
+                        //background-color: #dde5e378;
 
                         .menu-right, .menu-left {
                             height: 92%;
                             width: 46%;
-                            background-color: rgba(136, 111, 160, 0.788);
+                            // background-color: rgba(136, 111, 160, 0.788);
                             // padding: 0px 16px;
 
                             @import './components/toggle';
 
                             .menu-title {
                                 &-text {
-                                    justify-content: flex-start;
                                     width: 340px;
                                     height: 30px;
                                     border-top-left-radius: 8px;
@@ -255,10 +259,6 @@ li {
                                         font-weight: 600;
                                     }
                                 }
-                            }
-
-                            .menu-content {
-                                
                             }
                         }
                     }

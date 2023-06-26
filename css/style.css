@@ -428,7 +428,7 @@ li {
   height: 80px;
   flex-shrink: 0;
   border-radius: 6px;
-  background-image: url(../assets/customer-img/img/rectangle-8.png);
+  background-image: url(../assets/customer-img/img/Rectangle-8.png);
 }
 .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right .menu-food-name, .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-left .menu-food-name {
   color: #222222;

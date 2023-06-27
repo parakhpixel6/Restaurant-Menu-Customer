@@ -1,0 +1,263 @@
+.my-cart {
+    height: 100%;
+    width: 100%;
+    border-radius: 24px;
+    // background-color: rgba(140, 199, 199, 0.884);
+
+    &  header {
+        flex-shrink:  0;
+        width: 100%;
+        height: 8%;
+        background: $red;
+        background: linear-gradient(90deg, #ffe5e5 0%, #ffd5d5 100%);;
+        border-radius: 24px 24px 0px 0px;
+        color: $primary-dark-grey;
+
+        & span {
+            font-size: 25px;
+        }
+
+        & p {
+            padding: 0;
+            font-size: 20px;
+            font-family: Pacifico, sans-serif;
+        }
+    }
+
+    & .items-added-heading{
+        padding: 12px 16px 0px 16px;
+        height: 8%;
+        margin-bottom: -12px;
+        font-size: 18px;
+        color: $primary-dark-grey;
+    }
+
+    .items-added {
+        height: 50%;
+        padding: 0px 16px;
+        // background-color: rgba(194, 132, 132, 0.753);
+        overflow: hidden;
+        overflow-y: auto;
+
+        &::-webkit-scrollbar{
+            display: none;
+        }
+
+        .item-added {
+            // height: 94px;
+            // background-color: yellow;
+            padding: 0px 0px 12px 0px;
+            margin-bottom: 12px;
+            border-bottom: 1px solid  $off-white;
+
+            &:last-child {
+                border-bottom: none;
+            }
+
+            &-img {
+                height: 80px;
+                width: 80px;
+                border-radius: 6px;
+                object-position: center;
+                object-fit: cover;
+            }
+
+            &-title {
+                & p {
+                    padding: 0;
+                    font-size: 16px;
+                    color: #222;
+                }
+            }
+
+            &-speciality {
+                height: 14px;
+
+                & .speciality-taste {
+                    margin-top: -2px;
+                }
+                & .speciality-taste-text p {
+                    height: 14px;
+                    margin-top: 1px;
+                    font-size: 10px;
+                    line-height: 14px;
+                    color: #222222;
+                    padding: 0;
+                }
+
+                & .speciality-vegNonveg::after {
+                    margin-left: 8px;
+                    content: "";
+                    height: 14px;
+                    width: 1px;
+                    background-color: #DDDDDD;
+                }
+
+                & .speciality-rating::after {
+                    margin-left: 8px;
+                    content: "";
+                    height: 14px;
+                    width: 1px;
+                    background-color: #DDDDDD;
+                }
+            }
+
+            &-description {
+                width: 270px;
+                & p {
+                    padding: 0;
+                    font-size: 12px;
+                    color: #555555;
+                    text-transform: none;
+                }
+            }
+
+            &-quantity {
+                height: 56px;
+                width: 66px;
+                & p {
+                    padding: 0;
+                    font-weight: 600;
+                    font-size: 16px;
+                    color: $primary-black;
+                }
+            }
+
+            .item-add-remove {
+                height: 20px;
+                & p {
+                    font-weight: 600;
+                    font-size: 16px;
+                    color: $green;
+                }
+            }
+
+            .item-remove, .item-add {
+                height: 20px;
+                width: 20px;
+                background-color: transparent;
+                border-radius: 8px;
+                border: 1px solid $green;
+                
+                .item-remove-btn, .item-add-btn {
+                    color: $green;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    .cooking-instructions {
+
+
+        height: 24%;
+        margin: 0px 16px;
+        
+
+        &-container {
+            height: 48px;
+            width: 100%;
+            border-radius: 12px;
+            padding: 0px 0px 0px 16px;
+            border: 0.5px solid $light-grey;
+    
+            & input {
+                display: none;
+            }
+           
+            & p {
+                padding: 0;
+                font-size: 16px;
+                color: $primary-black;
+            }
+            & span {
+                padding: 0;
+                font-size: 24px;
+                color: #525252;
+            }
+        }
+
+    }
+
+    &-footer {
+        height: 10%;
+        width: calc(100% - 32px);
+        padding: 0px 16px;
+        border-radius: 0px 0px 24px 24px;
+        border-top:  1px solid $off-white;
+        // background-color: rgba(182, 127, 127, 0.767);
+
+        &-container {
+            position: relative;
+            height: fit-content;
+            width: 100%;
+
+            & .swiper-button-prev {
+                position: absolute;
+                height: 26px;
+                width: 152px;
+                /* top: 80%; */
+                left: -2.75%;
+                /* transform: translate(0%, -50%); */
+                margin: -14px 16px;
+
+                &::after {
+                    display: none;
+                }
+            }
+
+            & .swiper-button-next {
+                position: absolute;
+                height: 30px;
+                width: 152px;
+                /* top: 80%; */
+                // left: -2.75%;
+                /* transform: translate(0%, -50%); */
+                margin: -16px -10px;
+
+                &::after {
+                    display: none;
+                }
+            }
+
+            & .add-more {
+
+                // padding: 3px 12px;
+                border-radius: 6px;
+                border: 1px solid $dark-red;
+                cursor: pointer;
+
+                & span {
+                    font-size: 22px;
+                    color: $dark-red;
+                }
+
+                & p {
+                    padding: 0;
+                    font-size: 14px;
+                    font-weight: 600;
+                    color: $dark-red;
+                }
+            }
+
+            & .place-order {
+                cursor: pointer;
+                border-radius: 6px;
+                color: $widget-white;
+                background: rgb(255,102,102);
+                background: linear-gradient(90deg, rgba(255,102,102,1) 40%, rgba(255,150,136,1) 100%);
+
+                & span {
+                    font-size: 22px;
+                    font-weight: 200;
+                }
+
+                & p {
+                    padding: 0;
+                    color: $widget-white;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

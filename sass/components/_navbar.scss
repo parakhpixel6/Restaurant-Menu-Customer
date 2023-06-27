@@ -1,0 +1,60 @@
+// Navbar Quick Links
+nav {
+    position: absolute;
+    height: 10%;
+    padding: 0px 90px;
+    gap: 12px;
+    position: absolute;
+    top: -10%;
+    left: -10.5%;
+    // background: #fff;
+
+    .accomplishment {
+        gap: 4px;
+        height: auto;
+        width: auto;
+        margin: 6px;
+        position: relative;
+        padding: 3px 12px;
+        box-sizing: border-box;
+        $border: -1px;
+        background: linear-gradient(90deg, rgba(255,102,102,1) 40%, rgba(255,150,136,1) 100%);
+        background-clip: padding-box; /* !importanté */
+        border: solid $border transparent; /* !importanté */
+        border-radius: 8px;
+        z-index: 9;
+      
+        &:after {
+          content: '';
+          position: absolute;
+          top: 0; right: 0; bottom: 0; left: 0;
+          //z-index: 1;
+          margin: -$border; /* !importanté */
+          border-radius: inherit; /* !importanté */
+          background: #cccccc;
+        }
+
+        & a{
+            color: $dark-red;
+        }
+
+        & p {
+            z-index: 9;
+            font-size: 14px;
+            font-weight: 600;
+        }
+        
+        & span {
+            z-index: 9;
+            font-size: 18px;
+        }
+
+        & .person {
+            font-size: 20px;
+        }
+
+        & .help {
+            font-size: 20px;
+        }
+    }
+}

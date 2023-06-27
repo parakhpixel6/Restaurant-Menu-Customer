@@ -1,0 +1,153 @@
+//Footer-Progress
+footer {
+    position: absolute;
+    bottom: -8.5%;
+    left: 1.75%;
+    height: 10%;
+    width: 100%;
+    // background-color: rgba(189, 131, 131, 0.719);
+
+    .progress-container {
+        height: 100%;
+        width: 100%;
+        // background-color: rgba(189, 131, 131, 0.719);
+    }
+
+    .progress-bar {
+        position: relative;
+        height: 2px;
+        width: 96px;
+        background-color: $off-white;
+
+        &:last-child {
+            width: 0px;
+            background-color: transparent;
+        }
+
+        &.active{
+            height: 2px;
+            width: 96px;
+            background: rgb(255,102,102);
+            background: linear-gradient(90deg, rgba(255,102,102,1) 40%, rgba(255,150,136,1) 100%);
+        }
+    }
+
+    .progress-step {
+        position: absolute;
+        top: -16px;
+        left: -54px;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+        width: fit-content;
+        gap: 2px;
+
+        &-icon {
+            height: 35px;
+            width: 35px;
+            background-color: $off-white;
+            border-radius: 50%;
+            
+            & span.active {
+                font-weight: 200;
+                color: white;
+                font-size:  24px;
+            }
+            
+            & span.next-active,  span.prev-active{
+                font-weight: 200;
+                color: $dark-red;
+                font-size:  24px;
+            }
+
+            & span {
+                font-weight: 200;
+                color: $light-grey;
+                font-size:  24px;
+            }
+           
+
+            &.active {
+                background: rgb(255,102,102);
+                background: linear-gradient(90deg, rgba(255,102,102,1) 40%, rgba(255,150,136,1) 100%);
+            }
+
+            &.next-active, &.prev-active  {
+               background-color: #FFF;
+            }
+
+            .showUp {
+                display: inline-flex;
+                padding: 3px 6px;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                border-radius: 6px;
+                border: 0.1px $dark-red solid;
+                background-color: white;
+                top: -16px;
+                right: -15px;
+
+                & p{
+                    text-align: center;
+                    font-size: 12px;
+                    color: $dark-red;
+                }
+            }
+        }
+
+        &-text {
+            display: flex;
+            width: 80px;
+            flex-direction: column;
+            height: fit-content;
+            font-size: 14px;
+            color: $light-grey;
+             
+            &.active {
+                color: $dark-red;
+            }
+        }
+    }
+
+    .swiper-button-next {
+        height: 35px;
+        width: 35px;
+        border-radius: 6px;
+        background: rgba(255, 255, 255, 0.70);
+        right: 10%;
+        margin-top: -17px;
+        
+        & span {
+            font-size: 24px;
+            font-weight: 200;
+            color: $dark-red;
+        }
+
+        &::after {
+            display: none;
+        }
+    }
+
+    .swiper-button-prev {
+        height: 35px;
+        width: 35px;
+        border-radius: 6px;
+        background: rgba(255, 255, 255, 0.70);
+        left: 7%;
+        margin-top: -17px;
+        
+        & span {
+            font-size: 24px;
+            font-weight: 200;
+            color: $dark-red;
+        }
+
+        &::after {
+            display: none;
+        }
+    }
+
+}

@@ -1,0 +1,15 @@
+&-left {
+    height: 100%;
+    width: 38%;
+    background-color: $off-white;
+    border-radius: 24px;
+}
+
+.restaurant-logo {
+    height: 156px;
+    width: 156px;
+    border-radius: 50%;
+    background-image: url('../assets/customer-img/img/restaurant-logo.png');
+    background-position: center;
+    background-size: cover;
+}

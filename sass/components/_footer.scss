@@ -1,11 +1,15 @@
 //Footer-Progress
-footer {
+footer.progress {
     position: absolute;
-    bottom: -8.5%;
+    bottom: -8%;
     left: 1.75%;
-    height: 10%;
+    height: 9%;
     width: 100%;
     // background-color: rgba(189, 131, 131, 0.719);
+
+    &:first-child {
+        bottom: -7%;
+    }
 
     .progress-container {
         height: 100%;

@@ -93,6 +93,10 @@ li {
   flex-direction: column;
 }
 
+.flex-d-row {
+  flex-direction: row;
+}
+
 .h-100 {
   height: 100%;
 }
@@ -113,12 +117,12 @@ li {
   gap: 76px;
 }
 
-.g-40 {
-  gap: 40px;
-}
-
 .g-24 {
   gap: 24px;
+}
+
+.g-33 {
+  gap: 33px;
 }
 
 .g-16 {
@@ -154,6 +158,7 @@ li {
 }
 
 .swiper-container .swiper-wrapper .swiper-slide {
+  height: 98%;
   position: relative;
   flex-shrink: 0; /* Prevent the slides from shrinking to fit */
 }
@@ -813,9 +818,174 @@ li {
   flex-shrink: 0;
   width: 100%;
   height: 8%;
+  padding-top: 8px;
+  padding-bottom: 4px;
   border-radius: 24px 24px 0px 0px;
 }
 .swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-registeration header p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #222222;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-registeration-form {
+  width: 100%;
+  height: 82%;
+  padding: 8px;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-registeration-form .form-img {
+  height: 84px;
+  width: 84px;
+  object-fit: cover;
+  object-position: center;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-registeration-form .registeration-form .textfield-outlined {
+  position: relative;
+  margin-bottom: 20px;
+  padding-top: 6px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.4px;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-registeration-form .registeration-form .textfield-outlined > input {
+  box-sizing: border-box;
+  width: 220px;
+  height: 48px;
+  padding: 7px 14px 0px 14px;
+  font-size: 15px;
+  line-height: inherit;
+  color: #222222;
+  border-style: solid;
+  border-width: 1px;
+  border-color: transparent #AAAAAA #AAAAAA;
+  border-radius: 12px;
+  -webkit-text-fill-color: currentColor;
+  background-color: transparent;
+  caret-color: #222222;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-registeration-form .registeration-form .textfield-outlined > input:not(:focus):placeholder-shown {
+  border-top-color: #AAAAAA;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-registeration-form .registeration-form .textfield-outlined > input + label {
+  display: flex;
+  width: 221px;
+  height: 48px;
+  position: absolute;
+  top: 4.5px;
+  left: 0;
+  font-size: 14px;
+  line-height: 15px;
+  color: #222222;
+  cursor: text;
+  transition: color 0.2s, font-size 0.2s, line-height 0.2s;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-registeration-form .registeration-form .textfield-outlined > input:not(:focus):placeholder-shown + label {
+  font-size: 14px;
+  line-height: 54px;
+  color: #222222;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-registeration-form .registeration-form .textfield-outlined > input + label::before,
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-registeration-form .registeration-form .textfield-outlined > input + label::after {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  height: 48px;
+  min-width: 10px;
+  margin-top: 2.25px;
+  font-size: 14px;
+  border-top: solid 1px #AAAAAA;
+  pointer-events: none;
+  box-shadow: inset 0 1px transparent;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-registeration-form .registeration-form .textfield-outlined > input + label::before {
+  margin-right: 4px;
+  border-left: solid 1px transparent;
+  border-radius: 12px 0;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-registeration-form .registeration-form .textfield-outlined > input + label::after {
+  flex-grow: 1;
+  margin-left: 4px;
+  border-right: solid 1px transparent;
+  border-radius: 0 12px;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-registeration-form .registeration-form .textfield-outlined > input:not(:focus):placeholder-shown + label::before,
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-registeration-form .registeration-form .textfield-outlined > input:not(:focus):placeholder-shown + label::after {
+  border-top-color: transparent;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-registeration-form .registeration-form .textfield-outlined ~ label:hover > input {
+  border-color: transparent #222222 #222222;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-registeration-form .registeration-form .textfield-outlined label:hover > input + label::before,
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-registeration-form .registeration-form .textfield-outlined label:hover > input + label::after {
+  border-top-color: #222222;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-registeration-form .registeration-form .textfield-outlined label:hover > input:not(:focus):placeholder-shown {
+  border-color: #222222;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-registeration-form .registeration-form .textfield-outlined > input:focus {
+  border-color: transparent #222222 #222222;
+  outline: none;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-registeration-form .registeration-form .textfield-outlined > input:focus + label {
+  color: #222222;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-registeration-form .registeration-form .textfield-outlined > input:focus + label::before,
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-registeration-form .registeration-form .textfield-outlined > input:focus + label::after {
+  border-top-color: #222222 !important;
+}
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-registeration-form .registeration-form .textfield-outlined > input,
+    .swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-registeration-form .registeration-form .textfield-outlined > input + label,
+    .swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-registeration-form .registeration-form .textfield-outlined > input + label::before,
+    .swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-registeration-form .registeration-form .textfield-outlined > input + label::after {
+      transition-duration: 0.1s;
+    }
+  }
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-registeration-form .registeration-form .checkbox {
+  width: 280px;
+  height: 38px;
+  margin-left: -16px;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-registeration-form .registeration-form .checkbox label {
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: none;
+  text-align: center;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-registeration-form .registeration-form .checkbox #input-checkbox {
+  height: 14px;
+  width: 14px;
+  border-radius: 10px;
+  margin-top: 2px;
+  accent-color: #54BA54;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-registeration-form .registeration-form .checkbox #input-checkbox input[type=checkbox]:checked {
+  color: #fff;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-registeration-form .registeration-form .register-btn #register-btn {
+  position: relative;
+  width: 142px;
+  height: 32px;
+  border-radius: 12px;
+  padding: 8px 14px;
+  margin-top: -7px;
+  margin-left: 23px;
+  border: none;
+  color: #fff;
+  background: rgb(255, 102, 102);
+  background: linear-gradient(90deg, rgb(255, 102, 102) 40%, rgb(255, 150, 136) 100%);
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-registeration-form .registeration-form .register-btn #register-btn::after {
+  display: none;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-registeration-form .registeration-form .register-btn #register-btn span {
+  font-size: 24px;
+  font-weight: 400;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-registeration-form .registeration-form .register-btn #register-btn p {
   font-size: 16px;
   font-weight: 400;
 }
@@ -858,34 +1028,37 @@ li {
   font-weight: 600;
   color: #FF4747;
 }
-.swiper-container .swiper-wrapper .swiper-slide footer {
+.swiper-container .swiper-wrapper .swiper-slide footer.progress {
   position: absolute;
-  bottom: -8.5%;
+  bottom: -8%;
   left: 1.75%;
-  height: 10%;
+  height: 9%;
   width: 100%;
 }
-.swiper-container .swiper-wrapper .swiper-slide footer .progress-container {
+.swiper-container .swiper-wrapper .swiper-slide footer.progress:first-child {
+  bottom: -7%;
+}
+.swiper-container .swiper-wrapper .swiper-slide footer.progress .progress-container {
   height: 100%;
   width: 100%;
 }
-.swiper-container .swiper-wrapper .swiper-slide footer .progress-bar {
+.swiper-container .swiper-wrapper .swiper-slide footer.progress .progress-bar {
   position: relative;
   height: 2px;
   width: 96px;
   background-color: #DDDDDD;
 }
-.swiper-container .swiper-wrapper .swiper-slide footer .progress-bar:last-child {
+.swiper-container .swiper-wrapper .swiper-slide footer.progress .progress-bar:last-child {
   width: 0px;
   background-color: transparent;
 }
-.swiper-container .swiper-wrapper .swiper-slide footer .progress-bar.active {
+.swiper-container .swiper-wrapper .swiper-slide footer.progress .progress-bar.active {
   height: 2px;
   width: 96px;
   background: rgb(255, 102, 102);
   background: linear-gradient(90deg, rgb(255, 102, 102) 40%, rgb(255, 150, 136) 100%);
 }
-.swiper-container .swiper-wrapper .swiper-slide footer .progress-step {
+.swiper-container .swiper-wrapper .swiper-slide footer.progress .progress-step {
   position: absolute;
   top: -16px;
   left: -54px;
@@ -897,35 +1070,35 @@ li {
   width: fit-content;
   gap: 2px;
 }
-.swiper-container .swiper-wrapper .swiper-slide footer .progress-step-icon {
+.swiper-container .swiper-wrapper .swiper-slide footer.progress .progress-step-icon {
   height: 35px;
   width: 35px;
   background-color: #DDDDDD;
   border-radius: 50%;
 }
-.swiper-container .swiper-wrapper .swiper-slide footer .progress-step-icon span.active {
+.swiper-container .swiper-wrapper .swiper-slide footer.progress .progress-step-icon span.active {
   font-weight: 200;
   color: white;
   font-size: 24px;
 }
-.swiper-container .swiper-wrapper .swiper-slide footer .progress-step-icon span.next-active, .swiper-container .swiper-wrapper .swiper-slide footer .progress-step-icon span.prev-active {
+.swiper-container .swiper-wrapper .swiper-slide footer.progress .progress-step-icon span.next-active, .swiper-container .swiper-wrapper .swiper-slide footer.progress .progress-step-icon span.prev-active {
   font-weight: 200;
   color: #FF4747;
   font-size: 24px;
 }
-.swiper-container .swiper-wrapper .swiper-slide footer .progress-step-icon span {
+.swiper-container .swiper-wrapper .swiper-slide footer.progress .progress-step-icon span {
   font-weight: 200;
   color: #AAAAAA;
   font-size: 24px;
 }
-.swiper-container .swiper-wrapper .swiper-slide footer .progress-step-icon.active {
+.swiper-container .swiper-wrapper .swiper-slide footer.progress .progress-step-icon.active {
   background: rgb(255, 102, 102);
   background: linear-gradient(90deg, rgb(255, 102, 102) 40%, rgb(255, 150, 136) 100%);
 }
-.swiper-container .swiper-wrapper .swiper-slide footer .progress-step-icon.next-active, .swiper-container .swiper-wrapper .swiper-slide footer .progress-step-icon.prev-active {
+.swiper-container .swiper-wrapper .swiper-slide footer.progress .progress-step-icon.next-active, .swiper-container .swiper-wrapper .swiper-slide footer.progress .progress-step-icon.prev-active {
   background-color: #FFF;
 }
-.swiper-container .swiper-wrapper .swiper-slide footer .progress-step-icon .showUp {
+.swiper-container .swiper-wrapper .swiper-slide footer.progress .progress-step-icon .showUp {
   display: inline-flex;
   padding: 3px 6px;
   justify-content: center;
@@ -937,12 +1110,12 @@ li {
   top: -16px;
   right: -15px;
 }
-.swiper-container .swiper-wrapper .swiper-slide footer .progress-step-icon .showUp p {
+.swiper-container .swiper-wrapper .swiper-slide footer.progress .progress-step-icon .showUp p {
   text-align: center;
   font-size: 12px;
   color: #FF4747;
 }
-.swiper-container .swiper-wrapper .swiper-slide footer .progress-step-text {
+.swiper-container .swiper-wrapper .swiper-slide footer.progress .progress-step-text {
   display: flex;
   width: 80px;
   flex-direction: column;
@@ -950,10 +1123,10 @@ li {
   font-size: 14px;
   color: #AAAAAA;
 }
-.swiper-container .swiper-wrapper .swiper-slide footer .progress-step-text.active {
+.swiper-container .swiper-wrapper .swiper-slide footer.progress .progress-step-text.active {
   color: #FF4747;
 }
-.swiper-container .swiper-wrapper .swiper-slide footer .swiper-button-next {
+.swiper-container .swiper-wrapper .swiper-slide footer.progress .swiper-button-next {
   height: 35px;
   width: 35px;
   border-radius: 6px;
@@ -961,15 +1134,15 @@ li {
   right: 10%;
   margin-top: -17px;
 }
-.swiper-container .swiper-wrapper .swiper-slide footer .swiper-button-next span {
+.swiper-container .swiper-wrapper .swiper-slide footer.progress .swiper-button-next span {
   font-size: 24px;
   font-weight: 200;
   color: #FF4747;
 }
-.swiper-container .swiper-wrapper .swiper-slide footer .swiper-button-next::after {
+.swiper-container .swiper-wrapper .swiper-slide footer.progress .swiper-button-next::after {
   display: none;
 }
-.swiper-container .swiper-wrapper .swiper-slide footer .swiper-button-prev {
+.swiper-container .swiper-wrapper .swiper-slide footer.progress .swiper-button-prev {
   height: 35px;
   width: 35px;
   border-radius: 6px;
@@ -977,12 +1150,12 @@ li {
   left: 7%;
   margin-top: -17px;
 }
-.swiper-container .swiper-wrapper .swiper-slide footer .swiper-button-prev span {
+.swiper-container .swiper-wrapper .swiper-slide footer.progress .swiper-button-prev span {
   font-size: 24px;
   font-weight: 200;
   color: #FF4747;
 }
-.swiper-container .swiper-wrapper .swiper-slide footer .swiper-button-prev::after {
+.swiper-container .swiper-wrapper .swiper-slide footer.progress .swiper-button-prev::after {
   display: none;
 }
 

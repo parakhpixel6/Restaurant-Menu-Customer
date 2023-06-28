@@ -146,18 +146,32 @@ $color-focused: $primary-black;
     text-align: center;
   }
 
-  & #input-checkbox {
+  input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 28px;
     height: 14px;
-    width: 14px;
-    border-radius: 10px;
-    margin-top: 2px;
-    accent-color: $green;
-
-    input[type="checkbox"]:checked { 
-      color: #fff; 
-    }
+    border-radius: 5px;
+    border: 1px solid #aaaaaa;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  input[type="checkbox"]:checked {
+      border-color: $green; /* Change the border color when checked */
+      position: relative;
+  }
+  input[type="checkbox"]:checked:after {
+      content: '\2713'; /* Unicode character for check mark */
+      font-size: 13px;
+      color: $green; /* Change the color of the check mark */
+      top: 40%;
+      transform: translate(-50%, -50%);
+      left: 50%;
+      position: absolute;
   }
 }
+
 
 .register-btn {
   & #register-btn {

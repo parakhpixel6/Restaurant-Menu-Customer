@@ -1739,18 +1739,32 @@
                                     </div>                
                                 </div>
                                 <div class="progress-section-right">
-                                    <div class="my-cart d-flex justify-space-between ai-center flex-d-col">
-                                        <header class="my-cart-header d-flex justify-center ai-center g-8">
+                                    <div class="my-order d-flex justify-space-between ai-center flex-d-col">
+                                        <header class="my-order-header d-flex justify-center ai-center g-8">
                                             <span class="material-symbols-rounded">file_download_done</span>
                                             <p>My Order</p>
                                         </header>
-                                        <div class="my-cart-footer d-flex justify-center ai-center">
-                                            <div class="my-cart-footer-container d-flex justify-flex-end ai-center">
+                                        <div class="my-order-footer d-flex flex-d-col justify-space-evenly ai-center">
+                                            <div class="my-order-footer-container my-order-choice d-flex justify-space-between ai-center">
+                                                <div class="checkbox edit-my-order d-flex flex-d-row ai-center justify-center g-12">
+                                                    <input id="input-checkbox" name="order-choice" type="checkbox" placeholder="" required>
+                                                    <label for="input-checkbox">
+                                                        Edit my order
+                                                    </label>
+                                                </div>
+                                                <div class="checkbox finalise-my-order d-flex flex-d-row ai-center justify-center g-12">
+                                                    <input id="input-checkbox" name="order-choice" type="checkbox" checked="true" placeholder="" required>
+                                                    <label for="input-checkbox" class="checked-label">
+                                                        Finalise my order
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="my-order-footer-container d-flex justify-flex-end ai-center">
                                                 <div class="swiper-button-prev add-more d-flex ai-center justify-center g-4">
                                                     <span class="material-symbols-rounded">chevron_left</span>
                                                     <p>Back to Menu</p>
                                                 </div>
-                                                <div class="swiper-button-next place-order d-flex ai-center justify-center g-4">
+                                                <div class="swiper-button-next show-my-bill d-flex ai-center justify-center g-4">
                                                     <span class="material-symbols-rounded">receipt_long</span>
                                                     <p>Show My Bill</p>
                                                 </div>

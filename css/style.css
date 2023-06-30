@@ -1526,6 +1526,7 @@ li {
   font-weight: 600;
 }
 .swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-bill-details-container .coupons-details {
+  display: none;
   transition: 0.3s ease-in-out;
   padding: 12px 0px;
 }

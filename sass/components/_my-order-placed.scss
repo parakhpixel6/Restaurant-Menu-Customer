@@ -1,0 +1,298 @@
+.my-order {
+    height: 100%;
+    width: 100%;
+    border-radius: 24px;
+    // background-color: rgba(140, 199, 199, 0.884);
+
+    & header {
+        flex-shrink: 0;
+        width: 100%;
+        height: 8%;
+        background: $red;
+        background: linear-gradient(90deg, #ffe5e5 0%, #ffd5d5 100%);
+        ;
+        border-radius: 24px 24px 0px 0px;
+        color: $primary-dark-grey;
+
+        & span {
+            font-size: 25px;
+        }
+
+        & p {
+            padding: 0;
+            font-size: 20px;
+            font-family: Pacifico, sans-serif;
+        }
+    }
+
+    &-placed-heading {
+        width: 100%;
+        height: 8%;
+        // background-color: rgba(107, 155, 155, 0.912);
+
+        & p {
+            padding: 0;
+            font-size: 16px;
+            font-weight: 400;
+            color: $green;
+        }
+    }
+
+    &-bill {
+        height: 69%;
+        width: calc(100% - 32px);
+        margin: 0px auto;
+        // background-color: rgba(140, 199, 199, 0.884);
+    }
+
+    &-details {
+        padding: 8px 0px;
+        border-bottom: 1px solid $off-white;
+
+        & p {
+            font-size: 16px;
+            font-weight: 400;
+            color: $primary-dark-grey;
+        }
+
+        & .bill-unpaid {
+            padding: 3px 6px;
+            border-radius: 6px;
+            background-color: $light-red;
+            color: $dark-red;
+            font-size: 12px;
+            font-weight: 400;
+        }
+    }
+
+    &-items {
+        height: 65%;
+        width: 100%;
+        overflow: hidden;
+        overflow-y: auto;
+        // background-color: red;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    &-item {
+        padding: 12px 0px;
+        border-bottom: 1px solid $off-white;
+
+        .ordered-item-details {
+
+            & .ordered-item-img {
+                height: 60px;
+                width: 60px;
+                border-radius: 6px;
+                overflow: hidden;
+                object-fit: cover;
+                object-position: center;
+
+                & img {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+
+        .ordered-item-totalRate p {
+            margin: 50% 0%;
+        }
+
+        .ordered-item-content p {
+            font-size: 16px;
+            color: $primary-black;
+            font-weight: 400;
+        }
+
+        .ordered-item-quantity-rate p {
+            font-size: 14px;
+            font-weight: 400;
+            color: $primary-grey;
+        }
+    }
+
+    &-total {
+        padding: 16px 0px;
+
+        & .subTotal .sub-total {
+            font-size: 14px;
+            font-weight: 400;
+            color: $primary-black;
+            text-transform: none;
+        }
+
+        & .subTotal .total-rate {
+            font-size: 20px;
+            font-weight: 400;
+            color: $primary-black;
+        }
+
+        & .tax-charges {
+            padding: 0px 0px 16px 0px;
+
+            & p {
+                font-size: 14px;
+                font-weight: 400;
+                color: $primary-grey;
+                text-transform: none;
+            }
+        }
+    }
+
+    &-footer {
+        height: 15%;
+        width: calc(100% - 32px);
+        padding: 0px 16px;
+        border-radius: 0px 0px 24px 24px;
+        border-top: 1px solid $off-white;
+        // background-color: rgba(182, 127, 127, 0.767);
+
+        &-container {
+            position: relative;
+            height: fit-content;
+            width: 100%;
+
+            & label {
+                font-size: 12px;
+            }
+
+            & .swiper-button-prev {
+                position: absolute;
+                height: 26px;
+                width: 152px;
+                /* top: 80%; */
+                /* transform: translate(0%, -50%); */
+                margin: -14px -9px;
+                background-color: transparent;
+
+                &::after {
+                    display: none;
+                }
+            }
+
+            & .swiper-button-next {
+                position: absolute;
+                height: 30px;
+                width: 152px;
+                /* top: 80%; */
+                // left: -2.75%;
+                /* transform: translate(0%, -50%); */
+                margin: -16px -10px;
+                border: none;
+
+                &::after {
+                    display: none;
+                }
+            }
+
+            & .add-more {
+
+                // padding: 3px 12px;
+                border-radius: 6px;
+                border: 1px solid $dark-red;
+                cursor: pointer;
+
+                & span {
+                    font-size: 22px;
+                    color: $dark-red;
+                }
+
+                & p {
+                    padding: 0;
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: $dark-red;
+                }
+            }
+
+            & .show-my-bill {
+                cursor: pointer;
+                border-radius: 6px;
+                color: $widget-white;
+                background: rgb(255, 102, 102);
+                background: linear-gradient(90deg, rgba(255, 102, 102, 1) 40%, rgba(255, 150, 136, 1) 100%);
+
+                & span {
+                    font-size: 22px;
+                    font-weight: 200;
+                }
+
+                & p {
+                    padding: 0;
+                    color: $widget-white;
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .edit-my-order {
+            margin-left: 26px;
+
+            input[type="checkbox"]:checked {
+                position: relative;
+            }
+
+            input[type="checkbox"]:checked:after {
+                content: '\2713';
+                /* Unicode character for check mark */
+                font-size: 13px;
+                color: $green;
+                /* Change the color of the check mark */
+                top: 50%;
+                transform: translate(-50%, -50%);
+                left: 50%;
+                position: absolute;
+            }
+        }
+
+        .finalise-my-order {
+            margin-right: 16px;
+
+            input[type="checkbox"]:checked {
+                position: relative;
+            }
+
+            input[type="checkbox"]:checked:after {
+                content: '\2713';
+                /* Unicode character for check mark */
+                font-size: 13px;
+                color: $green;
+                /* Change the color of the check mark */
+                top: 50%;
+                transform: translate(-50%, -50%);
+                left: 50%;
+                position: absolute;
+            }
+        }
+    }
+
+    &-choice {
+        margin-top: -15px;
+
+        .checked-label {
+            color: $green;
+        }
+
+        input[type="checkbox"] {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            width: 14px;
+            height: 14px;
+            border-radius: 5px;
+            border: 1px solid #aaaaaa;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        input[type="checkbox"]:checked {
+            border-color: $green;
+            /* Change the border color when checked */
+        }
+
+    }
+}

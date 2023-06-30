@@ -9,7 +9,11 @@
     height: 156px;
     width: 156px;
     border-radius: 50%;
-    background-image: url('../assets/customer-img/img/restaurant-logo.png');
-    background-position: center;
-    background-size: cover;
+    object-position: center;
+    object-fit: cover;
+    
+    & img {
+        height: 100%;
+        width: 100%;
+    }
 }

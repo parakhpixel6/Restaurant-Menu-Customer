@@ -123,6 +123,7 @@
             }
 
             .item-status {
+                opacity: 0;
                 flex-shrink: 0;
                 display: flex;
                 justify-content: center;
@@ -156,7 +157,7 @@
             }
 
             .add-remove {
-                color: $green;
+                color: $primary-black;
             }
 
             .btn {
@@ -164,17 +165,23 @@
                 width: 18px;
                 border-radius: 8px;
                 background-color: transparent;
-                border: 1px solid $green;
-                color: $green;
+                border: 1px solid $light-grey;
+                color: $primary-grey;
                 text-align: center;
+                
             }
 
-            .remove-btn {
+            .remove-btn, .add-btn{
                     font-size: 14px;
             }
-            
-            .add-btn {
-                    font-size: 14px;
+
+            .green {
+                color: $green;
+                border-color: $green;
+            }
+
+            .green .add-remove {
+                color: $green;
             }
         }
     }

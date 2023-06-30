@@ -133,21 +133,21 @@ updateName.addEventListener('click', function() {
 
 
 
-//Apply Coupons 
-// const applyCoupons = document.querySelector('#apply-coupons');
-// const couponClosed = document.querySelector('#coupon-closed');
+// Apply Coupons 
+const applyCoupons = document.querySelector('#apply-coupons');
+const couponClosed = document.querySelector('#coupon-closed');
 
-// applyCoupons.addEventListener('click', function() {
-//   document.querySelector('.coupons-details').style.display = 'block';
-//   applyCoupons.style.display = 'none';
-//   const couponsDetails = document.getElementById("coupons-details");
-//   couponsDetails.scrollIntoView();
-// });
+applyCoupons.addEventListener('click', function() {
+  document.querySelector('.coupons-details').style.display = 'block';
+  applyCoupons.style.display = 'none';
+  const couponsDetails = document.getElementById("coupons-details");
+  couponsDetails.scrollIntoView();
+});
 
-// couponClosed.addEventListener('click', function() {
-//   document.querySelector('.coupons-details').style.display = 'none';
-//   applyCoupons.style.display = 'initial';
-// });
+couponClosed.addEventListener('click', function() {
+  document.querySelector('.coupons-details').style.display = 'none';
+  applyCoupons.style.display = 'initial';
+});
 
 
 

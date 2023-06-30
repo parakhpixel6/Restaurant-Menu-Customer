@@ -115,19 +115,22 @@ const updateName = document.querySelector('.update-name');
 editName.addEventListener('click', function() {
   document.querySelector('.edit-name-modal').style.top = '50%';
   document.querySelector('.edit-name-modal').style.opacity = '1';
+  document.querySelector('.edit-name-modal').style.display = 'flex';
   document.querySelector('#progress-section-right-modal').style.overflow = 'initial';
 });
 
 cancelName.addEventListener('click', function() {
   document.querySelector('.edit-name-modal').style.top = '-200%';
   document.querySelector('.edit-name-modal').style.opacity = '0';
-  document.querySelector('#progress-section-right-modal').style.overflow = 'initial';
+  // document.querySelector('.edit-name-modal').style.display = 'none';
+  document.querySelector('#progress-section-right-modal').style.overflow = 'none';
 });
 
 updateName.addEventListener('click', function() {
-  document.querySelector('.edit-name-modal').style.top = '200%';
+  document.querySelector('.edit-name-modal').style.top = '-200%';
   document.querySelector('.edit-name-modal').style.opacity = '0';
-  document.querySelector('#progress-section-right-modal').style.overflow = 'initial';
+  // document.querySelector('.edit-name-modal').style.display = 'none';
+  document.querySelector('#progress-section-right-modal').style.overflow = 'none';
 });
 
 

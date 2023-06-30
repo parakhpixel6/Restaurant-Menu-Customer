@@ -164,6 +164,7 @@ li {
     background-image: url('../assets/customer-img/img/bg-img.png');
     background-position: center;
     background-size: cover;
+    overflow: hidden;
 }
 
 .container {
@@ -208,6 +209,7 @@ li {
                     height: 100%;
                     width: 62%;
                     background-color: #fff;
+                    box-shadow: 2px 6px 24px 0px rgba(0, 0, 0, 0.10);
                     border-radius: 24px;
 
                     @import './components/my-cart';
@@ -541,6 +543,35 @@ li {
                                             background-image: url('../assets/customer-svg/svg/Subtract.svg');
                                             background-position: center;
                                             background-size: cover;
+
+                                            & .coupon-name {
+                                                padding: 4px 32px;
+                                                border-bottom: 1px dashed #fff;
+
+                                                & p {
+                                                    color: $primary-black;
+                                                    font-size: 14px;
+                                                    font-style: normal;
+                                                    font-weight: 400;
+                                                }
+                                            }
+
+                                            & .coupon-description {
+                                                padding: 0px 8px;
+                                                height: 42px;
+                                                width: 94px;
+                                                & p {
+                                                    color: $primary-black;
+                                                    text-align: center;
+                                                    font-style: normal;
+                                                    font-size: 10px;
+                                                    font-weight: 400;
+                                                }
+                                            }
+
+                                            // & .coupon-btn {
+
+                                            // }
                                         }
                                     }
                                 }

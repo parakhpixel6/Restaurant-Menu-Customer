@@ -39,6 +39,10 @@ li {
     display: flex;
 }
 
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
 .justify-center {
     justify-content: center;
 }
@@ -130,6 +134,10 @@ li {
     gap: 33px;
 }
 
+.g-32 {
+    gap: 32px;
+}
+
 .g-16 {
     gap: 16px;
 }
@@ -190,8 +198,13 @@ li {
                 // background-color: rgba(112, 165, 165, 0.856);
 
                 @import './components/progress-section-left';
+
+                & #progress-section-right-modal {
+                    overflow: hidden;
+                }
                 
                 &-right {
+                    position: relative;
                     height: 100%;
                     width: 62%;
                     background-color: #fff;
@@ -204,211 +217,403 @@ li {
                     @import './components/my-order-placed';
 
                     .my-bill {
-                            height: 100%;
+                        height: 100%;
+                        width: 100%;
+                        border-radius: 24px;
+                        // background-color: rgba(140, 199, 199, 0.884);
+                
+                        & header {
+                            flex-shrink: 0;
                             width: 100%;
-                            border-radius: 24px;
-                            // background-color: rgba(140, 199, 199, 0.884);
-                    
-                            & header {
-                                flex-shrink: 0;
-                                width: 100%;
-                                height: 8%;
-                                background: $red;
-                                background: linear-gradient(90deg, #ffe5e5 0%, #ffd5d5 100%);
-                                ;
-                                border-radius: 24px 24px 0px 0px;
-                                color: $primary-dark-grey;
-                    
-                                & span {
-                                    font-size: 25px;
-                                }
-                    
-                                & p {
-                                    padding: 0;
-                                    font-size: 20px;
-                                    font-family: Pacifico, sans-serif;
-                                }
+                            height: 8%;
+                            background: $red;
+                            background: linear-gradient(90deg, #ffe5e5 0%, #ffd5d5 100%);
+                            ;
+                            border-radius: 24px 24px 0px 0px;
+                            color: $primary-dark-grey;
+                
+                            & span {
+                                font-size: 25px;
+                            }
+                
+                            & p {
+                                padding: 0;
+                                font-size: 20px;
+                                font-family: Pacifico, sans-serif;
+                            }
+                        }
+
+                        &-recipet {
+                            overflow: hidden;
+                            height: 82%;
+                            width: 100%;
+                            // background-color: #9e5d5ddd;
+                        }
+
+                        &-tip {
+                            height: 8%;
+                            // background-color: rgba(170, 123, 123, 0.895);
+                            width: calc(100% - 32px);
+                            padding: 8px 16px;
+                            border-bottom: 1px solid $off-white;
+
+                            & .tip-heading {
+                                font-size: 16px;
+                                font-family: Pacifico, sans-serif;
+                                text-transform: none;
+                                background-image: linear-gradient(90deg, rgba(255, 102, 102, 1) 40%, rgba(255, 150, 136, 1) 100%);
+                                -webkit-background-clip: text;
+                                color: transparent;
+                                font-style: normal;
+                                font-weight: 400;
                             }
 
-                            &-recipet {
-                                overflow: hidden;
-                                height: 82%;
-                                width: 100%;
-                                // background-color: #9e5d5ddd;
+                            & .tip-amount {
+                                padding: 3px 6px;
+                                border: 1px solid $dark-red;
+                                border-radius: 6px;
+                                font-size: 12px;
+                                font-family: Nunito;
+                                font-style: normal;
+                                font-weight: 400;
+                                color: $dark-red;
                             }
 
-                            &-tip {
-                                height: 8%;
-                                // background-color: rgba(170, 123, 123, 0.895);
-                                width: calc(100% - 32px);
-                                padding: 8px 16px;
-                                border-bottom: 1px solid $off-white;
+                            & .selected {
+                                color: #fff;
+                                background: rgb(255, 102, 102);
+                                    background: linear-gradient(90deg, rgba(255, 102, 102, 1) 40%, rgba(255, 150, 136, 1) 100%);
+                                
+                            }
+                        }
 
-                                & .tip-heading {
-                                    font-size: 16px;
-                                    font-family: Pacifico, sans-serif;
+                        &-details {
+                            height: 82%;
+                            width: calc(100% - 32px);
+                            overflow: hidden;
+                            overflow-y: auto;
+                            margin: 8px auto;
+                            // background-color: yellow;
+
+                            &::-webkit-scrollbar {
+                                    display: none;
+                            }
+
+                            &-container {
+                                height: fit-content;
+                                width: 100%;
+
+                                & .restaurant-details{
+                                    width: 100%;
+
+                                    & .restaurant-logo-img {
+                                        width: 80px;
+                                        height: 80px;
+                                        border-radius: 50%;
+                                        object-fit: cover;
+                                        object-position: center;
+
+                                        & img {
+                                            height: 100%;
+                                            width: 100%;
+                                        }
+                                    }
+
+                                    & .restaurant-address {
+                                        text-align: center;
+
+                                        & h1 {
+                                            font-size: 16px;
+                                            font-style: normal;
+                                            font-weight: 400;
+                                            color: $primary-black;
+                                        }
+
+                                        & .address {
+                                            font-size: 12px;
+                                            color: $primary-grey;
+                                            font-style: normal;
+                                            font-weight: 400;
+                                            width: 314px;
+                                        }
+
+                                        & .gst {
+                                            font-size: 12px;
+                                            color: $primary-dark-grey;
+                                            font-style: normal;
+                                            font-weight: 400;
+                                            width: 143px;
+                                            margin-top: -2px;
+                                        }
+
+
+                                    }
+                                }
+
+                                & .customer-details {
+                                    width: 100%;
+                                    padding: 8px 0px;
+                                    border-bottom: 1px solid $off-white;
+
+                                    & .customer-name,  & .customer-gst{
+                                        font-size: 14px;
+                                        font-style: normal;
+                                        font-weight: 400;
+
+                                        & p span {
+                                            font-size: 13px;
+                                            color: $primary-dark-grey;
+                                        }
+
+                                        & span:nth-child(2) {
+                                            font-size: 20px;
+                                            cursor: pointer;
+                                            color: $primary-dark-grey;
+                                        }
+
+                                        & p{
+                                            color: $primary-grey;
+                                        }
+                                    }
+                                }
+
+                                & .item-details {
+                                    padding: 6px 0px 0px 0px ;
+                                    border-bottom: 1px solid $off-white;
+
+                                    & th {
+                                        text-align: left;
+                                        font-size: 14px;
+                                        font-style: normal;
+                                        font-weight: 600;
+                                        color: $primary-black;
+                                        padding: 0px 0px 8px 0px;
+                                    }
+
+                                    & td {
+                                        font-size: 12px;
+                                        font-family: Nunito;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        color: $primary-dark-grey;
+                                        padding: 0px 0px 6px 0px;
+                                    }
+
+                                    & .table-quantity {
+
+                                        & th {
+                                            padding: 0px 0px 8px 35px;
+                                        }
+
+                                        & td  {
+                                            text-align: right;
+                                        }
+                                    }
+                                }
+
+                                & .subTotal-details {
+                                    padding: 8px 0px;
                                     text-transform: none;
-                                    background-image: linear-gradient(90deg, rgba(255, 102, 102, 1) 40%, rgba(255, 150, 136, 1) 100%);
-                                    -webkit-background-clip: text;
-                                    color: transparent;
-                                    font-style: normal;
-                                    font-weight: 400;
-                                }
+                                    border-bottom: 1px solid $off-white;
 
-                                & .tip-amount {
-                                    padding: 3px 6px;
-                                    border: 1px solid $dark-red;
-                                    border-radius: 6px;
-                                    font-size: 12px;
-                                    font-family: Nunito;
-                                    font-style: normal;
-                                    font-weight: 400;
-                                    color: $dark-red;
-                                }
+                                    & .subTotal {
+                                        color: $primary-black;
+                                        font-size: 14px;
+                                        font-style: normal;
+                                        font-weight: 600;
+                                        
+                                    }
 
-                                & .selected {
-                                    color: #fff;
-                                    background: rgb(255, 102, 102);
-                                     background: linear-gradient(90deg, rgba(255, 102, 102, 1) 40%, rgba(255, 150, 136, 1) 100%);
-                                    
-                                }
-                            }
+                                    & .applied-coupons {
+                                        color: #555;
+                                        font-size: 12px;
+                                        font-style: normal;
+                                        font-weight: 400;
 
-                            &-details {
-                                height: 92%;
-                                width: calc(100% - 32px);
-                                overflow: hidden;
-                                overflow-y: auto;
-                                margin: 8px auto;
-                                // background-color: yellow;
-
-                                &::-webkit-scrollbar {
-                                        display: none;
-                                }
-
-                                &-container {
-                                    height: fit-content;
-                                    width: 100%;
-
-                                    & .restaurant-details{
-                                        width: 100%;
-
-                                        & .restaurant-logo-img {
-                                            width: 80px;
-                                            height: 80px;
-                                            border-radius: 50%;
-                                            object-fit: cover;
-                                            object-position: center;
-
-                                            & img {
-                                                height: 100%;
-                                                width: 100%;
-                                            }
-                                        }
-
-                                        & .restaurant-address {
-                                            text-align: center;
-
-                                            & h1 {
-                                                font-size: 16px;
-                                                font-style: normal;
-                                                font-weight: 400;
-                                                color: $primary-black;
-                                            }
-
-                                            & .address {
-                                                font-size: 12px;
-                                                color: $primary-grey;
-                                                font-style: normal;
-                                                font-weight: 400;
-                                                width: 314px;
-                                            }
-
-                                            & .gst {
-                                                font-size: 12px;
-                                                color: $primary-dark-grey;
-                                                font-style: normal;
-                                                font-weight: 400;
-                                                width: 143px;
-                                                margin-top: -2px;
-                                            }
-
-
+                                        & a, span {
+                                            color: $dark-red;
                                         }
                                     }
+                                }
 
-                                    & .customer-details {
-                                        width: 100%;
-                                        padding: 8px 0px;
+                                & .discount-details {
+                                    padding: 8px 0px;
+                                    text-transform: none;
+                                    border-bottom: 1px solid $off-white;
+
+                                    & .discount-price {
+                                        color: $primary-black;
+                                        font-size: 14px;
+                                        font-style: normal;
+                                        font-weight: 600;
+                                        
+                                    }
+
+                                    .service-tip, .charges {
+                                        color: #555;
+                                        font-size: 12px;
+                                        font-style: normal;
+                                        font-weight: 400;
                                     }
                                 }
 
-                            }
-                    
-                            &-footer {
-                                height: 10%;
-                                width: calc(100% - 32px);
-                                padding: 0px 16px;
-                                border-radius: 0px 0px 24px 24px;
-                                border-top: 1px solid $off-white;
-                                // background-color: rgba(182, 127, 127, 0.767);
-                    
-                                &-container {
-                                    position: relative;
-                                    height: fit-content;
-                                    width: 100%;
-                    
-                                    & .apply-coupons {
-                                        position: absolute;
-                                        left: 8px;
-                                        height: 26px;
-                                        width: 152px;
-                                        /* top: 80%; */
-                                        /* transform: translate(0%, -50%); */
-                                        margin: -14px -9px;
-                                        background-color: transparent;
-                                        cursor: pointer;
-                                        border: none;
-                                        background-color: transparent;
+                                & .totalAmount-details {
+                                    padding: 8px 0px;
+                                    text-transform: none;
+                                    border-bottom: 1px solid $off-white;
+
+                                    & .totalAmount-price {
+                                        color: $primary-black;
+                                        font-size: 14px;
+                                        font-style: normal;
+                                        font-weight: 600;
+                                        
                                     }
-                    
-                                    & .swiper-button-next {
-                                        position: absolute;
+
+                                    .sgst, .cgst {
+                                        color: #555;
+                                        font-size: 12px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                    }
+                                }
+
+                                & .netBill-details {
+                                    padding: 8px 0px;
+                                    text-transform: none;
+                                    // border-bottom: 1px solid $off-white;
+
+                                    & .netBillAmount-price {
+                                        color: $primary-black;
+                                        font-size: 18px;
+                                        font-style: normal;
+                                        font-weight: 600;
+                                        
+                                    }
+                                }
+
+                                & .coupons-details {
+                                    // display: none;
+                                    transition: .3s ease-in-out;
+                                    padding: 12px 0px;
+
+                                    & .coupons-bar {
                                         height: 30px;
-                                        width: 152px;
-                                        /* top: 80%; */
-                                        // left: -2.75%;
-                                        /* transform: translate(0%, -50%); */
-                                        margin: -16px -10px;
-                                        border: none;
-                    
-                                        &::after {
-                                            display: none;
+                                        width: 100%;
+                                    }
+
+                                    .coupons-bar-icon {
+                                        border-radius: 6px;
+                                        border-right: 2px dashed #fff;
+                                        width: 10%;
+                                        height: 100%;
+                                        background: rgb(112,168,175);
+                                        background: linear-gradient(90deg, rgba(112,168,175,0.865983893557423) 43%, rgba(99,152,185,1) 100%);
+                                    }
+
+                                    .coupons-bar-close {
+                                        border-radius: 6px;
+                                        padding: 0px 16px;
+                                        width: 90%;
+                                        height: 100%;
+                                        background: rgb(112,168,175);
+                                        background: linear-gradient(90deg, rgba(112,168,175,0.865983893557423) 43%, rgba(99,152,185,1) 100%);
+
+                                        & p {
+                                            font-size: 12px;
+                                            font-style: normal;
+                                            font-weight: 400;
+                                            color: #fff;
+
+                                            & span {
+                                                font-size: 18px;
+                                                font-weight: 200;
+                                            }
                                         }
                                     }
-                    
-                                    & .make-my-payment {
-                                        cursor: pointer;
-                                        border-radius: 6px;
+
+                                    & .all-coupons {
+                                        padding: 16px;
+
+                                        & .grab-coupon {
+                                            height: 122px;
+                                            width: 108px;
+                                            background-image: url('../assets/customer-svg/svg/Subtract.svg');
+                                            background-position: center;
+                                            background-size: cover;
+                                        }
+                                    }
+                                }
+                            }
+
+                        }
+                
+                        &-footer {
+                            height: 10%;
+                            width: calc(100% - 32px);
+                            padding: 0px 16px;
+                            border-radius: 0px 0px 24px 24px;
+                            border-top: 1px solid $off-white;
+                            // background-color: rgba(182, 127, 127, 0.767);
+                
+                            &-container {
+                                position: relative;
+                                height: fit-content;
+                                width: 100%;
+                
+                                & .apply-coupons {
+                                    position: absolute;
+                                    left: 8px;
+                                    height: 26px;
+                                    width: 152px;
+                                    /* top: 80%; */
+                                    /* transform: translate(0%, -50%); */
+                                    margin: -14px -9px;
+                                    background-color: transparent;
+                                    cursor: pointer;
+                                    border: none;
+                                    background-color: transparent;
+                                }
+                
+                                & .swiper-button-next {
+                                    position: absolute;
+                                    height: 30px;
+                                    width: 152px;
+                                    /* top: 80%; */
+                                    // left: -2.75%;
+                                    /* transform: translate(0%, -50%); */
+                                    margin: -16px -10px;
+                                    border: none;
+                
+                                    &::after {
+                                        display: none;
+                                    }
+                                }
+                
+                                & .make-my-payment {
+                                    cursor: pointer;
+                                    border-radius: 6px;
+                                    color: $widget-white;
+                                    background: rgb(255, 102, 102);
+                                    background: linear-gradient(90deg, rgba(255, 102, 102, 1) 40%, rgba(255, 150, 136, 1) 100%);
+                
+                                    & span {
+                                        font-size: 22px;
+                                        font-weight: 300;
+                                    }
+                
+                                    & p {
+                                        padding: 0;
                                         color: $widget-white;
-                                        background: rgb(255, 102, 102);
-                                        background: linear-gradient(90deg, rgba(255, 102, 102, 1) 40%, rgba(255, 150, 136, 1) 100%);
-                    
-                                        & span {
-                                            font-size: 22px;
-                                            font-weight: 300;
-                                        }
-                    
-                                        & p {
-                                            padding: 0;
-                                            color: $widget-white;
-                                            font-size: 14px;
-                                            font-weight: 300;
-                                        }
+                                        font-size: 14px;
+                                        font-weight: 300;
                                     }
                                 }
                             }
                         }
+                    }
+
+                    @import './components/modal-popup';
                 }
             }
 

@@ -1926,7 +1926,7 @@
                             </footer>
                         </div>
 
-                        <!--====MY BILL)====-->
+                        <!--====MY BILL====-->
                         <div class="swiper-slide justify-center ai-center d-flex">
                             <nav class="accomplishments w-100 d-flex ai-center justify-flex-end">
                                 <div class="accomplishment justify-center ai-center d-flex">
@@ -1954,7 +1954,7 @@
                                         <img src="./assets/customer-img/img/restaurant-logo.png" alt="">
                                     </div>
                                 </div>
-                                <div class="progress-section-right">
+                                <div id="progress-section-right-modal" class="progress-section-right">
                                     <div class="my-bill d-flex justify-space-between ai-center flex-d-col">
                                         <header class="my-bill-header d-flex justify-center ai-center g-8">
                                             <span class="material-symbols-rounded">receipt_long</span>
@@ -2143,12 +2143,125 @@
                                                     </div>
                                                     <div class="customer-details d-flex ai-center justify-center flex-d-col g-6">
                                                         <div class="customer-name w-100 d-flex ai-center justify-space-between">
-                                                            <p>Customer: <span>Naresh Kadeem</span> <span class="material-symbols-rounded">ink_pen</span></p>
+                                                            <p class="d-flex justify-center ai-center g-4">Customer: <span>Naresh Kadeem</span> <span id="edit_name" class="material-symbols-rounded">ink_pen</span></p>
                                                             <p>Bill no: <span>GT705</span></p>
                                                         </div>
                                                         <div class="customer-gst w-100 d-flex ai-center justify-space-between">
-                                                            <p>GST: <span>N/A</span> <span class="material-symbols-rounded">ink_pen</span></p>
+                                                            <p class="d-flex justify-center ai-center g-4">GST: <span>N/A</span> <span class="material-symbols-rounded">ink_pen</span></p>
                                                             <p>Date: <span>18/07/2023</span></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item-details d-flex justify-space-between ai-center">
+                                                        <table >
+                                                            <tr>
+                                                              <th>Item Description</th>
+                                                            </tr>
+                                                            <tr>
+                                                              <td>Classic American Breakfast</td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td>Belgian Waffles</td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td>French Toast</td>
+                                                            </tr>
+                                                        </table>
+                                                        <table class="table-quantity">
+                                                            <tr>
+                                                              <th>Qty</th>
+                                                              <th>Rate</th>
+                                                              <th>Total</th>
+                                                            </tr>
+                                                            <tr>
+                                                              <td>1</td>
+                                                              <td>189</td>
+                                                              <td>189</td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td>2</td>
+                                                              <td>189</td>
+                                                              <td>378</td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td>1</td>
+                                                              <td>189</td>
+                                                              <td>189</td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                    <div class="subTotal-details d-flex flex-d-col g-8">
+                                                        <div class="subTotal d-flex justify-space-between ai-center">
+                                                            <p>Sub-total</p>
+                                                            <p>756.00</p>
+                                                        </div>
+                                                        <div class="applied-coupons d-flex justify-space-between ai-center">
+                                                            <p>GET10 - 10% off coupon applied <a href="#">Apply another</a></p>
+                                                            <p><span>-33.80</span></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="discount-details d-flex flex-d-col g-8">
+                                                        <div class="discount-price d-flex justify-space-between ai-center">
+                                                            <p>Discounted Price</p>
+                                                            <p>723.00</p>
+                                                        </div>
+                                                        <div class="service-tip d-flex justify-space-between ai-center">
+                                                            <p>Service Tip</p>
+                                                            <p>100.00</p>
+                                                        </div>
+                                                        <div class="charges d-flex justify-space-between ai-center">
+                                                            <p>Restaurant charges</p>
+                                                            <p>15.40</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="totalAmount-details d-flex flex-d-col g-8">
+                                                        <div class="totalAmount-price d-flex justify-space-between ai-center">
+                                                            <p>Total Amount</p>
+                                                            <p>838.40</p>
+                                                        </div>
+                                                        <div class="sgst d-flex justify-space-between ai-center">
+                                                            <p>SGST@2.5</p>
+                                                            <p>10.60</p>
+                                                        </div>
+                                                        <div class="cgst d-flex justify-space-between ai-center">
+                                                            <p>CGST@2.5</p>
+                                                            <p>10.60</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="netBill-details d-flex flex-d-col g-8">
+                                                        <div class="netBillAmount-price d-flex justify-space-between ai-center">
+                                                            <p>Net Bill Amount</p>
+                                                            <p>859.60</p>
+                                                        </div>
+                                                    </div>
+                                                    <div id="coupons-details" class="coupons-details">
+                                                        <div class="coupons-bar d-flex ai-center">
+                                                            <div class="coupons-bar-icon d-flex justify-center ai-center">
+                                                                <svg width="28" height="13" viewBox="0 0 28 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <g id="Group 234">
+                                                                    <g id="Group 233">
+                                                                    <path id="Vector" d="M28 6.5C27.9988 5.5702 27.6471 4.6636 26.9931 3.90467C26.3391 3.14578 25.415 2.57193 24.3479 2.262V1C24.3479 0.73478 24.2196 0.48043 23.9913 0.29289C23.763 0.10536 23.4533 0 23.1305 0L4.86987 0C4.54699 0 4.23735 0.10536 4.00905 0.29289C3.78074 0.48043 3.65249 0.73478 3.65249 1V2.262C2.58457 2.57115 1.65973 3.14487 1.00553 3.90403C0.351329 4.6632 0 5.5704 0 6.5005C0 7.4306 0.351329 8.3378 1.00553 9.097C1.65973 9.8561 2.58457 10.4299 3.65249 10.739V12C3.65249 12.2652 3.78074 12.5196 4.00905 12.7071C4.23735 12.8946 4.54699 13 4.86987 13H23.1305C23.4533 13 23.763 12.8946 23.9913 12.7071C24.2196 12.5196 24.3479 12.2652 24.3479 12V10.739C25.4153 10.429 26.3395 9.855 26.9935 9.0959C27.6474 8.3368 27.999 7.43 28 6.5Z" fill="#FFEF5E"/>
+                                                                    <path id="Vector_2" d="M4.86987 0C4.54699 0 4.23735 0.10536 4.00905 0.29289C3.78074 0.48043 3.65249 0.73478 3.65249 1V2.262C2.58457 2.57115 1.65973 3.14487 1.00553 3.90403C0.351329 4.6632 0 5.5704 0 6.5005C0 7.4306 0.351329 8.3378 1.00553 9.097C1.65973 9.8561 2.58457 10.4299 3.65249 10.739V12C3.65249 12.1552 3.69649 12.3084 3.78101 12.4472C3.86553 12.5861 3.98824 12.7069 4.13944 12.8L19.7218 0L4.86987 0Z" fill="#FFF9BF"/>
+                                                                    </g>
+                                                                    <g id="Group 232">
+                                                                    <path id="Vector_3" d="M13.1679 3C13.8637 3 14.531 3.26345 15.023 3.73239C15.515 4.20134 15.7914 4.83736 15.7914 5.50055C15.7914 6.16373 15.515 6.79976 15.023 7.2687C14.531 7.73764 13.8637 8.00109 13.1679 8.00109H11.5938L14.742 11" stroke="#7E7202" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    <path id="Vector_4" d="M11.5938 3H17.8902" stroke="#7E7202" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    <path id="Vector_5" d="M11.5938 5.5H17.8902" stroke="#7E7202" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </g>
+                                                                    </g>
+                                                                </svg>
+                                                            </div>
+                                                            <div class="coupons-bar-close  d-flex ai-center justify-space-between">
+                                                                <p>2 Coupons Applicable</p>
+                                                                <p class="d-flex ai-center justify-center g-4">Close <span id="coupon-closed" class="material-symbols-rounded">highlight_off</span></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="all-coupons d-flex flex-wrap ai-center justify-center g-32">
+                                                            <div class="grab-coupon">
+                                                                
+                                                            </div>
+                                                            <div class="grab-coupon"></div>
+                                                            <div class="grab-coupon"></div>
+                                                            <div class="grab-coupon"></div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -2156,7 +2269,7 @@
                                         </div>
                                         <div class="my-bill-footer d-flex flex-d-col justify-space-evenly ai-center">
                                             <div class="my-bill-footer-container d-flex justify-flex-end ai-center">
-                                                <button  class=" apply-coupons d-flex ai-center justify-center g-4">
+                                                <button href="#coupons-details" id="apply-coupons"  class="apply-coupons d-flex ai-center justify-center g-4">
                                                     <svg width="157" height="30" viewBox="0 0 157 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path
                                                             d="M0 6C0 2.68629 2.68629 0 6 0H39.1833C40.3679 0 41.5259 0.350628 42.5115 1.0077L42.8906 1.2604C43.5624 1.70827 44.4376 1.70827 45.1094 1.2604L45.4885 1.0077C46.4741 0.350628 47.6321 0 48.8167 0H151C154.314 0 157 2.68629 157 6V24C157 27.3137 154.314 30 151 30H48.1261C47.3918 30 46.674 29.7827 46.063 29.3754V29.3754C44.8138 28.5425 43.1862 28.5425 41.937 29.3754V29.3754C41.326 29.7827 40.6082 30 39.8739 30H6C2.68629 30 0 27.3137 0 24V6Z"
@@ -2189,6 +2302,27 @@
                                                     <span class="material-symbols-rounded">currency_rupee</span>
                                                     <p>Make Payment</p>
                                                 </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="edit-name-modal d-flex ai-center justify-center">
+                                        <div class="edit-name-popup d-flex flex-d-col justify-center g-8 w-100">
+                                            <p>Update Customer Name</p>
+                                            <div class="textfield-outlined">
+                                                <input id="input-updateName" type="text" placeholder=" ">
+                                                <label for="input-updateName">
+                                                    <p>Your Name</p>
+                                                </label>
+                                            </div>
+                                            <div class="checkbox update-my-name d-flex flex-d-row ai-center justify-flex-start g-12">
+                                                <input id="check-update-name" name="update-name" type="checkbox" placeholder="" required>
+                                                <label for="check-update-name" class="checked-label">
+                                                    Yes, I want to update customer name
+                                                </label>
+                                            </div>
+                                            <div class="confirm-button d-flex ai-center justify-flex-end g-16 w-100 ">
+                                                <button id="cancel-name">Cancel</button>
+                                                <button class="update-name">Update</button>
                                             </div>
                                         </div>
                                     </div>

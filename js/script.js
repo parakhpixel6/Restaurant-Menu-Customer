@@ -106,3 +106,48 @@ tipAmounts.forEach(tipAmount => {
 
 
 
+
+//Edit Name Popup
+const editName = document.querySelector('#edit_name');
+const cancelName = document.querySelector('#cancel-name');
+const updateName = document.querySelector('.update-name');
+
+editName.addEventListener('click', function() {
+  document.querySelector('.edit-name-modal').style.top = '50%';
+  document.querySelector('.edit-name-modal').style.opacity = '1';
+  document.querySelector('#progress-section-right-modal').style.overflow = 'initial';
+});
+
+cancelName.addEventListener('click', function() {
+  document.querySelector('.edit-name-modal').style.top = '-200%';
+  document.querySelector('.edit-name-modal').style.opacity = '0';
+  document.querySelector('#progress-section-right-modal').style.overflow = 'initial';
+});
+
+updateName.addEventListener('click', function() {
+  document.querySelector('.edit-name-modal').style.top = '200%';
+  document.querySelector('.edit-name-modal').style.opacity = '0';
+  document.querySelector('#progress-section-right-modal').style.overflow = 'initial';
+});
+
+
+
+
+//Apply Coupons 
+// const applyCoupons = document.querySelector('#apply-coupons');
+// const couponClosed = document.querySelector('#coupon-closed');
+
+// applyCoupons.addEventListener('click', function() {
+//   document.querySelector('.coupons-details').style.display = 'block';
+//   applyCoupons.style.display = 'none';
+//   const couponsDetails = document.getElementById("coupons-details");
+//   couponsDetails.scrollIntoView();
+// });
+
+// couponClosed.addEventListener('click', function() {
+//   document.querySelector('.coupons-details').style.display = 'none';
+//   applyCoupons.style.display = 'initial';
+// });
+
+
+

@@ -1,0 +1,50 @@
+& .upi {
+    height: 94%;
+    width: 100%;
+    transition: .3s ease-in-out;
+    padding-top: 24px;
+    // background-color: rgba(231, 123, 123, 0.74);
+
+    & p {
+        text-align: center;
+        /* title 16px reg */
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        color: $primary-dark-grey;
+    }
+
+    & .upi-id {
+        text-transform: none;
+        & .request {
+            color: $primary-dark-grey;
+            text-align: center;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 16px;
+        }
+
+        & .upiID {
+            color: $primary-black;
+            text-align: center;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 16px;
+        }
+    }
+
+    & .upi-apps {
+        text-transform: none;
+
+        & p {
+            color: $primary-grey;
+            text-align: center;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 16px;
+        }
+    }
+}

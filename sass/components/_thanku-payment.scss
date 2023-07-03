@@ -1,0 +1,168 @@
+.thanku-container {
+    width: 100%;
+    height: 90%;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    // background-color: rgba(224, 131, 131, 0.747);
+
+    & .payment-status {
+
+        & p {
+            text-align: center;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 27px;
+            color: $green;
+        }
+    }
+
+    & .thanku-msg {
+        position: relative;
+        height: 400px;
+        width: 400px;
+        border-radius: 24px;
+        background-position: center;
+        background-size: cover;
+        background-image: url('../assets/customer-svg/svg/thank-you-bg-illus.svg');
+
+        &-container {
+            height: 100%;
+            width: 100%;
+            background-color: transparent;
+            border-radius: 24px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+
+            & .thanku-heading {
+                text-align: center;
+                font-size: 48px;
+                font-family: Pacifico;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                background-image: linear-gradient(90deg, rgb(255, 102, 102) 40%, rgb(255, 150, 136) 100%);
+                -webkit-background-clip: text;
+                color: transparent;
+            }
+
+            & p {
+                width: 354px;
+                color: $primary-black;
+                text-align: center;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 21px;
+            }
+        }
+
+    }
+}
+
+.thanku-payment {
+    height: 10%;
+    width: 100%;
+    border-radius: 24px;
+    // background-color: rgba(140, 199, 199, 0.884);
+
+    &-footer {
+        height: 100%;
+        width: calc(100% - 32px);
+        padding: 0px 16px;
+        border-radius: 0px 0px 24px 24px;
+        // border-top: 1px solid $off-white;
+        // background-color: rgba(182, 127, 127, 0.767);
+
+        &-container {
+            position: relative;
+            height: fit-content;
+            width: 100%;
+
+            & .hidden {
+                display: none;
+            }
+
+            & .ask-bill {
+                position: absolute;
+                // display: none;
+                height: 30px;
+                width: 152px;
+                left: 10px;
+                /* top: 80%; */
+                // left: -2.75%;
+                /* transform: translate(0%, -50%); */
+                margin: -16px -10px;
+                border: none;
+            }
+
+            & .bill-copy {
+                position: absolute;
+                left: -8px;
+                width: 234px;
+                text-align: center;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 16px;
+                color: $primary-dark-grey;
+            }
+
+            & .swiper-button-next {
+                position: absolute;
+                height: 30px;
+                width: 152px;
+                /* top: 80%; */
+                // left: -2.75%;
+                /* transform: translate(0%, -50%); */
+                margin: -16px -10px;
+                border: none;
+
+                &::after {
+                    display: none;
+                }
+            }
+
+            & .rate-and-review{
+                cursor: pointer;
+                border-radius: 6px;
+                color: $widget-white;
+                background: rgb(255, 102, 102);
+                background: linear-gradient(90deg, rgba(255, 102, 102, 1) 40%, rgba(255, 150, 136, 1) 100%);
+
+                & span {
+                    font-size: 22px;
+                    font-weight: 300;
+                }
+
+                & p {
+                    padding: 0;
+                    color: $widget-white;
+                    font-size: 14px;
+                    font-weight: 300;
+                }
+            }
+
+            & .request-bill {
+                cursor: pointer;
+                border-radius: 6px;
+                color: $dark-red;
+                border: 1px solid $dark-red;
+                background-color: transparent;
+
+                & span {
+                    font-size: 22px;
+                    font-weight: 300;
+                }
+
+                & p {
+                    padding: 0;
+                    font-size: 14px;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+}

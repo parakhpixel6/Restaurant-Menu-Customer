@@ -154,3 +154,41 @@ couponClosed.addEventListener('click', function() {
 
 
 
+// Get all the payment-option elements
+const paymentOptions = document.querySelectorAll('.payment-option');
+
+// Iterate over each payment-option element
+paymentOptions.forEach(option => {
+  // Add a click event listener to each payment-option element
+  option.addEventListener('click', function() {
+    // Remove the "active" class from all payment-option elements
+    paymentOptions.forEach(option => {
+      option.classList.remove('active');
+    });
+
+    // Add the "active" class to the clicked payment-option element
+    this.classList.add('active');
+
+    // Remove the "active" class from all <p> elements inside payment-option elements
+    const paragraphs = this.parentElement.querySelectorAll('p');
+    paragraphs.forEach(p => {
+      p.classList.remove('active');
+    });
+
+    // Add the "active" class to the <p> element inside the clicked payment-option element
+    const paragraph = this.querySelector('p');
+    paragraph.classList.add('active');
+  });
+});
+
+const askBillButton = document.getElementById('ask-bill-button');
+const billText = document.getElementById('bill-text');
+
+askBillButton.addEventListener('click', function() {
+  askBillButton.classList.add('hidden');
+  billText.classList.remove('hidden');
+});
+
+
+
+

@@ -1,0 +1,32 @@
+& .cash {
+    height: 100%;
+    width: 100%;
+    transition: .3s ease-in-out;
+    // background-color: rgba(0, 0, 0, 0.521);
+    .cash-img {
+        height: 120px;
+        width: 120px;
+        border-radius: 50%;
+        border: 1px solid $green;
+
+        &-container {
+            height: 104px;
+            width: 104px;
+            border-radius: 50%;
+            background-color: rgba(84, 186, 84, 0.10);
+            
+        }
+    }
+
+    & p {
+        color: $primary-dark-grey;
+        width: 356px;
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        text-transform: none;
+        line-height: 21px;
+    }
+
+}

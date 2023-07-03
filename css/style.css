@@ -145,12 +145,20 @@ li {
   gap: 16px;
 }
 
+.cg-16 {
+  column-gap: 16px;
+}
+
 .g-12 {
   gap: 12px;
 }
 
 .g-8 {
   gap: 8px;
+}
+
+.rg-8 {
+  row-gap: 8px;
 }
 
 .g-6 {
@@ -163,6 +171,10 @@ li {
 
 button, a, input[type=checkbox], .tip-amount {
   cursor: pointer;
+}
+
+a:hover {
+  background-color: transparent;
 }
 
 .customer-container {
@@ -2159,7 +2171,7 @@ button, a, input[type=checkbox], .tip-amount {
   width: 100%;
 }
 .swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options {
-  height: 62px;
+  height: 14%;
   width: 100%;
   padding: 4px 0px;
   border-bottom: 2px solid #DDDDDD;
@@ -2173,7 +2185,7 @@ button, a, input[type=checkbox], .tip-amount {
   border-bottom: 2.75px solid #FF4747;
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
-  color: #222222;
+  gap: 4px !important;
 }
 .swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options .payment-option .payment-option-img {
   width: 48px;
@@ -2182,8 +2194,8 @@ button, a, input[type=checkbox], .tip-amount {
   object-position: center;
 }
 .swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options .payment-option p {
+  width: 120px;
   display: flex;
-  width: 100px;
   height: 14px;
   flex-direction: column;
   text-align: center;
@@ -2192,6 +2204,550 @@ button, a, input[type=checkbox], .tip-amount {
   font-weight: 600;
   line-height: 16px;
   color: #888888;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options .payment-option p.active {
+  font-size: 14px;
+  color: #222222;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details {
+  display: inline-flex;
+  height: 84%;
+  width: 100%;
+  overflow-x: auto;
+  overflow: hidden;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail {
+  width: 400%;
+  overflow-x: auto;
+  overflow: hidden;
+  flex-shrink: 0;
+  height: 100%;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .netbanking {
+  height: 100%;
+  width: 100%;
+  transition: 0.3s ease-in-out;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .netbanking p {
+  color: #222222;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  padding-top: 32px;
+  line-height: 24px;
+  text-transform: none;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .netbanking .bank-options {
+  height: 140px;
+  width: 365px;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .netbanking .bank-option {
+  width: 80px;
+  border-radius: 12px;
+  height: 60px;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .netbanking .bank-option.active {
+  border: 1px solid #FF4747;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .netbanking .bank-option img {
+  height: 36px;
+  width: 36px;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .netbanking .bank-option p {
+  color: #555555;
+  text-align: center;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px;
+  padding: 0px;
+  text-transform: none;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .netbanking .textfield-outlined {
+  position: relative;
+  margin-bottom: 20px;
+  padding-top: 6px;
+  font-size: 16px;
+  line-height: 1.5;
+  width: 357px;
+  letter-spacing: 0.4px;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .netbanking .textfield-outlined > input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 48px;
+  padding: 7px 14px 0px 14px;
+  font-size: 15px;
+  line-height: inherit;
+  color: #222222;
+  border-style: solid;
+  border-width: 1px;
+  border-color: transparent #AAAAAA #AAAAAA;
+  border-radius: 12px;
+  -webkit-text-fill-color: currentColor;
+  background-color: transparent;
+  caret-color: #222222;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .netbanking .textfield-outlined > input:not(:focus):placeholder-shown {
+  border-top-color: #AAAAAA;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .netbanking .textfield-outlined > input + label {
+  display: flex;
+  width: 100%;
+  height: 48px;
+  position: absolute;
+  top: 4.5px;
+  left: 0;
+  font-size: 14px;
+  line-height: 8px;
+  color: #222222;
+  cursor: text;
+  transition: color 0.2s, font-size 0.2s, line-height 0.2s;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .netbanking .textfield-outlined > input:not(:focus):placeholder-shown + label {
+  font-size: 16px;
+  line-height: 54px;
+  text-transform: none;
+  color: #222222;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .netbanking .textfield-outlined > input + label::before,
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .netbanking .textfield-outlined > input + label::after {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  height: 48px;
+  min-width: 10px;
+  margin-top: 3px;
+  font-size: 14px;
+  border-top: solid 1px #AAAAAA;
+  pointer-events: none;
+  box-shadow: inset 0 1px transparent;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .netbanking .textfield-outlined > input + label::before {
+  margin-right: 4px;
+  border-left: solid 1px transparent;
+  border-radius: 12px 0;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .netbanking .textfield-outlined > input + label::after {
+  flex-grow: 1;
+  margin-left: 4px;
+  border-right: solid 1px transparent;
+  border-radius: 0 12px;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .netbanking .textfield-outlined > input:not(:focus):placeholder-shown + label::before,
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .netbanking .textfield-outlined > input:not(:focus):placeholder-shown + label::after {
+  border-top-color: transparent;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .netbanking .textfield-outlined ~ label:hover > input {
+  border-color: transparent #222222 #222222;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .netbanking .textfield-outlined label:hover > input + label::before,
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .netbanking .textfield-outlined label:hover > input + label::after {
+  border-top-color: #222222;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .netbanking .textfield-outlined label:hover > input:not(:focus):placeholder-shown {
+  border-color: #222222;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .netbanking .textfield-outlined > input:focus {
+  border-color: transparent #222222 #222222;
+  outline: none;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .netbanking .textfield-outlined > input:focus + label {
+  color: #222222;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .netbanking .textfield-outlined > input:focus + label::before,
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .netbanking .textfield-outlined > input:focus + label::after {
+  border-top-color: #222222 !important;
+}
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .netbanking .textfield-outlined > input,
+    .swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .netbanking .textfield-outlined > input + label,
+    .swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .netbanking .textfield-outlined > input + label::before,
+    .swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .netbanking .textfield-outlined > input + label::after {
+      transition-duration: 0.1s;
+    }
+  }
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .cards {
+  height: 94%;
+  width: 100%;
+  padding-top: 24px;
+  transition: 0.3s ease-in-out;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .cards p {
+  color: #FF4747;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: none;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .cards .cards-container {
+  height: 82%;
+  width: 60%;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .cards .cards-container .or-card-option {
+  width: 100%;
+  height: 18px;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .cards .cards-container .or-card-option .orCardBefore {
+  width: 45%;
+  height: 2px;
+  background-color: #DDDDDD;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .cards .cards-container .or-card-option p {
+  color: #555555;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: none;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .cards .cards-container .or-card-option .orCardAfter {
+  width: 45%;
+  height: 2px;
+  background-color: #DDDDDD;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .cards .cards-container .card-companies p {
+  text-transform: none;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  color: #555555;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .cards .cards-container .card-companies img {
+  margin-top: 0.75px;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .cards .cards-container .card-form {
+  width: 357px;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .cards .cards-container .card-form .textfield-outlined {
+  position: relative;
+  margin-bottom: 20px;
+  padding-top: 6px;
+  width: 100%;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.4px;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .cards .cards-container .card-form .textfield-outlined > input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 48px;
+  padding: 7px 14px 0px 14px;
+  font-size: 15px;
+  line-height: inherit;
+  color: #222222;
+  border-style: solid;
+  border-width: 1px;
+  border-color: transparent #AAAAAA #AAAAAA;
+  border-radius: 12px;
+  -webkit-text-fill-color: currentColor;
+  background-color: transparent;
+  caret-color: #222222;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .cards .cards-container .card-form .textfield-outlined > input:not(:focus):placeholder-shown {
+  border-top-color: #AAAAAA;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .cards .cards-container .card-form .textfield-outlined > input + label {
+  display: flex;
+  width: 100%;
+  height: 48px;
+  position: absolute;
+  top: 4.5px;
+  left: 0;
+  font-size: 14px;
+  line-height: 8px;
+  color: #222222;
+  cursor: text;
+  transition: color 0.2s, font-size 0.2s, line-height 0.2s;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .cards .cards-container .card-form .textfield-outlined > input:not(:focus):placeholder-shown + label {
+  font-size: 14px;
+  line-height: 54px;
+  color: #222222;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .cards .cards-container .card-form .textfield-outlined > input + label::before,
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .cards .cards-container .card-form .textfield-outlined > input + label::after {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  height: 48px;
+  min-width: 10px;
+  margin-top: 2.25px;
+  font-size: 14px;
+  border-top: solid 1px #AAAAAA;
+  pointer-events: none;
+  box-shadow: inset 0 1px transparent;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .cards .cards-container .card-form .textfield-outlined > input + label::before {
+  margin-right: 4px;
+  border-left: solid 1px transparent;
+  border-radius: 12px 0;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .cards .cards-container .card-form .textfield-outlined > input + label::after {
+  flex-grow: 1;
+  margin-left: 4px;
+  border-right: solid 1px transparent;
+  border-radius: 0 12px;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .cards .cards-container .card-form .textfield-outlined > input:not(:focus):placeholder-shown + label::before,
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .cards .cards-container .card-form .textfield-outlined > input:not(:focus):placeholder-shown + label::after {
+  border-top-color: transparent;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .cards .cards-container .card-form .textfield-outlined ~ label:hover > input {
+  border-color: transparent #222222 #222222;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .cards .cards-container .card-form .textfield-outlined label:hover > input + label::before,
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .cards .cards-container .card-form .textfield-outlined label:hover > input + label::after {
+  border-top-color: #222222;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .cards .cards-container .card-form .textfield-outlined label:hover > input:not(:focus):placeholder-shown {
+  border-color: #222222;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .cards .cards-container .card-form .textfield-outlined > input:focus {
+  border-color: transparent #222222 #222222;
+  outline: none;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .cards .cards-container .card-form .textfield-outlined > input:focus + label {
+  color: #222222;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .cards .cards-container .card-form .textfield-outlined > input:focus + label::before,
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .cards .cards-container .card-form .textfield-outlined > input:focus + label::after {
+  border-top-color: #222222 !important;
+}
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .cards .cards-container .card-form .textfield-outlined > input,
+    .swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .cards .cards-container .card-form .textfield-outlined > input + label,
+    .swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .cards .cards-container .card-form .textfield-outlined > input + label::before,
+    .swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .cards .cards-container .card-form .textfield-outlined > input + label::after {
+      transition-duration: 0.1s;
+    }
+  }
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .cards .cards-container .card-form .card-exp .textfield-outlined {
+  position: relative;
+  margin-bottom: 20px;
+  padding-top: 6px;
+  width: 108px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.4px;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .cards .cards-container .card-form .card-exp .textfield-outlined > input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 48px;
+  padding: 7px 14px 0px 14px;
+  font-size: 15px;
+  line-height: inherit;
+  color: #222222;
+  border-style: solid;
+  border-width: 1px;
+  border-color: transparent #AAAAAA #AAAAAA;
+  border-radius: 12px;
+  -webkit-text-fill-color: currentColor;
+  background-color: transparent;
+  caret-color: #222222;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .cards .cards-container .card-form .card-exp .textfield-outlined > input:not(:focus):placeholder-shown {
+  border-top-color: #AAAAAA;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .cards .cards-container .card-form .card-exp .textfield-outlined > input + label {
+  display: flex;
+  width: 100%;
+  height: 48px;
+  position: absolute;
+  top: 4.5px;
+  left: 0;
+  font-size: 14px;
+  line-height: 8px;
+  color: #222222;
+  cursor: text;
+  transition: color 0.2s, font-size 0.2s, line-height 0.2s;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .cards .cards-container .card-form .card-exp .textfield-outlined > input:not(:focus):placeholder-shown + label {
+  font-size: 14px;
+  line-height: 54px;
+  color: #222222;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .cards .cards-container .card-form .card-exp .textfield-outlined > input + label::before,
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .cards .cards-container .card-form .card-exp .textfield-outlined > input + label::after {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  height: 48px;
+  min-width: 10px;
+  margin-top: 2.25px;
+  font-size: 14px;
+  border-top: solid 1px #AAAAAA;
+  pointer-events: none;
+  box-shadow: inset 0 1px transparent;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .cards .cards-container .card-form .card-exp .textfield-outlined > input + label::before {
+  margin-right: 4px;
+  border-left: solid 1px transparent;
+  border-radius: 12px 0;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .cards .cards-container .card-form .card-exp .textfield-outlined > input + label::after {
+  flex-grow: 1;
+  margin-left: 4px;
+  border-right: solid 1px transparent;
+  border-radius: 0 12px;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .cards .cards-container .card-form .card-exp .textfield-outlined > input:not(:focus):placeholder-shown + label::before,
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .cards .cards-container .card-form .card-exp .textfield-outlined > input:not(:focus):placeholder-shown + label::after {
+  border-top-color: transparent;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .cards .cards-container .card-form .card-exp .textfield-outlined ~ label:hover > input {
+  border-color: transparent #222222 #222222;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .cards .cards-container .card-form .card-exp .textfield-outlined label:hover > input + label::before,
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .cards .cards-container .card-form .card-exp .textfield-outlined label:hover > input + label::after {
+  border-top-color: #222222;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .cards .cards-container .card-form .card-exp .textfield-outlined label:hover > input:not(:focus):placeholder-shown {
+  border-color: #222222;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .cards .cards-container .card-form .card-exp .textfield-outlined > input:focus {
+  border-color: transparent #222222 #222222;
+  outline: none;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .cards .cards-container .card-form .card-exp .textfield-outlined > input:focus + label {
+  color: #222222;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .cards .cards-container .card-form .card-exp .textfield-outlined > input:focus + label::before,
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .cards .cards-container .card-form .card-exp .textfield-outlined > input:focus + label::after {
+  border-top-color: #222222 !important;
+}
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .cards .cards-container .card-form .card-exp .textfield-outlined > input,
+    .swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .cards .cards-container .card-form .card-exp .textfield-outlined > input + label,
+    .swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .cards .cards-container .card-form .card-exp .textfield-outlined > input + label::before,
+    .swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .cards .cards-container .card-form .card-exp .textfield-outlined > input + label::after {
+      transition-duration: 0.1s;
+    }
+  }
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .cards .cards-container .card-form .checkbox {
+  width: 100%;
+  height: 38px;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .cards .cards-container .card-form .checkbox label {
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: none;
+  text-align: center;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .cards .cards-container .card-form .checkbox label a {
+  text-decoration: underline;
+  text-decoration-color: #AAAAAA;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .cards .cards-container .card-form .checkbox input[type=checkbox] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 5px;
+  border: 1px solid #aaaaaa;
+  outline: none;
+  transition: border-color 0.3s;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .cards .cards-container .card-form .checkbox input[type=checkbox]:checked {
+  border-color: #54BA54; /* Change the border color when checked */
+  position: relative;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .cards .cards-container .card-form .checkbox input[type=checkbox]:checked:after {
+  content: "✓"; /* Unicode character for check mark */
+  font-size: 13px;
+  color: #54BA54; /* Change the color of the check mark */
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  position: absolute;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .upi {
+  height: 94%;
+  width: 100%;
+  transition: 0.3s ease-in-out;
+  padding-top: 24px;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .upi p {
+  text-align: center;
+  /* title 16px reg */
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  color: #555555;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .upi .upi-id {
+  text-transform: none;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .upi .upi-id .request {
+  color: #555555;
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .upi .upi-id .upiID {
+  color: #222222;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .upi .upi-apps {
+  text-transform: none;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .upi .upi-apps p {
+  color: #888888;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .cash {
+  height: 100%;
+  width: 100%;
+  transition: 0.3s ease-in-out;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .cash .cash-img {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  border: 1px solid #54BA54;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .cash .cash-img-container {
+  height: 104px;
+  width: 104px;
+  border-radius: 50%;
+  background-color: rgba(84, 186, 84, 0.1);
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .cash p {
+  color: #555555;
+  width: 356px;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: none;
+  line-height: 21px;
 }
 .swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment-footer {
   height: 10%;
@@ -2229,6 +2785,225 @@ button, a, input[type=checkbox], .tip-amount {
   font-weight: 300;
 }
 .swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment-footer-container .make-my-payment p {
+  padding: 0;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 300;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .thanku-container {
+  width: 100%;
+  height: 90%;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .thanku-container .payment-status p {
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  color: #54BA54;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .thanku-container .thanku-msg {
+  position: relative;
+  height: 400px;
+  width: 400px;
+  border-radius: 24px;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../assets/customer-svg/svg/thank-you-bg-illus.svg");
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .thanku-container .thanku-msg-container {
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  border-radius: 24px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .thanku-container .thanku-msg-container .thanku-heading {
+  text-align: center;
+  font-size: 48px;
+  font-family: Pacifico;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background-image: linear-gradient(90deg, rgb(255, 102, 102) 40%, rgb(255, 150, 136) 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .thanku-container .thanku-msg-container p {
+  width: 354px;
+  color: #222222;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .thanku-payment {
+  height: 10%;
+  width: 100%;
+  border-radius: 24px;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .thanku-payment-footer {
+  height: 100%;
+  width: calc(100% - 32px);
+  padding: 0px 16px;
+  border-radius: 0px 0px 24px 24px;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .thanku-payment-footer-container {
+  position: relative;
+  height: fit-content;
+  width: 100%;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .thanku-payment-footer-container .hidden {
+  display: none;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .thanku-payment-footer-container .ask-bill {
+  position: absolute;
+  height: 30px;
+  width: 152px;
+  left: 10px;
+  /* top: 80%; */
+  /* transform: translate(0%, -50%); */
+  margin: -16px -10px;
+  border: none;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .thanku-payment-footer-container .bill-copy {
+  position: absolute;
+  left: -8px;
+  width: 234px;
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  color: #555555;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .thanku-payment-footer-container .swiper-button-next {
+  position: absolute;
+  height: 30px;
+  width: 152px;
+  /* top: 80%; */
+  /* transform: translate(0%, -50%); */
+  margin: -16px -10px;
+  border: none;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .thanku-payment-footer-container .swiper-button-next::after {
+  display: none;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .thanku-payment-footer-container .rate-and-review {
+  cursor: pointer;
+  border-radius: 6px;
+  color: #FFFFFF;
+  background: rgb(255, 102, 102);
+  background: linear-gradient(90deg, rgb(255, 102, 102) 40%, rgb(255, 150, 136) 100%);
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .thanku-payment-footer-container .rate-and-review span {
+  font-size: 22px;
+  font-weight: 300;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .thanku-payment-footer-container .rate-and-review p {
+  padding: 0;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 300;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .thanku-payment-footer-container .request-bill {
+  cursor: pointer;
+  border-radius: 6px;
+  color: #FF4747;
+  border: 1px solid #FF4747;
+  background-color: transparent;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .thanku-payment-footer-container .request-bill span {
+  font-size: 22px;
+  font-weight: 300;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .thanku-payment-footer-container .request-bill p {
+  padding: 0;
+  font-size: 14px;
+  font-weight: 300;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-review {
+  height: 100%;
+  width: 100%;
+  border-radius: 24px;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-review header {
+  flex-shrink: 0;
+  width: 100%;
+  height: 8%;
+  background: #FF9898;
+  background: linear-gradient(90deg, #ffe5e5 0%, #ffd5d5 100%);
+  border-radius: 24px 24px 0px 0px;
+  color: #555555;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-review header span {
+  font-size: 25px;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-review header p {
+  padding: 0;
+  font-size: 20px;
+  font-family: Pacifico, sans-serif;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-review .reviews-section {
+  height: 82%;
+  width: 100%;
+  padding: 16px 0px;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-review .reviews-section .review-header {
+  width: calc(100% - 32px);
+  height: 6%;
+  margin: 0px auto;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-review .reviews-section .review-header p {
+  color: #555555;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: none;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-review-footer {
+  height: 10%;
+  width: calc(100% - 32px);
+  padding: 0px 16px;
+  border-radius: 0px 0px 24px 24px;
+  border-top: 1px solid #DDDDDD;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-review-footer-container {
+  position: relative;
+  height: fit-content;
+  width: 100%;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-review-footer-container .swiper-button-next {
+  position: absolute;
+  height: 30px;
+  width: 152px;
+  /* top: 80%; */
+  /* transform: translate(0%, -50%); */
+  margin: -16px -10px;
+  border: none;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-review-footer-container .swiper-button-next::after {
+  display: none;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-review-footer-container .make-my-review {
+  cursor: pointer;
+  border-radius: 6px;
+  color: #FFFFFF;
+  background: rgb(255, 102, 102);
+  background: linear-gradient(90deg, rgb(255, 102, 102) 40%, rgb(255, 150, 136) 100%);
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-review-footer-container .make-my-review span {
+  font-size: 22px;
+  font-weight: 300;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-review-footer-container .make-my-review p {
   padding: 0;
   color: #FFFFFF;
   font-size: 14px;

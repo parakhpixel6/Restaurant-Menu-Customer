@@ -146,10 +146,10 @@
     }
 
     &-green > .switch-input:checked ~ .switch-label {
-        background: #4fb845;
+        background: $light-green;
     }
 
     &-red > .switch-input:checked ~ .switch-label {
-        background: red;
+        background: #ff6666;
     }
 }

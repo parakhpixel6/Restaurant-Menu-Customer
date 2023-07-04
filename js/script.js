@@ -189,7 +189,9 @@ askBillButton.addEventListener('click', function() {
   billText.classList.remove('hidden');
 });
 
-const reviewNav = document.getElementById('review-nav');
+
+
+const reviewNav = document.querySelector('.review-nav');
 const links = reviewNav.getElementsByTagName('a');
 
 reviewNav.addEventListener('click', function (event) {
@@ -206,6 +208,25 @@ reviewNav.addEventListener('click', function (event) {
     event.target.classList.add('active');
   }
 });
+
+
+// window.addEventListener('DOMContentLoaded', function() {
+//   // Smooth scrolling on anchor tag click
+//   var anchorTags = document.querySelectorAll('a[href^="#"]');
+//   anchorTags.forEach(function(anchor) {
+//     anchor.addEventListener('click', function(event) {
+//       var target = document.querySelector(this.getAttribute('href'));
+      
+//       if (target) {
+//         event.preventDefault();
+//         window.scrollTo({
+//           left: target.offsetLeft,
+//           behavior: 'smooth'
+//         });
+//       }
+//     });
+//   });
+// });
 
 
 

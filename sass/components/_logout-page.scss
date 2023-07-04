@@ -1,0 +1,138 @@
+.logout-section {
+    height: 100%;
+    width: 100%;
+    
+    & .logout-msg {
+        background-color: #fff;
+        width: 600px;
+        height: 600px;
+        border-radius: 24px;
+        background-position: center;
+        background-size: cover;
+        background-image: url('../assets/customer-svg/svg/log-out-bg-illus.svg');
+
+        & p {
+            background-image: linear-gradient(90deg, rgb(255, 102, 102) 40%, rgb(255, 150, 136) 100%);
+            -webkit-background-clip: text;
+            color: transparent;
+            text-align: center;
+            text-transform: none;
+            font-size: 36px;
+            font-family: Pacifico;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        & .next-coupon {
+            height: 123px;
+            width: 403px;
+            background-image: url('../assets/customer-img/img/logout-coupon.png');
+            background-position: center;
+            background-size: cover;
+
+            & .coupon-logo {
+                width: 86px;
+                height: 110px;
+                border-right: 1px dashed #fff;
+                background-color: transparent;
+
+                &-img {
+                    height: 58px;
+                    width: 58px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    object-position: center;
+
+                    & img {
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+            }
+
+            & .coupon-description {
+                width: fit-content;
+                height: 105px;
+
+                & .coupon-name {
+                    text-align: left;
+
+                    & .nextCoupon {
+                        color: $primary-black;
+                        font-size: 16px;
+                        font-family: Nunito;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 24px;
+                        text-transform: none;
+                    }
+
+                    & p {
+                        width: 230px;
+                        text-align: left;
+                        color: $primary-dark-grey;
+                        font-size: 12px;
+                        font-family: Nunito;
+                        font-style: normal;
+                        font-weight: 400;
+                        text-transform: none;
+                    }
+                }
+
+                & .coupon-date {
+                    width: 270px;
+
+                    & p {
+                        color: #555;
+                        font-size: 14px;
+                        font-family: Nunito;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 21px;
+                        text-transform: none;
+
+                        & span {
+                            margin-left: 4px;
+                            color: $primary-black;
+                        }
+                    }
+
+                    & a {
+                        color: $dark-red;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 16px;
+                        text-decoration-line: underline;
+                    }
+                }
+            }
+        }
+
+        & button {
+            border: none;
+            padding: 4px 14px;
+            cursor: pointer;
+            border-radius: 6px;
+            color: #FFFFFF;
+            background: rgb(255, 102, 102);
+            background: linear-gradient(90deg, rgb(255, 102, 102) 40%, rgb(255, 150, 136) 100%);
+
+            & p {
+                color: #fff;
+                text-align: center;
+                font-family: Nunito;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 21px;
+            }
+
+            & span {
+                transform: rotate(-180deg);
+                font-size: 20px;
+                font-weight: 200;
+            }
+        }
+    }
+}

@@ -47,15 +47,15 @@ li {
     justify-content: center;
 }
 
-.justify-space-around{
+.justify-space-around {
     justify-content: space-around;
 }
 
-.justify-space-evenly{
+.justify-space-evenly {
     justify-content: space-evenly;
 }
 
-.justify-space-between{
+.justify-space-between {
     justify-content: space-between;
 }
 
@@ -128,7 +128,7 @@ li {
 .g-92 {
     gap: 92px;
 }
- 
+
 
 .g-24 {
     gap: 24px;
@@ -147,6 +147,10 @@ li {
 }
 
 .g-16 {
+    gap: 16px;
+}
+
+.g-14 {
     gap: 16px;
 }
 
@@ -178,7 +182,10 @@ li {
     gap: 4px;
 }
 
-button, a, input[type="checkbox"], .tip-amount{
+button,
+a,
+input[type="checkbox"],
+.tip-amount {
     cursor: pointer;
 }
 
@@ -210,7 +217,8 @@ a:hover {
         .swiper-slide {
             height: 98%;
             position: relative;
-            flex-shrink: 0; /* Prevent the slides from shrinking to fit */
+            flex-shrink: 0;
+            /* Prevent the slides from shrinking to fit */
 
             @import './components/navbar';
 
@@ -231,7 +239,7 @@ a:hover {
                 & #progress-section-right-modal {
                     overflow: hidden;
                 }
-                
+
                 &-right {
                     position: relative;
                     height: 100%;
@@ -247,159 +255,19 @@ a:hover {
                     @import './components/my-order-placed';
 
                     @import './components/my-bill';
-                    
+
                     @import './components/my-payment';
 
                     @import './components/thanku-payment';
-
-                    .my-review {
-                        height: 100%;
-                        width: 100%;
-                        border-radius: 24px;
-                        // background-color: rgba(140, 199, 199, 0.884);
                     
-                        & header {
-                            flex-shrink: 0;
-                            width: 100%;
-                            height: 8%;
-                            background: $red;
-                            background: linear-gradient(90deg, #ffe5e5 0%, #ffd5d5 100%);
-                            ;
-                            border-radius: 24px 24px 0px 0px;
-                            color: $primary-dark-grey;
+                    @import './components/my-review';
                     
-                            & span {
-                                font-size: 25px;
-                            }
-                    
-                            & p {
-                                padding: 0;
-                                font-size: 20px;
-                                font-family: Pacifico, sans-serif;
-                            }
-                        }
-                    
-                        & .reviews-section {
-                            height: 82%;
-                            width: 100%;
-                            padding: 16px 0px;
-                            // background-color: red;
-
-                            & .review-header {
-                                width: calc(100% - 32px);
-                                height: 6%;
-                                margin: 0px auto;
-                                // margin-bottom: 24px;
-
-                                // background-color: rgba(107, 155, 155, 0.87);
-
-                                & p {
-                                    color: $primary-dark-grey;
-                                    font-size: 12px;
-                                    font-style: normal;
-                                    font-weight: 400;
-                                    line-height: 16px;
-                                    text-transform: none;
-                                }
-                            }
-
-                            & .review-navs {
-                                width: calc(100% - 32px);
-                                height: 5%;
-                                padding: 0px 16px 8px 16px;
-                                margin: 0px auto;
-                                border-bottom: 2px solid $off-white;
-
-                                &  p {
-                                    font-size: 14px;
-                                    font-family: Pacifico;
-                                    font-weight: 400;
-                                    background-image: linear-gradient(90deg, rgb(255, 102, 102) 40%, rgb(255, 150, 136) 100%);
-                                    -webkit-background-clip: text;
-                                    color: transparent;
-                                }
-
-                                & .review-nav a {
-                                    width: 150px;
-                                    height: 29px;
-                                    text-align: center;
-                                    text-decoration: none;
-                                    color: $primary-black;
-                                    font-family: Nunito, sans-serif;
-                                    font-size: 14px;
-                                    font-style: normal;
-                                    font-weight: 600;
-                                    line-height: 21px;
-
-                                    &.active {
-                                        border-bottom: 2px solid $dark-red;
-                                        border-bottom-left-radius: 2px;
-                                        border-bottom-right-radius: 2px;
-                                    }
-                                }
-                            }
-
-                            & .reviews-container {
-                                height: 76%;
-                                width: calc(100% - 32px);
-                                margin: 0px auto;
-                                background-color: rgba(220, 148, 148, 0.801);
-                            }
-                        }
-                    
-                        &-footer {
-                            height: 10%;
-                            width: calc(100% - 32px);
-                            padding: 0px 16px;
-                            border-radius: 0px 0px 24px 24px;
-                            border-top: 1px solid $off-white;
-                            // background-color: rgba(182, 127, 127, 0.767);
-                    
-                            &-container {
-                                position: relative;
-                                height: fit-content;
-                                width: 100%;
-                    
-                                & .swiper-button-next {
-                                    position: absolute;
-                                    height: 30px;
-                                    width: 152px;
-                                    /* top: 80%; */
-                                    // left: -2.75%;
-                                    /* transform: translate(0%, -50%); */
-                                    margin: -16px -10px;
-                                    border: none;
-                    
-                                    &::after {
-                                        display: none;
-                                    }
-                                }
-                    
-                                & .make-my-review {
-                                    cursor: pointer;
-                                    border-radius: 6px;
-                                    color: $widget-white;
-                                    background: rgb(255, 102, 102);
-                                    background: linear-gradient(90deg, rgba(255, 102, 102, 1) 40%, rgba(255, 150, 136, 1) 100%);
-                    
-                                    & span {
-                                        font-size: 22px;
-                                        font-weight: 300;
-                                    }
-                    
-                                    & p {
-                                        padding: 0;
-                                        color: $widget-white;
-                                        font-size: 14px;
-                                        font-weight: 300;
-                                    }
-                                }
-                            }
-                        }
-                    }
                     
                 }
             }
+            
+            @import './components/logout-page';
+            
 
             @import './components/footer';
         }

@@ -188,6 +188,17 @@ a:hover {
   background-color: transparent;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 .customer-container {
   position: relative;
   background-image: url("../assets/customer-img/img/bg-img.png");
@@ -2136,6 +2147,8 @@ a:hover {
   background-color: transparent;
 }
 .swiper-container .swiper-wrapper .swiper-slide .progress-section-right .edit-name-modal .edit-name-popup .confirm-button .update-name {
+  border: none;
+  padding: 5px 9px;
   color: #fff;
   background: rgb(255, 102, 102);
   background: linear-gradient(90deg, rgb(255, 102, 102) 40%, rgb(255, 150, 136) 100%);
@@ -2838,6 +2851,7 @@ a:hover {
   font-style: normal;
   font-weight: 400;
   line-height: 21px;
+  text-transform: none;
 }
 .swiper-container .swiper-wrapper .swiper-slide .progress-section-right .thanku-payment {
   height: 10%;
@@ -2982,7 +2996,7 @@ a:hover {
 }
 .swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-review .reviews-section .review-navs .review-nav a {
   width: 150px;
-  height: 29px;
+  padding-bottom: 10px;
   text-align: center;
   color: #222222;
   font-family: Nunito, sans-serif;

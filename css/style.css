@@ -2996,7 +2996,7 @@ input[type=number] {
 }
 .swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-review .reviews-section .review-navs .review-nav a {
   width: 150px;
-  padding-bottom: 10px;
+  padding-bottom: 14px;
   text-align: center;
   color: #222222;
   font-family: Nunito, sans-serif;

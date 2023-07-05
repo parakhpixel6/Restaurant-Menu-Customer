@@ -54,37 +54,47 @@
             height: 5%;
             padding: 0px 16px 8px 16px;
             margin: 0px auto;
-            border-bottom: 2px solid $off-white;
+            gap: 0px;
 
             & p {
+                height: 29px;
+                width: 56px;
+                border-bottom: 2 solid $off-white;
                 font-size: 14px;
                 font-family: Pacifico;
                 font-weight: 400;
                 background-image: linear-gradient(90deg, rgb(255, 102, 102) 40%, rgb(255, 150, 136) 100%);
                 -webkit-background-clip: text;
+                background-clip: text;
                 color: transparent;
+                border-bottom: 2px solid $off-white;
             }
 
-            & .review-nav a {
-                width: 150px;
-                // height: 29px;
-                padding-bottom: 14px;
-                text-align: center;
-                color: $primary-black;
-                font-family: Nunito, sans-serif;
-                font-size: 14px;
-                font-style: normal;
-                font-weight: 600;
-                line-height: 21px;
+            & .review-nav {
+                border-bottom: 2px solid $off-white;
+                padding-bottom: 0px;
+                height: 29px;
+                width: 100%;
+                & a {
+                    width: 150px;
+                    // height: 29px;
+                    padding-bottom: 8px;
+                    text-align: center;
+                    color: $primary-black;
+                    font-family: Nunito, sans-serif;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 21px;
 
-                &.active {
-                    border-bottom: 2px solid $dark-red;
-                    border-bottom-left-radius: 2px;
-                    border-bottom-right-radius: 2px;
+                    &.active {
+                        border-bottom: 2px solid $dark-red;
+                        border-bottom-left-radius: 2px;
+                        border-bottom-right-radius: 2px;
+                    }
                 }
             }
         }
-
         & .reviews-container {
             flex-shrink: 0;
             height: 76%;
@@ -131,7 +141,7 @@
 
                             &-img {
                                 height: 50px;
-                                width: 50px;
+                                min-width: 50px;
                                 object-fit: cover;
                                 object-position: center;
                                 overflow: hidden;

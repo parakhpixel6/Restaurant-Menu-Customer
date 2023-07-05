@@ -197,6 +197,7 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
+  appearance: textfield;
 }
 
 .customer-container {
@@ -1304,7 +1305,7 @@ input[type=number] {
   text-transform: none;
 }
 .swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-order-footer {
-  height: 15%;
+  height: 10%;
   width: calc(100% - 32px);
   padding: 0px 16px;
   border-radius: 0px 0px 24px 24px;
@@ -2841,6 +2842,7 @@ input[type=number] {
   line-height: normal;
   background-image: linear-gradient(90deg, rgb(255, 102, 102) 40%, rgb(255, 150, 136) 100%);
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
 }
 .swiper-container .swiper-wrapper .swiper-slide .progress-section-right .thanku-container .thanku-msg-container p {
@@ -2984,19 +2986,30 @@ input[type=number] {
   height: 5%;
   padding: 0px 16px 8px 16px;
   margin: 0px auto;
-  border-bottom: 2px solid #DDDDDD;
+  gap: 0px;
 }
 .swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-review .reviews-section .review-navs p {
+  height: 29px;
+  width: 56px;
+  border-bottom: 2 solid #DDDDDD;
   font-size: 14px;
   font-family: Pacifico;
   font-weight: 400;
   background-image: linear-gradient(90deg, rgb(255, 102, 102) 40%, rgb(255, 150, 136) 100%);
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
+  border-bottom: 2px solid #DDDDDD;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-review .reviews-section .review-navs .review-nav {
+  border-bottom: 2px solid #DDDDDD;
+  padding-bottom: 0px;
+  height: 29px;
+  width: 100%;
 }
 .swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-review .reviews-section .review-navs .review-nav a {
   width: 150px;
-  padding-bottom: 14px;
+  padding-bottom: 8px;
   text-align: center;
   color: #222222;
   font-family: Nunito, sans-serif;
@@ -3048,7 +3061,7 @@ input[type=number] {
 }
 .swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-review .reviews-section .reviews-container .review-container .review-food .food-review-container .food-review-img {
   height: 50px;
-  width: 50px;
+  min-width: 50px;
   object-fit: cover;
   object-position: center;
   overflow: hidden;
@@ -3156,6 +3169,7 @@ input[type=number] {
 .swiper-container .swiper-wrapper .swiper-slide .logout-section .logout-msg p {
   background-image: linear-gradient(90deg, rgb(255, 102, 102) 40%, rgb(255, 150, 136) 100%);
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
   text-align: center;
   text-transform: none;

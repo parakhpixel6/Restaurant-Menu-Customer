@@ -135,12 +135,48 @@ updateName.addEventListener('click', function() {
 
 
 
+//Add GST Popup
+const addGST = document.querySelector('#add_gst');
+const cancelGST = document.querySelector('#cancel-gst');
+const addGSTT= document.querySelector('.add-gst');
+
+addGST.addEventListener('click', function() {
+  document.querySelector('.add-gst-modal').style.top = '50%';
+  document.querySelector('.add-gst-modal').style.opacity = '1';
+  document.querySelector('.add-gst-modal').style.display = 'flex';
+  document.querySelector('#progress-section-right-modal').style.overflow = 'initial';
+});
+
+cancelGST.addEventListener('click', function() {
+  document.querySelector('.add-gst-modal').style.top = '-200%';
+  document.querySelector('.add-gst-modal').style.opacity = '0';
+  // document.querySelector('.add-gst-modal').style.display = 'none';
+  document.querySelector('#progress-section-right-modal').style.overflow = 'none';
+});
+
+addGSTT.addEventListener('click', function() {
+  document.querySelector('.add-gst-modal').style.top = '-200%';
+  document.querySelector('.add-gst-modal').style.opacity = '0';
+  // document.querySelector('.add-gst-modal').style.display = 'none';
+  document.querySelector('#progress-section-right-modal').style.overflow = 'none';
+});
+
+
+
 
 // Apply Coupons 
 const applyCoupons = document.querySelector('#apply-coupons');
+const applyCouponsFooter = document.querySelector('#apply-coupons-footer');
 const couponClosed = document.querySelector('#coupon-closed');
 
 applyCoupons.addEventListener('click', function() {
+  document.querySelector('.coupons-details').style.display = 'block';
+  applyCoupons.style.display = 'none';
+  const couponsDetails = document.getElementById("coupons-details");
+  couponsDetails.scrollIntoView();
+});
+
+applyCouponsFooter.addEventListener('click', function() {
   document.querySelector('.coupons-details').style.display = 'block';
   applyCoupons.style.display = 'none';
   const couponsDetails = document.getElementById("coupons-details");

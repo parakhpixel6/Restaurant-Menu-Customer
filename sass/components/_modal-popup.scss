@@ -1,7 +1,7 @@
-.edit-name-modal {
+.edit-name-modal, .add-gst-modal {
 
     position: absolute;
-    top: -20%;
+    top: -200%;
     left: 18%;
     transform: translate(-50%, -50%);
     width: 1150px;
@@ -12,9 +12,9 @@
     opacity: 0;
     display: none;
     box-shadow: 2px 2px 2px 1026px rgb(0 0 0 / 26%);
-    transition: .3s ease-in-out;
+    transition: .2s ease-in-out;
 
-    & .edit-name-popup {
+    & .edit-name-popup, .add-gst-popup {
         height: 200px;
         width: 427px;
         background-color: #fff;
@@ -229,7 +229,7 @@
                 background-color: transparent;
             }
 
-            & .update-name {
+            & .update-name, .add-gst {
                 border: none;
                 padding: 5px 9px;
 

@@ -26,13 +26,13 @@
                         <!--==== First Slide - MENU FRONT PAGE ====-->
                         <div class="swiper-slide justify-center ai-center d-flex">
                             <div class="close-menu h-100 w-100 d-flex justify-center ai-center">
-                                <div class="page-0">
+                                <div class="page-0 h-100">
                                 </div>
-                                <div class="page-2  d-flex justify-center ai-center">
+                                <div class="page-2 h-100 w-50 pos-relative  d-flex justify-center ai-center">
                                     <img class="menu-cover h-100 w-100" src="./assets/customer-img/img/first-page.png"
                                         alt="menu-cover">
                                     <div
-                                        class="menu-cover-content d-flex ai-center flex-d-col justify-space-around g-76">
+                                        class="menu-cover-content pos-absolute transform-50-50 left-50 top-50 d-flex ai-center flex-d-col justify-space-around g-76">
                                         <h1>Food and Beverages Menu</h1>
                                         <div class="restaurant-logo d-flex ai-center flex-d-col justify-center g-16">
                                             <img src="assets/customer-img/img/image 15.png" alt="">
@@ -3251,7 +3251,7 @@
                                                         <div
                                                             class="customer-gst w-100 d-flex ai-center justify-space-between">
                                                             <p class="d-flex justify-center ai-center g-4">GST:
-                                                                <span>N/A</span> <span
+                                                                <span>N/A</span> <span id="add_gst"
                                                                     class="material-symbols-rounded">ink_pen</span>
                                                             </p>
                                                             <p>Date: <span>18/07/2023</span></p>
@@ -3302,7 +3302,7 @@
                                                         </div>
                                                         <div
                                                             class="applied-coupons d-flex justify-space-between ai-center">
-                                                            <p>GET10 - 10% off coupon applied <a href="#">Apply
+                                                            <p>GET10 - 10% off coupon applied <a id="apply-coupons" href="#">Apply
                                                                     another</a></p>
                                                             <p><span>-33.80</span></p>
                                                         </div>
@@ -3475,7 +3475,7 @@
                                         </div>
                                         <div class="my-bill-footer d-flex flex-d-col justify-space-evenly ai-center">
                                             <div class="my-bill-footer-container d-flex justify-flex-end ai-center">
-                                                <button href="#coupons-details" id="apply-coupons"
+                                                <button href="#coupons-details" id="apply-coupons-footer"
                                                     class="apply-coupons d-flex ai-center justify-center g-4">
                                                     <svg width="157" height="30" viewBox="0 0 157 30" fill="none"
                                                         xmlns="http://www.w3.org/2000/svg">
@@ -3539,6 +3539,29 @@
                                             <div class="confirm-button d-flex ai-center justify-flex-end g-16 w-100 ">
                                                 <button id="cancel-name">Cancel</button>
                                                 <button class="update-name">Update</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="add-gst-modal d-flex ai-center justify-center">
+                                        <div class="add-gst-popup d-flex flex-d-col justify-center g-8 w-100">
+                                            <p>Add Your GST No.</p>
+                                            <div class="textfield-outlined">
+                                                <input id="input-updateName" type="text" placeholder=" ">
+                                                <label for="input-updateName">
+                                                    <p>Your GST No.</p>
+                                                </label>
+                                            </div>
+                                            <div
+                                                class="checkbox update-my-name d-flex flex-d-row ai-center justify-flex-start g-12">
+                                                <input id="check-update-name" name="update-name" type="checkbox"
+                                                    placeholder="" required>
+                                                <label for="check-update-name" class="checked-label">
+                                                    Yes, I want to add my GST No.
+                                                </label>
+                                            </div>
+                                            <div class="confirm-button d-flex ai-center justify-flex-end g-16 w-100 ">
+                                                <button id="cancel-gst">Cancel</button>
+                                                <button class="add-gst">Add</button>
                                             </div>
                                         </div>
                                     </div>
@@ -4157,7 +4180,7 @@
                                                 <p>Rate</p>
                                                 <div class="review-nav d-flex justify-center ai-flex-start g-24">
                                                     <!-- <a href="#reviewServices">Click</a> -->
-                                                    <a href="#reviewFood" class="active">The Food</a>
+                                                    <a href='#reviewFood' class="active">The Food</a>
                                                     <a href="#reviewServices">Services Ambience</a>
                                                     <a href="#reviewExperience">Restaurant Experience</a>
                                                 </div>
@@ -4547,5 +4570,4 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
-
 </html>

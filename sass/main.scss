@@ -112,6 +112,14 @@ li {
     width: 100%;
 }
 
+.h-50 {
+    height: 50%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
 .h-fit-content {
     height: fit-content;
 }
@@ -182,6 +190,34 @@ li {
     gap: 4px;
 }
 
+.pos-absolute {
+    position: absolute;
+}
+
+.pos-fixed {
+    position: fixed;
+}
+
+.pos-relative {
+    position: relative;
+}
+
+.transform-50-50 {
+    transform: translate(-50%, -50%);
+}
+
+.left-50 {
+    left: 50%;
+}
+
+.top-50 {
+    top: 50%;
+}
+
+.text-trans-none {
+    text-transform: none;
+}
+
 button,
 a,
 input[type="checkbox"],
@@ -192,6 +228,7 @@ input[type="checkbox"],
 a:hover {
     background-color: transparent;
 }
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;

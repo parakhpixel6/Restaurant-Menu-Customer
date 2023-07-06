@@ -123,6 +123,10 @@ footer.progress {
         background: rgba(255, 255, 255, 0.70);
         right: 10%;
         margin-top: -17px;
+
+        @media (max-width: 1070px) and (min-width: 1000px) {
+            right: 6%;                                  
+       }
         
         & span {
             font-size: 24px;
@@ -142,6 +146,10 @@ footer.progress {
         background: rgba(255, 255, 255, 0.70);
         left: 7%;
         margin-top: -17px;
+
+        @media (max-width: 1070px) and (min-width: 1000px) {
+            left: 2%;                                  
+       }
         
         & span {
             font-size: 24px;

@@ -172,15 +172,8 @@ const couponClosed = document.querySelector('#coupon-closed');
 applyCoupons.addEventListener('click', function() {
   document.querySelector('.coupons-details').style.display = 'block';
   applyCoupons.style.display = 'none';
-  const couponsDetails = document.getElementById("coupons-details");
-  couponsDetails.scrollIntoView();
-});
-
-applyCouponsFooter.addEventListener('click', function() {
-  document.querySelector('.coupons-details').style.display = 'block';
-  applyCoupons.style.display = 'none';
-  const couponsDetails = document.getElementById("coupons-details");
-  couponsDetails.scrollIntoView();
+  // const couponsDetails = document.getElementById("coupons-details");
+  // couponsDetails.scrollIntoView();
 });
 
 couponClosed.addEventListener('click', function() {
@@ -226,12 +219,10 @@ askBillButton.addEventListener('click', function() {
 });
 
 
-
 const reviewNav = document.querySelector('.review-nav');
 const links = reviewNav.getElementsByTagName('a');
 
 reviewNav.addEventListener('click', function (event) {
-  event.preventDefault();
 
   // Check if the clicked element is an <a> tag
   if (event.target.tagName === 'A') {
@@ -244,6 +235,79 @@ reviewNav.addEventListener('click', function (event) {
     event.target.classList.add('active');
   }
 });
+
+
+// Get all elements with class "item-modify"
+const itemModifyElements = document.querySelectorAll('.item-modify');
+
+// Attach click event listener to each "item-modify" element
+itemModifyElements.forEach((element) => {
+  element.addEventListener('click', function() {
+    // Get the next sibling element with class "add-instruction"
+    const addInstructionElement = this.nextElementSibling;
+
+    // Reset changes made to the previously clicked element
+    const previouslyClickedElement = document.querySelector('.item-modify.clicked');
+    if (previouslyClickedElement) {
+      const previousAddInstructionElement = previouslyClickedElement.nextElementSibling;
+      previouslyClickedElement.querySelector('.material-symbols-rounded').innerText = 'edit_note';
+      previouslyClickedElement.querySelector('p').innerText = 'Add Instructions';
+      previouslyClickedElement.classList.remove('clicked');
+    }
+
+    // Check if "add-instruction" element is currently hidden
+    if (addInstructionElement.style.display === 'block') {
+      // Hide the clicked "add-instruction" element
+      this.querySelector('.material-symbols-rounded').innerText = 'edit_note';
+      this.querySelector('p').innerText = 'Add Instructions';
+      addInstructionElement.style.display = 'none';
+      this.classList.remove('clicked');
+    } else {
+
+      const allAddInstructionElements = document.querySelectorAll('.add-instruction');
+      allAddInstructionElements.forEach((element) => {
+        element.style.display = 'none';
+      });
+
+      // Show the clicked "add-instruction" element
+      this.querySelector('.material-symbols-rounded').innerText = 'close';
+      this.querySelector('p').innerText = 'Cancel';
+      addInstructionElement.style.display = 'block';
+      this.classList.add('clicked');
+    }
+  });
+});
+
+
+var get10Button = document.getElementById('get10Button');
+var firstVisitButton = document.getElementById('firstVisitButton');
+
+get10Button.addEventListener('click', toggleButton);
+firstVisitButton.addEventListener('click', toggleButton);
+
+function toggleButton() {
+    var buttonText = this.getElementsByTagName('p')[0];
+    var otherButton;
+
+    if (buttonText.innerHTML === 'Applied') {
+        buttonText.innerHTML = 'Apply';
+        this.classList.remove('applied');
+    } else {
+        buttonText.innerHTML = 'Applied';
+        this.classList.add('applied');
+
+        if (this === get10Button) {
+            otherButton = firstVisitButton;
+        } else {
+            otherButton = get10Button;
+        }
+
+        var otherButtonText = otherButton.getElementsByTagName('p')[0];
+        otherButtonText.innerHTML = 'Apply';
+        otherButton.classList.remove('applied');
+    }
+}
+
 
 
 // window.addEventListener('DOMContentLoaded', function() {

@@ -273,6 +273,10 @@
                         text-transform: none;
                     }
 
+                    & label p {
+                        font-size: 15px;
+                    }
+
                     
                                 $color-default: $primary-black;
                                 $color-active: $primary-black;
@@ -295,7 +299,7 @@
                                     width: 100%;
                                     margin-left: 0.5px;
                                     height: 120px;
-                                    padding: 7px 14px 0px 14px;
+                                    padding: 14px 14px 0px 14px;
                                     font-size: 15px;
                                     line-height: inherit;
                                     color: $color-active;

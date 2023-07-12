@@ -308,7 +308,9 @@ function toggleButton() {
     }
 }
 
-
+function refreshPage(){
+  window.location.reload();
+} 
 
 // window.addEventListener('DOMContentLoaded', function() {
 //   // Smooth scrolling on anchor tag click

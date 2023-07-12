@@ -541,7 +541,7 @@ input[type=number] {
   font-size: 12px;
   color: #555555;
   display: flex;
-  width: 256px;
+  width: 235px;
   flex-direction: column;
   line-height: 14px;
   text-transform: none;
@@ -3348,7 +3348,7 @@ input[type=number] {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  margin-bottom: 12px;
+  margin-bottom: 30px;
   text-transform: none;
 }
 .swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-review .reviews-section .reviews-container .review-container .review-experience label p {
@@ -3367,7 +3367,6 @@ input[type=number] {
   box-sizing: border-box;
   resize: vertical;
   width: 100%;
-  margin-left: 0.5px;
   height: 120px;
   padding: 14px 14px 0px 14px;
   font-size: 15px;

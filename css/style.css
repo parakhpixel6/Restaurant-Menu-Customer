@@ -3351,6 +3351,9 @@ input[type=number] {
   margin-bottom: 12px;
   text-transform: none;
 }
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-review .reviews-section .reviews-container .review-container .review-experience label p {
+  font-size: 15px;
+}
 .swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-review .reviews-section .reviews-container .review-container .review-experience .textfield-outlined {
   position: relative;
   margin-bottom: 20px;
@@ -3366,7 +3369,7 @@ input[type=number] {
   width: 100%;
   margin-left: 0.5px;
   height: 120px;
-  padding: 7px 14px 0px 14px;
+  padding: 14px 14px 0px 14px;
   font-size: 15px;
   line-height: inherit;
   color: #222222;

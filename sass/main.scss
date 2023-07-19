@@ -310,8 +310,18 @@ input[type=number] {
                     @import './components/thanku-payment';
                     
                     @import './components/my-review';
+
+
                     
                     
+                }
+
+                &-myPayment {
+                    width: 61% !important;
+                }
+
+                &-myReview {
+                    width: 61% !important;
                 }
             }
             

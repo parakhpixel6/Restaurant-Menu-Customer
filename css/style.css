@@ -1198,7 +1198,7 @@ input[type=number] {
   position: absolute;
   top: 4.5px;
   left: 0;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 8px;
   color: #222222;
   cursor: text;
@@ -3499,6 +3499,12 @@ input[type=number] {
   color: #FFFFFF;
   font-size: 14px;
   font-weight: 300;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-myPayment {
+  width: 61% !important;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-myReview {
+  width: 61% !important;
 }
 .swiper-container .swiper-wrapper .swiper-slide .logout-section {
   height: 100%;

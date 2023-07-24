@@ -47,8 +47,8 @@ $color-focused: $primary-black;
   color: $color-default;
   cursor: text;
   transition: color .2s,
-              font-size .2s,
-              line-height .2s;
+  font-size .2s,
+  line-height .2s;
 }
 
 .textfield-outlined > input:not(:focus):placeholder-shown + label {

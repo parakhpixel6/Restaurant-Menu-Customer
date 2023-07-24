@@ -2,8 +2,10 @@ const swiper = new Swiper('.swiper-container', {
     slidesPerView: 1,
     speed: 10,
     spaceBetween: 100,
+    allowTouchMove: false,
+
     keyboard: {
-      enabled: true,
+      enabled: false,
     },
     pagination: {
       el: '.swiper-pagination',
@@ -14,6 +16,12 @@ const swiper = new Swiper('.swiper-container', {
       prevEl: '.swiper-button-prev',
     },
 });
+
+
+
+
+//Book Effect Logic
+
 
 // Loop through each add-remove element
 const addRemoveElements = document.querySelectorAll('.add-remove');

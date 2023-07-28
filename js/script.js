@@ -112,6 +112,43 @@ tipAmounts.forEach(tipAmount => {
   });
 });
 
+const bankOptions = document.querySelectorAll('.bank-option');
+
+bankOptions.forEach(bankOption => {
+  bankOption.addEventListener('click', () => {
+      bankOptions.forEach(element => {
+        element.classList.remove('active');
+      });
+
+      bankOption.classList.add('active');
+  });
+});
+
+
+const requestOptions = document.querySelectorAll('.request-option p');
+
+requestOptions.forEach(requestOption => {
+  requestOption.addEventListener('click', () => {
+      requestOptions.forEach(element => {
+        element.classList.remove('active');
+      });
+
+      requestOption.classList.add('active');
+  });
+});
+
+const foodOptions = document.querySelectorAll('.food-navigation-title a');
+
+foodOptions.forEach(foodOption => {
+  foodOption.addEventListener('click', () => {
+      foodOptions.forEach(element => {
+        element.classList.remove('active');
+      });
+
+      foodOption.classList.add('active');
+  });
+});
+
 
 
 

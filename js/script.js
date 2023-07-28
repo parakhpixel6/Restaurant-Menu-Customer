@@ -170,6 +170,61 @@ addGSTT.addEventListener('click', function() {
 });
 
 
+// Call Waiter Popup
+const showCallWaiter = document.querySelectorAll('.showCallWaiter');
+const closeCallWaiter = document.querySelector('#closeCallWaiter');
+const callWaiterPopup = document.querySelector('#call-waiter-popup');
+
+console.log(showCallWaiter);
+
+showCallWaiter.forEach(waiter => {
+  console.log(waiter);
+  waiter.addEventListener('click', function() {
+    callWaiterPopup.style.top = '0%';
+    callWaiterPopup.style.opacity = '1';
+  })
+})
+
+closeCallWaiter.addEventListener('click', function() {
+  callWaiterPopup.style.top = '-100%';
+  callWaiterPopup.style.opacity = '0';
+})
+
+
+// Get Water Popup
+const showGetWater = document.querySelectorAll('.showGetWater');
+const closeGetWater = document.querySelector('#closeGetWater');
+const getWaterPopup = document.querySelector('#get-water-popup');
+
+showGetWater.forEach(water => {
+  water.addEventListener('click', function() {
+    getWaterPopup.style.top = '0%';
+    getWaterPopup.style.opacity = '1';
+  })
+})
+
+closeGetWater.addEventListener('click', function() {
+  getWaterPopup.style.top = '-100%';
+  getWaterPopup.style.opacity = '0';
+})
+
+// Need Help Popup
+const showNeedHelp = document.querySelectorAll('.showNeedHelp');
+const closeNeedHelp = document.querySelector('#closeNeedHelp');
+const needHelpPopup = document.querySelector('#need-help-popup');
+
+showNeedHelp.forEach(help => {
+  help.addEventListener('click', function() {
+    needHelpPopup.style.top = '0%';
+    needHelpPopup.style.opacity = '1';
+  })
+})
+
+closeNeedHelp.addEventListener('click', function() {
+  needHelpPopup.style.top = '-100%';
+  needHelpPopup.style.opacity = '0';
+})
+
 
 
 // Apply Coupons 
@@ -226,6 +281,9 @@ askBillButton.addEventListener('click', function() {
   billText.classList.remove('hidden');
 });
 
+
+
+//My Review Nav
 
 const reviewNav = document.querySelector('.review-nav');
 const links = reviewNav.getElementsByTagName('a');

@@ -835,7 +835,7 @@ input[type=number] {
 .swiper-container .swiper-wrapper .swiper-slide .open-menu .food-navigation-title:first-child {
   margin-top: 45px;
 }
-.swiper-container .swiper-wrapper .swiper-slide .open-menu .food-navigation-title:first-child .active {
+.swiper-container .swiper-wrapper .swiper-slide .open-menu .food-navigation-title:first-child.active {
   color: #FF4747;
   font-size: 16px;
   font-weight: 600;
@@ -844,6 +844,9 @@ input[type=number] {
   color: #888888;
   font-size: 16px;
   font-weight: 600;
+}
+.swiper-container .swiper-wrapper .swiper-slide .open-menu .food-navigation-title a.active {
+  color: #FF4747;
 }
 .swiper-container .swiper-wrapper .swiper-slide .progress-section {
   height: 97%;

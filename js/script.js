@@ -137,7 +137,7 @@ requestOptions.forEach(requestOption => {
   });
 });
 
-const foodOptions = document.querySelectorAll('.food-navigation-title a');
+const foodOptions = document.querySelectorAll('.food-navigation-title p');
 
 foodOptions.forEach(foodOption => {
   foodOption.addEventListener('click', () => {

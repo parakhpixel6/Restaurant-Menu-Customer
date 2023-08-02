@@ -733,44 +733,252 @@ input[type=number] {
     top: -2%;
   }
 }
-.swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(1).menu-right-flip {
+.swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(1).menu-right-bf.active {
   z-index: 12;
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  transform-origin: left center;
+  transition: transform 3s;
+  /* backface-visibility: hidden; */
+  top: -2.6%;
+  left: -1.5%;
+  height: 100%;
+  width: 91.1%;
 }
-.swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(2).menu-right-flip {
+.swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(1).menu-right-bf.active > .menu-content-wrap {
+  transform: scaleX(-1);
+  overflow: hidden;
+}
+.swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(2).menu-right-bf.active {
   z-index: 11;
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  transform-origin: left center;
+  transition: transform 3s;
+  /* backface-visibility: hidden; */
+  top: -2.6%;
+  left: -1.5%;
+  height: 100%;
+  width: 91.1%;
 }
-.swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(3).menu-right-flip {
+.swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(2).menu-right-bf.active > .menu-content-wrap {
+  transform: scaleX(-1);
+  overflow: hidden;
+}
+.swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(3).menu-right-bf.active {
   z-index: 10;
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  transform-origin: left center;
+  transition: transform 3s;
+  /* backface-visibility: hidden; */
+  top: -2.6%;
+  left: -1.5%;
+  height: 100%;
+  width: 91.1%;
 }
-.swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(4).menu-right-flip {
+.swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(3).menu-right-bf.active > .menu-content-wrap {
+  transform: scaleX(-1);
+  overflow: hidden;
+}
+.swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(4).menu-right-bf.active {
   z-index: 9;
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  transform-origin: left center;
+  transition: transform 3s;
+  /* backface-visibility: hidden; */
+  top: -2.6%;
+  left: -1.5%;
+  height: 100%;
+  width: 91.1%;
 }
-.swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(5).menu-right-flip {
+.swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(4).menu-right-bf.active > .menu-content-wrap {
+  transform: scaleX(-1);
+  overflow: hidden;
+}
+.swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(5).menu-right-bf.active {
   z-index: 8;
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  transform-origin: left center;
+  transition: transform 3s;
+  /* backface-visibility: hidden; */
+  top: -2.6%;
+  left: -1.5%;
+  height: 100%;
+  width: 91.1%;
 }
-.swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(6).menu-right-flip {
+.swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(5).menu-right-bf.active > .menu-content-wrap {
+  transform: scaleX(-1);
+  overflow: hidden;
+}
+.swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(6).menu-right-bf.active {
   z-index: 7;
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  transform-origin: left center;
+  transition: transform 3s;
+  /* backface-visibility: hidden; */
+  top: -2.6%;
+  left: -1.5%;
+  height: 100%;
+  width: 91.1%;
 }
-.swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(7).menu-right-flip {
+.swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(6).menu-right-bf.active > .menu-content-wrap {
+  transform: scaleX(-1);
+  overflow: hidden;
+}
+.swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(7).menu-right-bf.active {
   z-index: 6;
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  transform-origin: left center;
+  transition: transform 3s;
+  /* backface-visibility: hidden; */
+  top: -2.6%;
+  left: -1.5%;
+  height: 100%;
+  width: 91.1%;
 }
-.swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(8).menu-right-flip {
+.swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(7).menu-right-bf.active > .menu-content-wrap {
+  transform: scaleX(-1);
+  overflow: hidden;
+}
+.swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(8).menu-right-bf.active {
   z-index: 5;
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  transform-origin: left center;
+  transition: transform 3s;
+  /* backface-visibility: hidden; */
+  top: -2.6%;
+  left: -1.5%;
+  height: 100%;
+  width: 91.1%;
 }
-.swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(9).menu-right-flip {
+.swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(8).menu-right-bf.active > .menu-content-wrap {
+  transform: scaleX(-1);
+  overflow: hidden;
+}
+.swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(9).menu-right-bf.active {
   z-index: 4;
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  transform-origin: left center;
+  transition: transform 3s;
+  /* backface-visibility: hidden; */
+  top: -2.6%;
+  left: -1.5%;
+  height: 100%;
+  width: 91.1%;
 }
-.swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(10).menu-right-flip {
+.swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(9).menu-right-bf.active > .menu-content-wrap {
+  transform: scaleX(-1);
+  overflow: hidden;
+}
+.swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(10).menu-right-bf.active {
   z-index: 3;
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  transform-origin: left center;
+  transition: transform 3s;
+  /* backface-visibility: hidden; */
+  top: -2.6%;
+  left: -1.5%;
+  height: 100%;
+  width: 91.1%;
 }
-.swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(11).menu-right-flip {
+.swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(10).menu-right-bf.active > .menu-content-wrap {
+  transform: scaleX(-1);
+  overflow: hidden;
+}
+.swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(11).menu-right-bf.active {
   z-index: 2;
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  transform-origin: left center;
+  transition: transform 3s;
+  /* backface-visibility: hidden; */
+  top: -2.6%;
+  left: -1.5%;
+  height: 100%;
+  width: 91.1%;
 }
-.swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(12).menu-right-flip {
+.swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(11).menu-right-bf.active > .menu-content-wrap {
+  transform: scaleX(-1);
+  overflow: hidden;
+}
+.swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(12).menu-right-bf.active {
   z-index: 1;
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  transform-origin: left center;
+  transition: transform 3s;
+  /* backface-visibility: hidden; */
+  top: -2.6%;
+  left: -1.5%;
+  height: 100%;
+  width: 91.1%;
 }
-.swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(13).menu-right-flip {
+.swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(12).menu-right-bf.active > .menu-content-wrap {
+  transform: scaleX(-1);
+  overflow: hidden;
+}
+.swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(13).menu-right-bf.active {
   z-index: 0;
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  transform-origin: left center;
+  transition: transform 3s;
+  /* backface-visibility: hidden; */
+  top: -2.6%;
+  left: -1.5%;
+  height: 100%;
+  width: 91.1%;
+}
+.swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(13).menu-right-bf.active > .menu-content-wrap {
+  transform: scaleX(-1);
+  overflow: hidden;
 }
 .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-ff {
   -webkit-backface-visibility: hidden;
@@ -785,16 +993,12 @@ input[type=number] {
   transition: transform 3s;
   transform-origin: center left;
 }
-.swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right.menu-right-bf.seen.menu-right-ff, .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right.menu-right-bf.seen.breakfast, .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right.menu-right-bf.active.menu-right-bf, .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right.menu-right-bf.seen.menu-right-ff, .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right.menu-right-ff.seen.menu-right-ff, .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right.menu-right-ff.seen.breakfast, .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right.menu-right-ff.active.menu-right-bf, .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right.menu-right-ff.seen.menu-right-ff, .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right.breakfast.seen.menu-right-ff, .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right.breakfast.seen.breakfast, .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right.breakfast.active.menu-right-bf, .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right.breakfast.seen.menu-right-ff {
+.swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right.menu-right-bf.menu-right-ff.seen, .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right.menu-right-bf.breakfast.seen, .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right.menu-right-bf.menu-right-bf.active, .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right.menu-right-bf.menu-right-bf.seen, .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right.menu-right-ff.menu-right-ff.seen, .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right.menu-right-ff.breakfast.seen, .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right.menu-right-ff.menu-right-bf.active, .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right.menu-right-ff.menu-right-bf.seen, .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right.breakfast.menu-right-ff.seen, .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right.breakfast.breakfast.seen, .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right.breakfast.menu-right-bf.active, .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right.breakfast.menu-right-bf.seen {
   transform: rotateX(10deg) rotateY(180deg);
   backface-visibility: hidden;
 }
 .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right.indexReset {
   z-index: unset !important;
-}
-.swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right.menu-right-bf .menu-content-wrap {
-  transform: rotateY(180deg);
-  overflow: hidden;
 }
 .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right.menu-right-ff {
   backface-visibility: hidden;

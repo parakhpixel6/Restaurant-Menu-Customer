@@ -237,8 +237,26 @@
                     @if $show-numbers {
                         @for $i from 1 through $count {
                           &:nth-child(#{$i}) {
-                            &.menu-right-flip {
+                            &.menu-right-bf.active {
                               z-index: $count - $i;
+                              -webkit-transform: rotateY(180deg);
+                              -moz-transform: rotateY(180deg);
+                              -ms-transform: rotateY(180deg);
+                              -o-transform: rotateY(180deg);
+                              transform: rotateY(180deg);
+                              transform-origin: left center;
+                              transition: transform 3s;
+                              /* backface-visibility: hidden; */
+                              top: -2.6%;
+                              left: -1.5%;
+                              height: 100%;
+                              width: 91.1%;
+                              //box-shadow: -9px 6px 47px -12px #888888;
+
+                              & >.menu-content-wrap {
+                                transform: scaleX(-1);
+                                overflow: hidden;
+                              }
                             }
                           }
                         }
@@ -272,12 +290,13 @@
                     transition: transform 3s;
                     transform-origin: center left;
 
-                    &.seen.menu-right-ff,
-                    &.seen.breakfast,
-                    &.active.menu-right-bf,
-                    &.seen.menu-right-ff {
+                    &.menu-right-ff.seen,
+                    &.breakfast.seen,
+                    &.menu-right-bf.active,
+                    &.menu-right-bf.seen {
                         transform: rotateX(10deg) rotateY(180deg);
                         backface-visibility: hidden;
+                        // z-index: unset !important;  
                         // top: -3.8%;
                         // left: 2.4%;
                         // height: 102%;
@@ -296,47 +315,47 @@
                     z-index: unset !important;  
                 }
 
-                &.menu-right-bf {
+                // &.menu-right-bf.active {
               
+                //     & >.menu-content-wrap {
+                //       transform: scaleX(-1);
+                //       overflow: hidden;
+                //     }
+                // }
+              
+                &.menu-right-ff {
+                backface-visibility: hidden;
+            
                     .menu-content-wrap {
-                      transform: rotateY(180deg);
-                      overflow: hidden;
-                    }
-                  }
-              
-                  &.menu-right-ff {
-                    backface-visibility: hidden;
-              
-                    .menu-content-wrap {
-                      &::after {
+                        &::after {
                         opacity: 1;
                         z-index: -1;
-                      }
-                    }
-              
-                    &.active {
-                      .menu-content-wrap {
-                        &::after {
-                          background: #181f22;
                         }
-                      }
                     }
-              
+                
+                    &.active {
+                        .menu-content-wrap {
+                        &::after {
+                            background: #181f22;
+                        }
+                        }
+                    }
+                
                     &.indexReset {
-                      .menu-content-wrap:after {
+                        .menu-content-wrap:after {
                         -webkit-transform: rotateY(180deg) rotateX(0deg) rotate(270deg);
                         -moz-transform: rotateY(180deg) rotateX(0deg) rotate(270deg);
                         -o-transform: rotateY(180deg) rotateX(0deg) rotate(270deg);
                         transform: rotateY(180deg) rotateX(0deg) rotate(270deg);
-                      }
+                        }
                     }
-              
+                
                     &.seen {
-                      .menu-content-wrap:after {
+                        .menu-content-wrap:after {
                         opacity: 0;
-                      }
+                        }
                     }
-                  }
+                }
 
 
 

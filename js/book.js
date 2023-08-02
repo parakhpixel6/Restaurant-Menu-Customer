@@ -1,11 +1,7 @@
 document.onkeydown = checkKey;
-// document.onclick=checkKey;
+document.onclick=checkKey;
 
 let enableClick = true;
-// // JavaScript code for the carousel
-// const carouselImages = document.querySelectorAll(".carousel-image");
-// let loader = false;
-// var slideIndex = 0;
 
 setTimeout(() => {
   let nodes = document.getElementById("menu-right-book")?.childNodes;
@@ -18,31 +14,7 @@ setTimeout(() => {
   nodes[3]?.classList?.add("active");
   nodes[5]?.classList?.add("active");
 }, 10000);
-// function clickb(){
-//   console.log('gjhd');
-// }
-// function showSlides() {
-//   loader = true;
-//   var i;
 
-//   let bars = document
-//     .getElementsByClassName("carousel-hilighter")[0]
-//     .getElementsByTagName("li");
-//   var slides = document
-//     .getElementsByClassName("carousel")[0]
-//     .getElementsByTagName("img");
-//   for (i = 0; i < slides.length; i++) {
-//     slides[i].style.display = "none";
-//     bars[i]?.classList?.remove("active");
-//   }
-//   slideIndex++;
-//   if (slideIndex > slides.length) {
-//     slideIndex = 1;
-//   }
-//   slides[slideIndex - 1].style.display = "block";
-//   bars[slideIndex - 1]?.classList?.add("active");
-//   setTimeout(showSlides, 5000); // Change image every 5 seconds
-// }
 
 function checkKey(e) {
   if (!enableClick) {
@@ -65,9 +37,6 @@ function checkKey(e) {
       return;
     }
     nodes.forEach((e, i) => {
-    //   if (e.classList?.value?.includes("team") && !loader) {
-    //     showSlides();
-    //   }
 
       if (
         e.classList?.value?.includes("active") &&
@@ -140,8 +109,8 @@ function selectionPage(node, event) {
   if (!nodes) {
     // console.log(nodes);
     return;
-}
-nodes.forEach((e, i) => {
+  }
+  nodes.forEach((e, i) => {
     if (!e?.innerHTML) {
         console.log(nodes);
         return;
@@ -152,54 +121,52 @@ nodes.forEach((e, i) => {
     }
     if (e.classList.value.includes(node)) {
       point = 1;
-      console.log("watched");
     } else {
         if (!point) {
-          console.log("watched");
         setTimeout(() => {
           e.classList.add("indexReset");
         }, 900);
         e.classList.add("seen");
       }
+      event.target.parentElement.classList.add("active");
+      event.target.parentElement.previousElementSibling.classList.add("active");
     }
   });
-  event.target.parentElement.classList.add("active");
-  event.target.parentElement.previousElementSibling.classList.add("active");
 }
 
 const breakfast = document
-  .querySelector('[data-point="Breakfast"]')
+  .querySelectorAll('[data-point="Breakfast"]')[0]
   .addEventListener("click", (event) => {
     selectionPage("breakfast", event);
     console.log('hey');
   });
 const continental = document
-  .querySelector('[data-point="Continental"]')
+  .querySelectorAll('[data-point="Continental"]')[0]
   .addEventListener("click", (event) => {
     selectionPage("continental", event);
   });
 const chinese = document
-  .querySelector('[data-point="Chinese"]')
+  .querySelectorAll('[data-point="Chinese"]')[0]
   .addEventListener("click", (event) => {
     selectionPage("chinese", event);
   });
 const north_indian = document
-  .querySelector('[data-point="North-Indian"]')
+  .querySelectorAll('[data-point="North-Indian"]')[0]
   .addEventListener("click", (event) => {
     selectionPage("north_indian", event);
   });
 const maharashtrian = document
-  .querySelector('[data-point="Maharashtrian"]')
+  .querySelectorAll('[data-point="Maharashtrian"]')[0]
   .addEventListener("click", (event) => {
     selectionPage("maharashtrian", event);
   });
 const south_indian = document
-  .querySelector('[data-point="South-Indian"]')
+  .querySelectorAll('[data-point="South-Indian"]')[0]
   .addEventListener("click", (event) => {
     selectionPage("south_indian", event);
   });
 const beverages = document
-  .querySelector('[data-point="Beverages"]')
+  .querySelectorAll('[data-point="Beverages"]')[0]
   .addEventListener("click", (event) => {
     selectionPage("beverages", event);
   });

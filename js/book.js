@@ -269,7 +269,7 @@ chinese.addEventListener('click', function() {
   document.querySelectorAll('.continental').forEach(conti => {
     conti.classList.remove('active');
     conti.classList.add('seen');
-    conti.style.zIndex = "1";
+    conti.style.zIndex = "11";
   })
   document.querySelectorAll('.chinese').forEach(xing => {
     xing.classList.add('active');

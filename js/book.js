@@ -181,6 +181,13 @@ const maharashtrian = document.querySelector('#maharashtrian');
 const south_indian = document.querySelector('#south_indian');
 const beverages = document.querySelector('#beverages');
 
+// document.querySelectorAll('.breakfast').forEach(fast => {
+//   fast.addEventListener('load', function(){
+//     // fast.style.zIndex = "12";
+//     // fast.style.transition = "none";
+//     fast.style.width = "91.9%";
+//   });
+// });
 
 
 breakfast.addEventListener('click', function() {

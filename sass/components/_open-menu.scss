@@ -284,57 +284,24 @@
                                 transform: rotateY(180deg);
                                 transform-origin: left center;
                                 transition: transform 3s;
-                                //transition: transform 0.1s;
-                                //transition: transform 0.5s;
-                                /* backface-visibility: hidden; */
                                 top: -2.6%;
                                 left: -2.5%;
                                 height: 100%;
                                 width: 91.1%;
-                                // box-shadow: -9px 6px 47px -12px #888888;
-
-                                // & >.menu-content-wrap:nth-child(2n) {
-                                //     transform: scaleX(-1);
-                                //     overflow: hidden;
-                                // }
                             }
 
                             &.menu-right-ff.active {
-                                z-index: $count - $i;
-                                -webkit-transform: none;
-                                -moz-transform: none;
-                                -ms-transform: none;
-                                -o-transform: none;
-                                transform: none;
-                                transform-origin: inherit;
-                                transition: transform 3s;
-                                //transition: transform 0.1s;
-                                //transition: transform 0.5s;
-                                /* backface-visibility: hidden; */
-                                // top: 0%;
                                 left: 0.05%;
                                 height: 100%;
                                 width: 92.1%;
-                                // box-shadow: -9px 6px 47px -12px #888888;
+                                box-shadow: -9px 6px 47px -12px #888888;
                             }
 
                             &.menu-right-bf.active {
-                                // z-index: $count - $i;
-                                // -webkit-transform: none;
-                                // -moz-transform: none;
-                                // -ms-transform: none;
-                                // -o-transform: none;
-                                // transform: none;
-                                // transform-origin: inherit;
-                                // transition: transform 3s;
-                                // //transition: transform 0.1s;
-                                // //transition: transform 0.5s;
-                                // /* backface-visibility: hidden; */
-                                // top: -3.6%;
-                                // left: 0.05%;
+                                z-index: $count - $i;
                                 height: 100%;
                                 width: 91.1%;
-                                box-shadow: -9px 6px 47px -12px #888888;
+                                box-shadow: -29px 6px 47px -12px #888888;
                                 & >.menu-content-wrap {
                                     transform: scaleX(-1);
                                     overflow: hidden;

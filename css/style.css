@@ -107,6 +107,10 @@ li {
   height: 100%;
 }
 
+.h-90 {
+  height: 90%;
+}
+
 .w-100 {
   width: 100%;
 }
@@ -219,6 +223,10 @@ li {
   position: relative;
 }
 
+.d-none {
+  display: none;
+}
+
 .transform-50-50 {
   transform: translate(-50%, -50%);
 }
@@ -294,7 +302,7 @@ input[type=number] {
   width: fit-content;
   padding: 16px;
   background-color: #fff;
-  border-radius: 24px;
+  border-radius: 18px;
 }
 .container .accomplishment-modal .accomplishment-popup .popup-header {
   padding-bottom: 8px;
@@ -333,7 +341,7 @@ input[type=number] {
   border: none;
   width: fit-content;
   padding: 4px 12px;
-  border-radius: 12px;
+  border-radius: 6px;
   margin-left: auto;
 }
 .container .accomplishment-modal .accomplishment-popup button p {
@@ -371,7 +379,7 @@ input[type=number] {
   background: linear-gradient(90deg, rgb(255, 102, 102) 40%, rgb(255, 150, 136) 100%);
   background-clip: padding-box; /* !importanté */
   border: solid -1px transparent; /* !importanté */
-  border-radius: 8px;
+  border-radius: 6px;
   z-index: 9;
 }
 .swiper-container .swiper-wrapper .swiper-slide nav .accomplishment:after {
@@ -755,13 +763,11 @@ input[type=number] {
   left: 0.05%;
   height: 100%;
   width: 92.1%;
-  box-shadow: -9px 6px 47px -12px #888888;
 }
 .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(1).menu-right-bf.active {
   z-index: 12;
   height: 100%;
   width: 91.1%;
-  box-shadow: -29px 6px 47px -12px #888888;
 }
 .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(1).menu-right-bf.active > .menu-content-wrap {
   transform: scaleX(-1);
@@ -786,13 +792,11 @@ input[type=number] {
   left: 0.05%;
   height: 100%;
   width: 92.1%;
-  box-shadow: -9px 6px 47px -12px #888888;
 }
 .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(2).menu-right-bf.active {
   z-index: 11;
   height: 100%;
   width: 91.1%;
-  box-shadow: -29px 6px 47px -12px #888888;
 }
 .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(2).menu-right-bf.active > .menu-content-wrap {
   transform: scaleX(-1);
@@ -817,13 +821,11 @@ input[type=number] {
   left: 0.05%;
   height: 100%;
   width: 92.1%;
-  box-shadow: -9px 6px 47px -12px #888888;
 }
 .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(3).menu-right-bf.active {
   z-index: 10;
   height: 100%;
   width: 91.1%;
-  box-shadow: -29px 6px 47px -12px #888888;
 }
 .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(3).menu-right-bf.active > .menu-content-wrap {
   transform: scaleX(-1);
@@ -848,13 +850,11 @@ input[type=number] {
   left: 0.05%;
   height: 100%;
   width: 92.1%;
-  box-shadow: -9px 6px 47px -12px #888888;
 }
 .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(4).menu-right-bf.active {
   z-index: 9;
   height: 100%;
   width: 91.1%;
-  box-shadow: -29px 6px 47px -12px #888888;
 }
 .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(4).menu-right-bf.active > .menu-content-wrap {
   transform: scaleX(-1);
@@ -879,13 +879,11 @@ input[type=number] {
   left: 0.05%;
   height: 100%;
   width: 92.1%;
-  box-shadow: -9px 6px 47px -12px #888888;
 }
 .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(5).menu-right-bf.active {
   z-index: 8;
   height: 100%;
   width: 91.1%;
-  box-shadow: -29px 6px 47px -12px #888888;
 }
 .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(5).menu-right-bf.active > .menu-content-wrap {
   transform: scaleX(-1);
@@ -910,13 +908,11 @@ input[type=number] {
   left: 0.05%;
   height: 100%;
   width: 92.1%;
-  box-shadow: -9px 6px 47px -12px #888888;
 }
 .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(6).menu-right-bf.active {
   z-index: 7;
   height: 100%;
   width: 91.1%;
-  box-shadow: -29px 6px 47px -12px #888888;
 }
 .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(6).menu-right-bf.active > .menu-content-wrap {
   transform: scaleX(-1);
@@ -941,13 +937,11 @@ input[type=number] {
   left: 0.05%;
   height: 100%;
   width: 92.1%;
-  box-shadow: -9px 6px 47px -12px #888888;
 }
 .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(7).menu-right-bf.active {
   z-index: 6;
   height: 100%;
   width: 91.1%;
-  box-shadow: -29px 6px 47px -12px #888888;
 }
 .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(7).menu-right-bf.active > .menu-content-wrap {
   transform: scaleX(-1);
@@ -972,13 +966,11 @@ input[type=number] {
   left: 0.05%;
   height: 100%;
   width: 92.1%;
-  box-shadow: -9px 6px 47px -12px #888888;
 }
 .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(8).menu-right-bf.active {
   z-index: 5;
   height: 100%;
   width: 91.1%;
-  box-shadow: -29px 6px 47px -12px #888888;
 }
 .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(8).menu-right-bf.active > .menu-content-wrap {
   transform: scaleX(-1);
@@ -1003,13 +995,11 @@ input[type=number] {
   left: 0.05%;
   height: 100%;
   width: 92.1%;
-  box-shadow: -9px 6px 47px -12px #888888;
 }
 .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(9).menu-right-bf.active {
   z-index: 4;
   height: 100%;
   width: 91.1%;
-  box-shadow: -29px 6px 47px -12px #888888;
 }
 .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(9).menu-right-bf.active > .menu-content-wrap {
   transform: scaleX(-1);
@@ -1034,13 +1024,11 @@ input[type=number] {
   left: 0.05%;
   height: 100%;
   width: 92.1%;
-  box-shadow: -9px 6px 47px -12px #888888;
 }
 .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(10).menu-right-bf.active {
   z-index: 3;
   height: 100%;
   width: 91.1%;
-  box-shadow: -29px 6px 47px -12px #888888;
 }
 .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(10).menu-right-bf.active > .menu-content-wrap {
   transform: scaleX(-1);
@@ -1065,13 +1053,11 @@ input[type=number] {
   left: 0.05%;
   height: 100%;
   width: 92.1%;
-  box-shadow: -9px 6px 47px -12px #888888;
 }
 .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(11).menu-right-bf.active {
   z-index: 2;
   height: 100%;
   width: 91.1%;
-  box-shadow: -29px 6px 47px -12px #888888;
 }
 .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(11).menu-right-bf.active > .menu-content-wrap {
   transform: scaleX(-1);
@@ -1096,13 +1082,11 @@ input[type=number] {
   left: 0.05%;
   height: 100%;
   width: 92.1%;
-  box-shadow: -9px 6px 47px -12px #888888;
 }
 .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(12).menu-right-bf.active {
   z-index: 1;
   height: 100%;
   width: 91.1%;
-  box-shadow: -29px 6px 47px -12px #888888;
 }
 .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(12).menu-right-bf.active > .menu-content-wrap {
   transform: scaleX(-1);
@@ -1127,13 +1111,11 @@ input[type=number] {
   left: 0.05%;
   height: 100%;
   width: 92.1%;
-  box-shadow: -9px 6px 47px -12px #888888;
 }
 .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(13).menu-right-bf.active {
   z-index: 0;
   height: 100%;
   width: 91.1%;
-  box-shadow: -29px 6px 47px -12px #888888;
 }
 .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(13).menu-right-bf.active > .menu-content-wrap {
   transform: scaleX(-1);
@@ -3591,6 +3573,33 @@ input[type=number] {
   color: #FFFFFF;
   font-size: 14px;
   font-weight: 300;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .timer {
+  height: 50%;
+  width: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .timer img {
+  height: 100%;
+  width: 100%;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .waiting-payment {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  color: #111;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .transaction-payment {
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  color: #444;
+  text-transform: none;
+  line-height: 16px;
+  margin-top: -16px;
+  width: 290px;
 }
 .swiper-container .swiper-wrapper .swiper-slide .progress-section-right .thanku-container {
   width: 100%;

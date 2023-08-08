@@ -283,7 +283,7 @@
                                 -o-transform: rotateY(180deg);
                                 transform: rotateY(180deg);
                                 transform-origin: left center;
-                                transition: transform 3s;
+                                // transition: transform 3s;
                                 top: -2.6%;
                                 left: -2.5%;
                                 height: 100%;
@@ -293,7 +293,7 @@
                             &.menu-right-ff.active {
                                 transform: rotate(0deg);
                                 transform-origin: left center;
-                                transition: transform 3s;
+                                // transition: transform 3s;
                                 left: 0.05%;
                                 height: 100%;
                                 width: 92.1%;

@@ -10670,7 +10670,7 @@
                                         </div>
                                         <div class="my-payment-footer d-flex flex-d-col justify-space-evenly ai-center">
                                             <div class="my-payment-footer-container d-flex justify-flex-end ai-center">
-                                                <button
+                                                <button id="make-my-payment"
                                                     class="swiper-button-next make-my-payment d-flex ai-center justify-center g-4">
                                                     <span class="material-symbols-rounded">payments</span>
                                                     <p>Proceed to Pay</p>
@@ -10681,7 +10681,7 @@
                                 </div>
                             </div>
                             <footer class="progress">
-                                <div class="swiper-button-next">
+                                <div id="make-my-payment-footer" class="swiper-button-next">
                                     <span class="material-symbols-rounded">arrow_forward_ios</span>
                                 </div>
                                 <div class="progress-container d-flex ai-center g-24 justify-center">
@@ -10782,49 +10782,58 @@
                                     </div>
                                 </div>
                                 <div class="progress-section-right">
-                                    <div class="thanku-container d-flex justify-center ai-center flex-d-col g-24">
-                                        <div class="payment-status d-flex ai-center justify-center g-8">
-                                            <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <g id="Check Badge">
-                                                    <circle id="Ellipse 18" cx="14.5" cy="12.5" r="11.5" fill="#54BA54"
-                                                        fill-opacity="0.2" />
-                                                    <path id="Vector"
-                                                        d="M19.6981 9.33616L13.1186 15.2839C13.012 15.3801 12.8862 15.4524 12.7493 15.4959C12.6125 15.5393 12.468 15.5528 12.3255 15.5356C12.183 15.5183 12.0458 15.4706 11.9233 15.3959C11.8009 15.3211 11.6958 15.2207 11.6153 15.1019L9.09124 12.6698"
-                                                        stroke="#54BA54" stroke-width="1.6875" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-                                                </g>
-                                            </svg>
-                                            <p>Payment Successful</p>
+                                    <div class="waiting-window h-90 d-flex flex-d-col justify-center ai-center g-24">
+                                        <div class="timer">
+                                            <img src="./assets/customer-img/img/timer.gif" alt="timer-gif">
                                         </div>
-                                        <div class="thanku-msg">
-                                            <img class="w-100 h-100"
-                                                src="./assets/customer-img/img/output-onlinegiftools.gif" alt="">
-                                            <div
-                                                class="thanku-msg-container d-flex justify-center ai-center flex-d-col g-24">
-                                                <p class="thanku-heading">Thank You</p>
-                                                <p>We're grateful for the opportunity to serve you today. Thank you for
-                                                    choosing our restaurant, and we hope you enjoyed your meal.</p>
+                                        <p class="waiting-payment">Waiting for Confirmation</p>
+                                        <p class="transaction-payment">Once the transaction is completed successfully, your bill will be settled.</p>
+                                    </div>
+                                    <div class="d-none h-100 thanku-wrap">
+                                        <div class="thanku-container d-flex justify-center ai-center flex-d-col g-24">
+                                            <div class="payment-status d-flex ai-center justify-center g-8">
+                                                <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g id="Check Badge">
+                                                        <circle id="Ellipse 18" cx="14.5" cy="12.5" r="11.5" fill="#54BA54"
+                                                            fill-opacity="0.2" />
+                                                        <path id="Vector"
+                                                            d="M19.6981 9.33616L13.1186 15.2839C13.012 15.3801 12.8862 15.4524 12.7493 15.4959C12.6125 15.5393 12.468 15.5528 12.3255 15.5356C12.183 15.5183 12.0458 15.4706 11.9233 15.3959C11.8009 15.3211 11.6958 15.2207 11.6153 15.1019L9.09124 12.6698"
+                                                            stroke="#54BA54" stroke-width="1.6875" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </g>
+                                                </svg>
+                                                <p>Payment Successful</p>
+                                            </div>
+                                            <div class="thanku-msg">
+                                                <img class="w-100 h-100"
+                                                    src="./assets/customer-img/img/output-onlinegiftools.gif" alt="">
+                                                <div
+                                                    class="thanku-msg-container d-flex justify-center ai-center flex-d-col g-24">
+                                                    <p class="thanku-heading">Thank You</p>
+                                                    <p>We're grateful for the opportunity to serve you today. Thank you for
+                                                        choosing our restaurant, and we hope you enjoyed your meal.</p>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="thanku-payment d-flex justify-flex-end ai-center flex-d-col">
-                                        <div
-                                            class="thanku-payment-footer d-flex flex-d-col justify-space-evenly ai-center">
+                                        <div class="thanku-payment d-flex justify-flex-end ai-center flex-d-col">
                                             <div
-                                                class="thanku-payment-footer-container d-flex justify-flex-end ai-center">
-                                                <button id="ask-bill-button"
-                                                    class="ask-bill request-bill d-flex ai-center justify-center g-4">
-                                                    <span class="material-symbols-rounded">content_copy</span>
-                                                    <p>Ask For Bill Copy</p>
-                                                </button>
-                                                <p class="hidden bill-copy" id="bill-text">Your request for bill copy is
-                                                    placed, you will get your bill copy in 2 minutes.</p>
-                                                <button
-                                                    class="swiper-button-next rate-and-review d-flex ai-center justify-center g-4">
-                                                    <span class="material-symbols-rounded">hotel_class</span>
-                                                    <p>Rate & Review</p>
-                                                </button>
+                                                class="thanku-payment-footer d-flex flex-d-col justify-space-evenly ai-center">
+                                                <div
+                                                    class="thanku-payment-footer-container d-flex justify-flex-end ai-center">
+                                                    <button id="ask-bill-button"
+                                                        class="ask-bill request-bill d-flex ai-center justify-center g-4">
+                                                        <span class="material-symbols-rounded">content_copy</span>
+                                                        <p>Ask For Bill Copy</p>
+                                                    </button>
+                                                    <p class="hidden bill-copy" id="bill-text">Your request for bill copy is
+                                                        placed, you will get your bill copy in 2 minutes.</p>
+                                                    <button
+                                                        class="swiper-button-next rate-and-review d-flex ai-center justify-center g-4">
+                                                        <span class="material-symbols-rounded">hotel_class</span>
+                                                        <p>Rate & Review</p>
+                                                    </button>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>

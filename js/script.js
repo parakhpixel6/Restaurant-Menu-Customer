@@ -411,6 +411,24 @@ function toggleButton() {
     }
 }
 
+
+//WAITING PAYMENT
+const makePayment = document.querySelector('#make-my-payment');
+makePayment.addEventListener('click', function(){
+  setTimeout(function() {
+    document.querySelector('.waiting-window').classList.add('d-none');
+    document.querySelector('.thanku-wrap').classList.remove('d-none');
+  }, 4000);
+});
+
+const makePaymentFooter = document.querySelector('#make-my-payment-footer');
+makePaymentFooter.addEventListener('click', function(){
+  setTimeout(function() {
+    document.querySelector('.waiting-window').classList.add('d-none');
+    document.querySelector('.thanku-wrap').classList.remove('d-none');
+  }, 4000);
+});
+
 function refreshPage(){
   window.location.reload();
 } 

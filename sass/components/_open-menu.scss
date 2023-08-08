@@ -297,14 +297,14 @@
                                 left: 0.05%;
                                 height: 100%;
                                 width: 92.1%;
-                                box-shadow: -9px 6px 47px -12px #888888;
+                                // box-shadow: -9px 6px 47px -12px #888888;
                             }
                             
                             &.menu-right-bf.active {
                                 z-index: $count - $i;
                                 height: 100%;
                                 width: 91.1%;
-                                box-shadow: -29px 6px 47px -12px #888888;
+                                // box-shadow: -29px 6px 47px -12px #888888;
                                 & >.menu-content-wrap {
                                     transform: scaleX(-1);
                                     overflow: hidden;

@@ -752,6 +752,8 @@ input[type=number] {
   -o-transform: rotateY(180deg);
   transform: rotateY(180deg);
   transform-origin: left center;
+  transition: transform 3s;
+  box-shadow: 9px 6px 47px -12px #888888;
   top: -2.6%;
   left: -2.5%;
   height: 100%;
@@ -781,6 +783,8 @@ input[type=number] {
   -o-transform: rotateY(180deg);
   transform: rotateY(180deg);
   transform-origin: left center;
+  transition: transform 3s;
+  box-shadow: 9px 6px 47px -12px #888888;
   top: -2.6%;
   left: -2.5%;
   height: 100%;
@@ -810,6 +814,8 @@ input[type=number] {
   -o-transform: rotateY(180deg);
   transform: rotateY(180deg);
   transform-origin: left center;
+  transition: transform 3s;
+  box-shadow: 9px 6px 47px -12px #888888;
   top: -2.6%;
   left: -2.5%;
   height: 100%;
@@ -839,6 +845,8 @@ input[type=number] {
   -o-transform: rotateY(180deg);
   transform: rotateY(180deg);
   transform-origin: left center;
+  transition: transform 3s;
+  box-shadow: 9px 6px 47px -12px #888888;
   top: -2.6%;
   left: -2.5%;
   height: 100%;
@@ -868,6 +876,8 @@ input[type=number] {
   -o-transform: rotateY(180deg);
   transform: rotateY(180deg);
   transform-origin: left center;
+  transition: transform 3s;
+  box-shadow: 9px 6px 47px -12px #888888;
   top: -2.6%;
   left: -2.5%;
   height: 100%;
@@ -897,6 +907,8 @@ input[type=number] {
   -o-transform: rotateY(180deg);
   transform: rotateY(180deg);
   transform-origin: left center;
+  transition: transform 3s;
+  box-shadow: 9px 6px 47px -12px #888888;
   top: -2.6%;
   left: -2.5%;
   height: 100%;
@@ -926,6 +938,8 @@ input[type=number] {
   -o-transform: rotateY(180deg);
   transform: rotateY(180deg);
   transform-origin: left center;
+  transition: transform 3s;
+  box-shadow: 9px 6px 47px -12px #888888;
   top: -2.6%;
   left: -2.5%;
   height: 100%;
@@ -955,6 +969,8 @@ input[type=number] {
   -o-transform: rotateY(180deg);
   transform: rotateY(180deg);
   transform-origin: left center;
+  transition: transform 3s;
+  box-shadow: 9px 6px 47px -12px #888888;
   top: -2.6%;
   left: -2.5%;
   height: 100%;
@@ -984,6 +1000,8 @@ input[type=number] {
   -o-transform: rotateY(180deg);
   transform: rotateY(180deg);
   transform-origin: left center;
+  transition: transform 3s;
+  box-shadow: 9px 6px 47px -12px #888888;
   top: -2.6%;
   left: -2.5%;
   height: 100%;
@@ -1013,6 +1031,8 @@ input[type=number] {
   -o-transform: rotateY(180deg);
   transform: rotateY(180deg);
   transform-origin: left center;
+  transition: transform 3s;
+  box-shadow: 9px 6px 47px -12px #888888;
   top: -2.6%;
   left: -2.5%;
   height: 100%;
@@ -1042,6 +1062,8 @@ input[type=number] {
   -o-transform: rotateY(180deg);
   transform: rotateY(180deg);
   transform-origin: left center;
+  transition: transform 3s;
+  box-shadow: 9px 6px 47px -12px #888888;
   top: -2.6%;
   left: -2.5%;
   height: 100%;
@@ -1071,6 +1093,8 @@ input[type=number] {
   -o-transform: rotateY(180deg);
   transform: rotateY(180deg);
   transform-origin: left center;
+  transition: transform 3s;
+  box-shadow: 9px 6px 47px -12px #888888;
   top: -2.6%;
   left: -2.5%;
   height: 100%;
@@ -1100,6 +1124,8 @@ input[type=number] {
   -o-transform: rotateY(180deg);
   transform: rotateY(180deg);
   transform-origin: left center;
+  transition: transform 3s;
+  box-shadow: 9px 6px 47px -12px #888888;
   top: -2.6%;
   left: -2.5%;
   height: 100%;
@@ -2692,6 +2718,32 @@ input[type=number] {
   border: none;
   background-color: transparent;
 }
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-bill-footer-container .swiper-button-prev {
+  position: absolute;
+  height: 26px;
+  width: 160px;
+  /* top: 80%; */
+  /* transform: translate(0%, -50%); */
+  margin: -14px -9px;
+  border-radius: 6px;
+  border: 1px solid #FF4747;
+  cursor: pointer;
+  background-color: transparent;
+  color: #FF4747;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-bill-footer-container .swiper-button-prev span {
+  font-size: 22px;
+  font-weight: 300;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-bill-footer-container .swiper-button-prev p {
+  padding: 2px 4px;
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: none;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-bill-footer-container .swiper-button-prev::after {
+  display: none;
+}
 .swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-bill-footer-container .swiper-button-next {
   position: absolute;
   height: 30px;
@@ -3897,6 +3949,13 @@ input[type=number] {
   height: 36px;
   width: 36px;
 }
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-review .reviews-section .reviews-container .review-container .review-food .food-review-container .food-review .food-rating .star-label {
+  font-size: 42px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 .swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-review .reviews-section .reviews-container .review-container .review-service p {
   color: #222222;
   font-size: 16px;
@@ -3953,6 +4012,13 @@ input[type=number] {
 .swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-review .reviews-section .reviews-container .review-container .review-service .services-review-container .service-review .service-rating .star-container {
   height: 36px;
   width: 36px;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-review .reviews-section .reviews-container .review-container .review-service .services-review-container .service-review .service-rating .star-label {
+  font-size: 42px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-review .reviews-section .reviews-container .review-container .review-experience p {
   color: #222222;
@@ -4258,6 +4324,27 @@ input[type=number] {
   height: 2px;
   width: 96px;
   background-color: #DDDDDD;
+}
+.swiper-container .swiper-wrapper .swiper-slide footer.progress .progress-bar > .swiper-button-next {
+  top: 0px;
+  left: -23px;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.swiper-container .swiper-wrapper .swiper-slide footer.progress .progress-bar > .swiper-button-next > .progress-step-icon {
+  position: absolute;
+}
+.swiper-container .swiper-wrapper .swiper-slide footer.progress .progress-bar > .swiper-button-next > .progress-step-icon > .showUp {
+  height: 17px !important;
+  width: 40px !important;
+  right: -42px !important;
+}
+.swiper-container .swiper-wrapper .swiper-slide footer.progress .progress-bar > .swiper-button-next > .progress-step-text {
+  margin-top: 60px;
 }
 .swiper-container .swiper-wrapper .swiper-slide footer.progress .progress-bar:last-child {
   width: 0px;

@@ -156,35 +156,27 @@
             } 
 
             // .spiral {
-            //     // position: absolute;
-            //     // z-index: 14;
-            //     // width: 40px;
-            //     // top: 50%;
-            //     // left: 49.65%;
-            //     // transform: translate(-50%, -50%);
-            //     // /* height: 30px; */
-            //     // object-fit: cover;
-            //     // object-position: center;
+            //     display: flex;
+            //     flex-direction: column;
+            //     justify-content: center;
+            //     align-items: center;
+            //     gap: 3px;
             //     position: absolute;
-            //     z-index: 14;
-            //     width: 35px;
             //     top: 50%;
-            //     left: 50.8%;
+            //     left: 50%;
             //     transform: translate(-50%, -50%);
-            //     /* height: 30px; */
-            //     object-fit: cover;
-            //     object-position: center;
+            //     z-index: 999;
+            //     height: 92.1%;
+            //     width: 30px;
+            //     // background-color: yellow;
 
-            //     @media (min-height: 800px) and (max-height: 960px) { 
-            //         width: 40px;
-            //         top: 50%;
-            //         left: 50.4%;    
-            //     }
-            //     @media (min-height: 961px) and (max-height: 1000px) { 
-            //         // top: -2%;    
-            //         width: 45px;
-            //         top: 50%;
-            //         left: 50.4%;
+            //     .spring
+            //     {
+            //         height: 8px;
+            //         width: 14px;
+            //         background-color: transparent;
+            //         border: 2px solid grey;
+            //         border-radius: 50%;
             //     }
             // }
 
@@ -283,7 +275,8 @@
                                 -o-transform: rotateY(180deg);
                                 transform: rotateY(180deg);
                                 transform-origin: left center;
-                                // transition: transform 3s;
+                                transition: transform 3s;
+                                box-shadow: 9px 6px 47px -12px #888888;
                                 top: -2.6%;
                                 left: -2.5%;
                                 height: 100%;

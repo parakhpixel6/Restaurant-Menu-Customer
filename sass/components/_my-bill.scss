@@ -618,6 +618,40 @@
                 cursor: pointer;
                 border: none;
                 background-color: transparent;
+
+            }
+
+            & .swiper-button-prev {
+                
+                position: absolute;
+                height: 26px;
+                width: 160px;
+                /* top: 80%; */
+                /* transform: translate(0%, -50%); */
+                margin: -14px -9px;
+                border-radius: 6px;
+                border: 1px solid $dark-red;
+                cursor: pointer;
+                background-color: transparent;
+                color: $dark-red;
+
+                & span {
+                    font-size: 22px;
+                    font-weight: 300;
+                }
+
+                & p {
+                    padding: 2px 4px;
+                    font-size: 12px;
+                    font-weight: 300;
+                    text-transform: none;
+                }
+
+
+
+                &::after {
+                    display: none;
+                }
             }
 
             & .swiper-button-next {
@@ -629,6 +663,7 @@
                 /* transform: translate(0%, -50%); */
                 margin: -16px -10px;
                 border: none;
+                
 
                 &::after {
                     display: none;

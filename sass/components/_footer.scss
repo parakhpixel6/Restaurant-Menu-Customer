@@ -23,6 +23,31 @@ footer.progress {
         width: 96px;
         background-color: $off-white;
 
+        &>.swiper-button-next {
+            top: 0px;
+            left: -23px;
+            height: 35px;
+            width: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &>.progress-step-icon{
+                position: absolute;
+                &>.showUp {
+                    height: 17px !important;
+                    width: 40px !important;
+                    right: -42px !important;
+                }
+            }
+
+            &>.progress-step-text {
+                margin-top: 60px;
+            }
+
+        }
+
         &:last-child {
             width: 0px;
             background-color: transparent;

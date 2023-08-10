@@ -182,6 +182,14 @@
                                     height: 36px;
                                     width: 36px;
                                 }
+
+                                .star-label {
+                                    font-size: 42px;
+                                    -webkit-user-select: none;
+                                    -moz-user-select: none;
+                                    -ms-user-select: none;
+                                    user-select: none;
+                                }
                             }
                         }
                     }
@@ -255,6 +263,14 @@
                                 & .star-container {
                                     height: 36px;
                                     width: 36px;
+                                }
+
+                                .star-label {
+                                    font-size: 42px;
+                                    -webkit-user-select: none;
+                                    -moz-user-select: none;
+                                    -ms-user-select: none;
+                                    user-select: none;
                                 }
                             }
                         }

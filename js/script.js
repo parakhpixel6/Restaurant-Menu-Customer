@@ -5,7 +5,7 @@ const swiper = new Swiper('.swiper-container', {
     allowTouchMove: false,
 
     keyboard: {
-      enabled: false,
+      enabled: true,
     },
     pagination: {
       el: '.swiper-pagination',
@@ -421,13 +421,13 @@ makePayment.addEventListener('click', function(){
   }, 4000);
 });
 
-const makePaymentFooter = document.querySelector('#make-my-payment-footer');
-makePaymentFooter.addEventListener('click', function(){
-  setTimeout(function() {
-    document.querySelector('.waiting-window').classList.add('d-none');
-    document.querySelector('.thanku-wrap').classList.remove('d-none');
-  }, 4000);
-});
+// const makePaymentFooter = document.querySelector('#make-my-payment-footer');
+// makePaymentFooter.addEventListener('click', function(){
+//   setTimeout(function() {
+//     document.querySelector('.waiting-window').classList.add('d-none');
+//     document.querySelector('.thanku-wrap').classList.remove('d-none');
+//   }, 4000);
+// });
 
 function refreshPage(){
   window.location.reload();
@@ -454,3 +454,76 @@ function refreshPage(){
 
 
 
+const LABELCOLORINACTIV = "rgb(238, 238, 238)";
+const LABELCOLORACTIV = "yellow";
+
+const RATINGSLABELS = document.querySelectorAll("form.star label");
+const RATINGSINPUTS = document.querySelectorAll("form.star input");
+
+// make inputs disappear
+RATINGSINPUTS.forEach(function(anInput) {
+  anInput.style.display = "none";
+});
+
+// manage label click & hover display
+function notationLabels(e) {
+  let currentLabelRed = e.target;
+  let currentLabelBlack = e.target;
+  
+  // console.log(e.target.localName);
+  
+  if (e.type == "mouseenter" || !e.target.control.checked) {
+    // coloring red from the clicked/hovered label included, going backward till the node start - if we are hovering or the star isn't already checked.
+    while (currentLabelRed != null) {
+      currentLabelRed.style.color = LABELCOLORACTIV;
+      currentLabelRed = currentLabelRed.previousElementSibling;
+    }
+
+    // coloring black from the clicked/hovered label excluded, going forward till the node end
+    while ((currentLabelBlack = currentLabelBlack.nextElementSibling) != null) {
+      currentLabelBlack.style.color = LABELCOLORINACTIV;
+    }
+  } else {
+    // if the clicked label was already checked we uncheck it and prevent the click event from doing its job - defacto enabling zero star rating
+    e.target.control.checked = false;
+    e.preventDefault();
+  }
+  
+}
+
+function notationLabelsOut(e) {
+  let notesNode = e.target.parentNode.querySelectorAll("label");
+  let currentLabel = notesNode[notesNode.length - 1];
+  
+  // console.log("out : " + e.target.localName);
+  // console.log("out checked: " + e.target.control.checked);
+  
+  notesNode.forEach(function redrum(starLabel) {
+    starLabel.style.color = LABELCOLORACTIV;
+  });
+
+  while (currentLabel != null && !currentLabel.control.checked) {
+    currentLabel.style.color = LABELCOLORINACTIV;
+    currentLabel = currentLabel.previousElementSibling;
+    
+    //console.log("currentLabel null?: " + currentLabel);
+    // previousElementSibling become the input ...
+  }
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  RATINGSLABELS.forEach(function(aStar) {
+    aStar.style.color="#eee";
+    aStar.addEventListener("click", notationLabels);
+    aStar.addEventListener("mouseenter", notationLabels);
+    aStar.addEventListener("mouseout", notationLabelsOut);
+  });
+
+  // stop a callback to the label click event function notationLabels passed on the input element associated ... why ... that's behond me
+  // alternatively we could check for e.target.localName in the notationLabels function
+  RATINGSINPUTS.forEach(function(aStarInput) {
+    aStarInput.addEventListener("click", function(e) {
+    e.stopPropagation();
+    });
+  });
+});

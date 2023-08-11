@@ -2708,7 +2708,7 @@ input[type=number] {
 .swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-bill-footer-container .swiper-button-prev {
   position: absolute;
   height: 26px;
-  width: 160px;
+  width: 152px;
   /* top: 80%; */
   /* transform: translate(0%, -50%); */
   margin: -14px -9px;
@@ -2724,7 +2724,7 @@ input[type=number] {
 }
 .swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-bill-footer-container .swiper-button-prev p {
   padding: 2px 4px;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 300;
   text-transform: none;
 }

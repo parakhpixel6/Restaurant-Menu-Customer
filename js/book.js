@@ -193,8 +193,7 @@ const beverages = document.querySelector('#beverages');
 breakfast.addEventListener('click', function() {
   document.querySelectorAll('.breakfast').forEach(fast => {
     fast.classList.add('active');
-    fast[0].style.zIndex = "12";
-    fast[1].style.zIndex = "11";
+    fast.style.zIndex = "12";
   })
   document.querySelectorAll('.continental').forEach(conti => {
     conti.classList.remove('active');
@@ -238,8 +237,7 @@ continental.addEventListener('click', function() {
   document.querySelectorAll('.continental').forEach(conti => {
     conti.classList.add('active');
     conti.classList.remove('seen');
-    conti[0].style.zIndex = "12";
-    conti[1].style.zIndex = "11";
+    conti.style.zIndex = "12";
   })
   document.querySelectorAll('.chinese').forEach(xing => {
     xing.style.zIndex = "1";
@@ -283,8 +281,7 @@ chinese.addEventListener('click', function() {
   document.querySelectorAll('.chinese').forEach(xing => {
     xing.classList.add('active');
     xing.classList.remove('seen');
-    xing[0].style.zIndex = "12";
-    xing[1].style.zIndex = "11";
+    xing.style.zIndex = "12";
   })
   document.querySelectorAll('.north_indian').forEach(north => {
     north.style.zIndex = "1";

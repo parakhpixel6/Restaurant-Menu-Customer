@@ -5,7 +5,7 @@ const swiper = new Swiper('.swiper-container', {
     allowTouchMove: false,
 
     keyboard: {
-      enabled: true,
+      enabled: false,
     },
     pagination: {
       el: '.swiper-pagination',
@@ -125,11 +125,33 @@ bankOptions.forEach(bankOption => {
 });
 
 
-const requestOptions = document.querySelectorAll('.request-option p');
+const requestOptionsWaiter = document.querySelectorAll('.request-option-waiter p');
 
-requestOptions.forEach(requestOption => {
+requestOptionsWaiter.forEach(requestOption => {
   requestOption.addEventListener('click', () => {
-      requestOptions.forEach(element => {
+      requestOptionsWaiter.forEach(element => {
+        element.classList.remove('active');
+      });
+
+      requestOption.classList.add('active');
+  });
+});
+const requestOptionsWater = document.querySelectorAll('.request-option-water p');
+
+requestOptionsWater.forEach(requestOption => {
+  requestOption.addEventListener('click', () => {
+      requestOptionsWater.forEach(element => {
+        element.classList.remove('active');
+      });
+
+      requestOption.classList.add('active');
+  });
+});
+const requestOptionsHelp = document.querySelectorAll('.request-option-help p');
+
+requestOptionsHelp.forEach(requestOption => {
+  requestOption.addEventListener('click', () => {
+      requestOptionsHelp.forEach(element => {
         element.classList.remove('active');
       });
 
@@ -212,7 +234,7 @@ const showCallWaiter = document.querySelectorAll('.showCallWaiter');
 const closeCallWaiter = document.querySelector('#closeCallWaiter');
 const callWaiterPopup = document.querySelector('#call-waiter-popup');
 
-console.log(showCallWaiter);
+// console.log(showCallWaiter);
 
 showCallWaiter.forEach(waiter => {
   console.log(waiter);
@@ -225,6 +247,23 @@ showCallWaiter.forEach(waiter => {
 closeCallWaiter.addEventListener('click', function() {
   callWaiterPopup.style.top = '-100%';
   callWaiterPopup.style.opacity = '0';
+  let showWaiterTag = document.querySelectorAll('.showCallWaiter a');
+  showCallWaiter.forEach(waiter => {
+    // console.log(waiter);
+    waiter.style.background = "grey";
+    // waiter.disabled = true;
+    waiter.setAttribute("disabled", "true");
+    showWaiterTag.forEach(waiterTag => {
+      waiterTag.style.color = "grey";
+    })
+    setTimeout(function() {
+      waiter.style.background = "linear-gradient(90deg, rgb(255, 102, 102) 40%, rgb(255, 150, 136) 100%)";
+      waiter.removeAttribute("disabled", "true");
+      showWaiterTag.forEach(waiterTag => {
+        waiterTag.style.color = "#FF4747";
+      })
+    }, 12000);
+  })
 })
 
 
@@ -243,6 +282,23 @@ showGetWater.forEach(water => {
 closeGetWater.addEventListener('click', function() {
   getWaterPopup.style.top = '-100%';
   getWaterPopup.style.opacity = '0';
+  let showWaterTag = document.querySelectorAll('.showGetWater a');
+  showGetWater.forEach(water => {
+    // console.log(waiter);
+    water.style.background = "grey";
+    // waiter.disabled = true;
+    water.setAttribute("disabled", "true");
+    showWaterTag.forEach(waterTag => {
+      waterTag.style.color = "grey";
+    })
+    setTimeout(function() {
+      water.style.background = "linear-gradient(90deg, rgb(255, 102, 102) 40%, rgb(255, 150, 136) 100%)";
+      water.removeAttribute("disabled", "true");
+      showWaterTag.forEach(waterTag => {
+        waterTag.style.color = "#FF4747";
+      })
+    }, 12000);
+  })
 })
 
 // Need Help Popup
@@ -260,6 +316,23 @@ showNeedHelp.forEach(help => {
 closeNeedHelp.addEventListener('click', function() {
   needHelpPopup.style.top = '-100%';
   needHelpPopup.style.opacity = '0';
+  let showHelpTag = document.querySelectorAll('.showNeedHelp a');
+  showNeedHelp.forEach(help => {
+    // console.log(waiter);
+    help.style.background = "grey";
+    // waiter.disabled = true;
+    help.setAttribute("disabled", "true");
+    showHelpTag.forEach(helpTag => {
+      helpTag.style.color = "grey";
+    })
+    setTimeout(function() {
+      help.style.background = "linear-gradient(90deg, rgb(255, 102, 102) 40%, rgb(255, 150, 136) 100%)";
+      help.removeAttribute("disabled", "true");
+      showHelpTag.forEach(helpTag => {
+        helpTag.style.color = "#FF4747";
+      })
+    }, 12000);
+  })
 })
 
 

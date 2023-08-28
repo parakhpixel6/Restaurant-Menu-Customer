@@ -68,6 +68,23 @@
             background: linear-gradient(90deg, rgba(255, 102, 102, 1) 40%, rgba(255, 150, 136, 1) 100%);
 
         }
+
+        & .tipAdd {
+            text-transform: none;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 14px;
+            color: $green;
+        }
+
+        & .tip-bomb {
+            height: 30px;
+            width: 30px;
+            background-image: url('');
+            background-position: center;
+            background-size: contain;
+        }
     }
 
     &-details {

@@ -5,7 +5,7 @@ const swiper = new Swiper('.swiper-container', {
     allowTouchMove: false,
 
     keyboard: {
-      enabled: false,
+      enabled: true,
     },
     pagination: {
       el: '.swiper-pagination',
@@ -110,6 +110,21 @@ tipAmounts.forEach(tipAmount => {
       tipAmount.classList.add('selected');
     }
   });
+});
+
+const tipImage = document.getElementById('tipImage');        
+const tipAdd = document.querySelector('.tipAdd');        
+const tipBomb = document.querySelector('.tip-bomb');        
+tipAmounts.forEach(amount => {        
+  amount.addEventListener('click', () => {            
+    if (amount.classList.contains('selected')) 
+    {                
+      // Update the image source when the selected amount is clicked                
+      tipImage.src = './assets/customer-svg/svg/thank you.svg';            
+      tipAdd.classList.remove('d-none');
+      tipBomb.style.backgroundImage = 'url(/assets/customer-img/img/bomb.gif)';
+    }        
+  });    
 });
 
 const bankOptions = document.querySelectorAll('.bank-option');

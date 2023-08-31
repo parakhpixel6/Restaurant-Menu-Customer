@@ -1,4 +1,4 @@
-.edit-name-modal, .add-gst-modal {
+.edit-name-modal, .add-gst-modal, .other-tip-modal {
 
     position: absolute;
     top: -200%;
@@ -14,7 +14,7 @@
     box-shadow: 2px 2px 2px 1026px rgb(0 0 0 / 26%);
     transition: .2s ease-in-out;
 
-    & .edit-name-popup, .add-gst-popup {
+    & .edit-name-popup, .add-gst-popup, .other-tip-popup {
         height: 200px;
         width: 427px;
         background-color: #fff;
@@ -100,7 +100,8 @@
             box-sizing: border-box;
             height: 48px;
             min-width: 10px;
-            margin-top:2.25px;
+            // margin-top:2.25px;
+            margin-top:3.25px;
             font-size: 12px;
             border-top: solid 1px #AAAAAA;
             pointer-events: none;
@@ -229,7 +230,7 @@
                 background-color: transparent;
             }
 
-            & .update-name, .add-gst {
+            & .update-name, .add-gst, .other-tip {
                 border: none;
                 padding: 5px 9px;
 

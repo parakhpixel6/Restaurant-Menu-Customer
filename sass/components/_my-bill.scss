@@ -53,7 +53,18 @@
 
         & .tip-amount {
             padding: 3px 6px;
-            border: 1px solid $dark-red;
+            border: 1px solid #fba1a1;
+            border-radius: 6px;
+            font-size: 12px;
+            font-family: Nunito;
+            font-style: normal;
+            font-weight: 400;
+            color: $dark-red;
+        }
+
+        & .tip-amount-other {
+            padding: 3px 6px;
+            border: 1px solid #fba1a1;
             border-radius: 6px;
             font-size: 12px;
             font-family: Nunito;

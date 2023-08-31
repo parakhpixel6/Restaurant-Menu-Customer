@@ -223,6 +223,10 @@ li {
     gap: 4px;
 }
 
+.g-2 {
+    gap: 2px;
+}
+
 .pos-absolute {
     position: absolute;
 }
@@ -321,6 +325,22 @@ input[type=number] {
     // overflow: hidden; /* Apply overflow: hidden to hide content exceeding dimensions */
 
     .swiper-wrapper {
+
+        & .swiper-button-next {
+
+            &::after {
+                display: none;
+            }
+            position: static;
+            top: 0; 
+            margin-top: 0; 
+            z-index: 10;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--swiper-navigation-color,var(--swiper-theme-color));
+        }
         .swiper-slide {
             height: 98%;
             position: relative;
@@ -369,6 +389,7 @@ input[type=number] {
                     
                     @import './components/my-review';
 
+                    @import './components/logout-page';
 
                     
                     
@@ -383,7 +404,6 @@ input[type=number] {
                 }
             }
             
-            @import './components/logout-page';
             
 
             @import './components/footer';

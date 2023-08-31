@@ -20,12 +20,11 @@ const swiper = new Swiper('.swiper-container', {
 
 
 
-//Book Effect Logic
-
 
 // Loop through each add-remove element
 const addRemoveElements = document.querySelectorAll('.add-remove');
 addRemoveElements.forEach(addRemoveElement => {
+    const myCartBtns = document.querySelectorAll('.my-cart-btn');  
     const removeButton = addRemoveElement.querySelector('.remove-btn');
     const addButton = addRemoveElement.querySelector('.add-btn');
     const quantityElement = addRemoveElement.querySelector('.quantity p');
@@ -62,37 +61,50 @@ addRemoveElements.forEach(addRemoveElement => {
             removeButton.parentElement.classList.add('green');
             quantityElement.parentElement.classList.add('green');
             itemStatusElement.style.opacity = '1';
+            myCartBtns.forEach(btn => {
+              btn.style.display = 'flex';
+            }) 
+            
+
         } else {
             addButton.parentElement.classList.remove('green');
             removeButton.parentElement.classList.remove('green');
             quantityElement.parentElement.classList.remove('green');
             itemStatusElement.style.opacity = '0';
+            myCartBtns.forEach(btn => {
+              btn.style.display = 'none';
+            }) 
         }
     }
 });
 
 
 
-//My Placed Order Checkbox at once
-const checkboxes = document.querySelectorAll('input[type="checkbox"][name="order-choice"]');
-// Add event listener to each checkbox
-checkboxes.forEach(checkbox => {
-  checkbox.addEventListener('change', function() {
-    // Uncheck all checkboxes
-    checkboxes.forEach(cb => {
-      if (cb !== this) {
-        cb.checked = false;
-        cb.nextElementSibling.classList.remove('checked-label');
-      } 
-    });
-
-    // Check the current checkbox and update label color
-    this.checked = true;
-    this.nextElementSibling.classList.add('checked-label');
+//My Cart remove the div
+document.addEventListener('DOMContentLoaded', () => {  
+  const itemAddedContainers = document.querySelectorAll('.item-added-modify');  
+  itemAddedContainers.forEach(container => {    
+    const quantityElement = container.querySelector('.item-add-remove p');    
+    const removeButton = container.querySelector('.item-remove-btn');    
+    const addButton = container.querySelector('.item-add-btn');    
+    removeButton.addEventListener('click', () => {      
+      let currentQuantity = parseInt(quantityElement.textContent);            
+      if (currentQuantity > 1) {        
+        quantityElement.textContent = currentQuantity - 1;      
+      } else {        
+        container.style.display = 'none'; 
+        // Hide the container      
+      }    
+    });    
+    addButton.addEventListener('click', () => {      
+      let currentQuantity = parseInt(quantityElement.textContent);      
+      quantityElement.textContent = currentQuantity + 1;    
+    });  
   });
 });
 
 
+//My Bill Tip Amount
 const tipAmounts = document.querySelectorAll('.tip-amount');
 
 tipAmounts.forEach(tipAmount => {
@@ -107,7 +119,6 @@ tipAmounts.forEach(tipAmount => {
       tipAmounts.forEach(element => {
         element.classList.remove('selected');
       });
-      tipAmount.classList.add('selected');
     }
   });
 });
@@ -127,6 +138,9 @@ tipAmounts.forEach(amount => {
   });    
 });
 
+
+
+//bankoption selection
 const bankOptions = document.querySelectorAll('.bank-option');
 
 bankOptions.forEach(bankOption => {
@@ -140,6 +154,8 @@ bankOptions.forEach(bankOption => {
 });
 
 
+
+//Popup of navigation
 const requestOptionsWaiter = document.querySelectorAll('.request-option-waiter p');
 
 requestOptionsWaiter.forEach(requestOption => {
@@ -174,6 +190,9 @@ requestOptionsHelp.forEach(requestOption => {
   });
 });
 
+
+
+//food menu on open book
 const foodOptions = document.querySelectorAll('.food-navigation-title p');
 
 foodOptions.forEach(foodOption => {
@@ -240,6 +259,32 @@ addGSTT.addEventListener('click', function() {
   document.querySelector('.add-gst-modal').style.top = '-200%';
   document.querySelector('.add-gst-modal').style.opacity = '0';
   // document.querySelector('.add-gst-modal').style.display = 'none';
+  document.querySelector('#progress-section-right-modal').style.overflow = 'none';
+});
+
+//Add GST Popup
+const otherTip = document.querySelector('#other_tip');
+const cancelTip = document.querySelector('#cancel-tip');
+const otherTipp= document.querySelector('.other-tip');
+
+otherTip.addEventListener('click', function() {
+  document.querySelector('.other-tip-modal').style.top = '50%';
+  document.querySelector('.other-tip-modal').style.opacity = '1';
+  document.querySelector('.other-tip-modal').style.display = 'flex';
+  document.querySelector('#progress-section-right-modal').style.overflow = 'initial';
+});
+
+cancelTip.addEventListener('click', function() {
+  document.querySelector('.other-tip-modal').style.top = '-200%';
+  document.querySelector('.other-tip-modal').style.opacity = '0';
+  // document.querySelector('.other-tip-modal').style.display = 'none';
+  document.querySelector('#progress-section-right-modal').style.overflow = 'none';
+});
+
+otherTipp.addEventListener('click', function() {
+  document.querySelector('.other-tip-modal').style.top = '-200%';
+  document.querySelector('.other-tip-modal').style.opacity = '0';
+  // document.querySelector('.other-tip-modal').style.display = 'none';
   document.querySelector('#progress-section-right-modal').style.overflow = 'none';
 });
 
@@ -373,6 +418,7 @@ couponClosed.addEventListener('click', function() {
 
 // Get all the payment-option elements
 const paymentOptions = document.querySelectorAll('.payment-option');
+
 
 // Iterate over each payment-option element
 paymentOptions.forEach(option => {
@@ -615,3 +661,23 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 });
+
+
+// //make-my-payment  cash payment hidden
+const cashPaymentOption = document.getElementById('cash-payment-option');  
+const makeMyPaymentButton = document.getElementById('make-my-payment'); 
+const myPaymentFooter = document.querySelector('.my-payment-footer');
+cashPaymentOption.addEventListener('click', function() {    
+  if (cashPaymentOption.classList.contains('active')) {      
+    myPaymentFooter.style.opacity = '0' ;
+    console.log('hoo');
+  }
+});
+
+const otherPaymentOptions = document.querySelectorAll('.payment-option:not(#cash-payment-option)');  
+otherPaymentOptions.forEach(option => {    
+  option.addEventListener('click', function() {
+    myPaymentFooter.style.opacity = '1';    
+  });  
+});
+

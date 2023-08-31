@@ -21,62 +21,62 @@ const swiper = new Swiper('.swiper-container', {
 
 
 
-// Loop through each add-remove element
 const addRemoveElements = document.querySelectorAll('.add-remove');
-addRemoveElements.forEach(addRemoveElement => {
-    const myCartBtns = document.querySelectorAll('.my-cart-btn');  
-    const removeButton = addRemoveElement.querySelector('.remove-btn');
-    const addButton = addRemoveElement.querySelector('.add-btn');
-    const quantityElement = addRemoveElement.querySelector('.quantity p');
-    const itemStatusElement = addRemoveElement.closest('.menu-content-item').querySelector('.item-status');
-
-    // Add click event listeners to the buttons
-    removeButton.addEventListener('click', decreaseQuantity);
-    addButton.addEventListener('click', increaseQuantity);
-
-    function decreaseQuantity() {
-        let quantity = parseInt(quantityElement.textContent);
-
-        if (quantity > 0) {
-            quantity--;
-            quantityElement.textContent = quantity;
-        }
-
-        updateButtonColor();
-    }
-
-    function increaseQuantity() {
-        let quantity = parseInt(quantityElement.textContent);
-        quantity++;
-        quantityElement.textContent = quantity;
-
-        updateButtonColor();
-    }
-
-    function updateButtonColor() {
-        let quantity = parseInt(quantityElement.textContent);
-
-        if (quantity > 0) {
-            addButton.parentElement.classList.add('green');
-            removeButton.parentElement.classList.add('green');
-            quantityElement.parentElement.classList.add('green');
-            itemStatusElement.style.opacity = '1';
-            myCartBtns.forEach(btn => {
-              btn.style.display = 'flex';
-            }) 
-            
-
-        } else {
-            addButton.parentElement.classList.remove('green');
-            removeButton.parentElement.classList.remove('green');
-            quantityElement.parentElement.classList.remove('green');
-            itemStatusElement.style.opacity = '0';
-            myCartBtns.forEach(btn => {
-              btn.style.display = 'none';
-            }) 
-        }
-    }
+const myCartBtns = document.querySelectorAll('.my-cart-btn');
+addRemoveElements.forEach(addRemoveElement => {    
+  const removeButton = addRemoveElement.querySelector('.remove-btn');    
+  const addButton = addRemoveElement.querySelector('.add-btn');    
+  const quantityElement = addRemoveElement.querySelector('.quantity p');    
+  const itemStatusElement = addRemoveElement.closest('.menu-content-item').querySelector('.item-status');    
+  // Add click event listeners to the buttons    
+  removeButton.addEventListener('click', decreaseQuantity);    
+  addButton.addEventListener('click', increaseQuantity);    
+  function decreaseQuantity() {        
+    let quantity = parseInt(quantityElement.textContent);        
+    if (quantity > 0) {            
+      quantity--;            
+      quantityElement.textContent = quantity;        
+    }        
+    updateButtonColor();    
+  }    
+  function increaseQuantity() {        
+    let quantity = parseInt(quantityElement.textContent);        
+    quantity++;        
+    quantityElement.textContent = quantity;        
+    updateButtonColor();    
+  }    
+  function updateButtonColor() {        
+    let totalQuantity = 0;        
+    addRemoveElements.forEach(element => {            
+      totalQuantity += parseInt(element.querySelector('.quantity p').textContent);        
+    });        
+    if (totalQuantity > 0) {            
+      myCartBtns.forEach(btn => {                
+        btn.style.display = 'flex';            
+      });        
+    } else {            
+      myCartBtns.forEach(btn => {                
+        btn.style.display = 'none';            
+      });        
+    }               
+    
+    let quantity = parseInt(quantityElement.textContent);   
+      
+    if (quantity > 0) {            
+      addButton.parentElement.classList.add('green');            
+      removeButton.parentElement.classList.add('green');            
+      quantityElement.parentElement.classList.add('green');            
+      itemStatusElement.style.opacity = '1';                    
+    } else {            
+      addButton.parentElement.classList.remove('green');            
+      removeButton.parentElement.classList.remove('green');            
+      quantityElement.parentElement.classList.remove('green');            
+      itemStatusElement.style.opacity = '0';    
+    }   
+  }
+  updateButtonColor()
 });
+
 
 
 

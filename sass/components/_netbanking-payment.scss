@@ -1,4 +1,5 @@
 & .netbanking {
+    position: relative;
     height: 100%;
     width: 100%;
     transition: .3s ease-in-out;
@@ -24,12 +25,12 @@
         width: 80px;
         border-radius: 12px;
         height: 60px;
+        cursor: pointer;
+        border: 1px solid transparent;
 
         &.active {
             border: 1px solid $dark-red;
         }
-
-        
 
         & img {
             height: 36px;
@@ -48,142 +49,253 @@
         }
     }
 
-    $color-default: $primary-black;
-    $color-active: $primary-black;
-    $color-focused: $primary-black;
-
-    & .textfield-outlined {
-    position: relative;
-    margin-bottom: 20px;
-    padding-top: 6px;
-    font-size: 16px;
-    line-height: 1.5;
-    width: 357px;
-    letter-spacing: .4px;
-    }
-
-    // Form elements
-    & .textfield-outlined > input {
-    box-sizing: border-box;
-    width: 100%;
-    height: 48px;
-    padding: 7px 14px 0px 14px;
-    font-size: 15px;
-    line-height: inherit;
-    color: $color-active;
-    border-style: solid;
-    border-width: 1px;
-    border-color: transparent #AAAAAA #AAAAAA;
-    border-radius: 12px;
-    -webkit-text-fill-color: currentColor; // Safari
-    background-color: transparent;
-    caret-color: $color-focused;
-    transition: border .2s, box-shadow .2s;
-    }
-
-    & .textfield-outlined > input:not(:focus):placeholder-shown{
-    border-top-color: #AAAAAA;
-    }
-
-    // Label
-    & .textfield-outlined > input + label {
-    display: flex;
-    width: 100%;
-    height: 48px;
-    position: absolute;
-    top: 4.5px;
-    left: 0;
-    font-size: 14px;
-    line-height: 8px;
-    color: $color-default;
-    cursor: text;
-    transition: color .2s,
-                font-size .2s,
-                line-height .2s;
-    }
-
-    & .textfield-outlined > input:not(:focus):placeholder-shown + label {
+    .dropdown-default, li, span {
         font-size: 16px;
-        line-height: 54px;
-        text-transform: none;
-        color: $primary-black;
+        font-weight: 400;
     }
-
-    // Corners
-    & .textfield-outlined > input + label::before,
-    .textfield-outlined > input + label::after {
-    content: "";
-    display: block;
-    box-sizing: border-box;
-    height: 48px;
-    min-width: 10px;
-    margin-top:3px;
-    font-size: 14px;
-    border-top: solid 1px #AAAAAA;
-    pointer-events: none;
-    box-shadow: inset 0 1px transparent;
-    transition: border .2s,
-                box-shadow .2s;
-    }
-
-    & .textfield-outlined > input + label::before {
-    margin-right: 4px;
-    border-left: solid 1px transparent;
-    border-radius: 12px 0;
-    }
-
-    & .textfield-outlined > input + label::after{
-    flex-grow: 1;
-    margin-left: 4px;
-    border-right: solid 1px transparent;
-    border-radius: 0 12px;
-    }
-
-    & .textfield-outlined > input:not(:focus):placeholder-shown + label::before,
-     .textfield-outlined > input:not(:focus):placeholder-shown + label::after {
-    border-top-color: transparent;
-    }
-
-    // Hover
-    & .textfield-outlined ~ label:hover > input {
-    border-color: transparent $color-active $color-active;
-    }
-
-    & .textfield-outlined label:hover > input + label::before,
-     .textfield-outlined label:hover > input + label::after {
-    border-top-color: $color-active;
-    }
-
-    & .textfield-outlined label:hover > input:not(:focus):placeholder-shown{
-    border-color: $color-active;
-    }
-
-    // Focus
-    & .textfield-outlined > input:focus {
-    border-color: transparent $color-focused $color-focused;
-    outline: none;
-    }
-
-    & .textfield-outlined > input:focus + label {
-    color: $color-focused;
-    }
-
-    & .textfield-outlined > input:focus + label::before,
-     .textfield-outlined > input:focus + label::after {
-    border-top-color: $color-focused !important;
-    }
-
-    // Faster transition in Safari due to fractional font-size issue
-    @media not all and (min-resolution: .001dpcm) {
-    @supports (-webkit-appearance: none) {
-        & .textfield-outlined > input,
-         .textfield-outlined > input + label,
-         .textfield-outlined > input + label::before,
-         .textfield-outlined > input + label::after{
-            transition-duration: .1s;
+    
+    
+    .dropdown-wrapper {
+        position: relative;
+        width: 365px;
+        padding: 8px 10px;
+        background: #fff;
+        border-radius: 8px;
+        //box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        outline: none;
+        color: #222;
+        border: 1px solid #ddd;
+        transition: all 0.3s ease-out;
+        &:after {
+            content: "";
+            width: 0;
+            height: 0;
+            position: absolute;
+            top: 50%;
+            right: 15px;
+            margin-top: -3px;
+            border-width: 6px 6px 0 6px;
+            border-style: solid;
+            border-color: #222 transparent;
+        }
+        &.is-active {
+            border: none;
+            background: #FF9898;
+            background: linear-gradient(90deg, #ffe5e5 0%, #ffd5d5 100%);
+            box-shadow: none;
+            border-bottom: none;
+            color: #222;
+    
+            &:after {
+                border-color: #222 transparent;
+                transform: rotate(180deg);
+            }
+            & .dropdown-list {
+                height: 300px;
+            }
         }
     }
+    
+    .dropdown-list {
+        /* Size & position */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        /* Styles */
+        background: #fff;
+        border-radius: 0 0 12px 12px;
+        border-top: none;
+        border-bottom: none;
+        list-style: none;
+        transition: all 0.3s ease-out;
+        /* Hiding */
+        height: 0px;
+        overflow-y: auto;
+
+        &::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.3);
+            border-radius: 10px;
+            background-color: #F5F5F5;
+        }
+
+        &::-webkit-scrollbar
+        {
+            width: 2px;
+            background-color: #F5F5F5;
+        }
+
+        &::-webkit-scrollbar-thumb
+        {
+            border-radius: 2px;
+            -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,.3);
+            background-color: #555;
+        }
+        & li {
+            padding: 0 10px;
+        }
+        & li:hover a {
+            color: #FF4747;
+        }
+        & li:last-of-type a {
+            border: none;
+        }
+        & a {
+            display: block;
+            text-decoration: none;
+            color: #333;
+            padding: 10px 0;
+            transition: all 0.3s ease-out;
+        }
     }
+
+    .header-dropDown {
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 999;
+    }
+
+
+
+    // $color-default: $primary-black;
+    // $color-active: $primary-black;
+    // $color-focused: $primary-black;
+
+    // & .textfield-outlined {
+    // position: relative;
+    // margin-bottom: 20px;
+    // padding-top: 6px;
+    // font-size: 16px;
+    // line-height: 1.5;
+    // width: 357px;
+    // letter-spacing: .4px;
+    // }
+
+    // // Form elements
+    // & .textfield-outlined > input {
+    // box-sizing: border-box;
+    // width: 100%;
+    // height: 48px;
+    // padding: 7px 14px 0px 14px;
+    // font-size: 15px;
+    // line-height: inherit;
+    // color: $color-active;
+    // border-style: solid;
+    // border-width: 1px;
+    // border-color: transparent #AAAAAA #AAAAAA;
+    // border-radius: 12px;
+    // -webkit-text-fill-color: currentColor; // Safari
+    // background-color: transparent;
+    // caret-color: $color-focused;
+    // transition: border .2s, box-shadow .2s;
+    // }
+
+    // & .textfield-outlined > input:not(:focus):placeholder-shown{
+    // border-top-color: #AAAAAA;
+    // }
+
+    // // Label
+    // & .textfield-outlined > input + label {
+    // display: flex;
+    // width: 100%;
+    // height: 48px;
+    // position: absolute;
+    // top: 4.5px;
+    // left: 0;
+    // font-size: 14px;
+    // line-height: 8px;
+    // color: $color-default;
+    // cursor: text;
+    // transition: color .2s,
+    //             font-size .2s,
+    //             line-height .2s;
+    // }
+
+    // & .textfield-outlined > input:not(:focus):placeholder-shown + label {
+    //     font-size: 16px;
+    //     line-height: 54px;
+    //     text-transform: none;
+    //     color: $primary-black;
+    // }
+
+    // // Corners
+    // & .textfield-outlined > input + label::before,
+    // .textfield-outlined > input + label::after {
+    // content: "";
+    // display: block;
+    // box-sizing: border-box;
+    // height: 48px;
+    // min-width: 10px;
+    // margin-top:3px;
+    // font-size: 14px;
+    // border-top: solid 1px #AAAAAA;
+    // pointer-events: none;
+    // box-shadow: inset 0 1px transparent;
+    // transition: border .2s,
+    //             box-shadow .2s;
+    // }
+
+    // & .textfield-outlined > input + label::before {
+    // margin-right: 4px;
+    // border-left: solid 1px transparent;
+    // border-radius: 12px 0;
+    // }
+
+    // & .textfield-outlined > input + label::after{
+    // flex-grow: 1;
+    // margin-left: 4px;
+    // border-right: solid 1px transparent;
+    // border-radius: 0 12px;
+    // }
+
+    // & .textfield-outlined > input:not(:focus):placeholder-shown + label::before,
+    //  .textfield-outlined > input:not(:focus):placeholder-shown + label::after {
+    // border-top-color: transparent;
+    // }
+
+    // // Hover
+    // & .textfield-outlined ~ label:hover > input {
+    // border-color: transparent $color-active $color-active;
+    // }
+
+    // & .textfield-outlined label:hover > input + label::before,
+    //  .textfield-outlined label:hover > input + label::after {
+    // border-top-color: $color-active;
+    // }
+
+    // & .textfield-outlined label:hover > input:not(:focus):placeholder-shown{
+    // border-color: $color-active;
+    // }
+
+    // // Focus
+    // & .textfield-outlined > input:focus {
+    // border-color: transparent $color-focused $color-focused;
+    // outline: none;
+    // }
+
+    // & .textfield-outlined > input:focus + label {
+    // color: $color-focused;
+    // }
+
+    // & .textfield-outlined > input:focus + label::before,
+    //  .textfield-outlined > input:focus + label::after {
+    // border-top-color: $color-focused !important;
+    // }
+
+    // // Faster transition in Safari due to fractional font-size issue
+    // @media not all and (min-resolution: .001dpcm) {
+    // @supports (-webkit-appearance: none) {
+    //     & .textfield-outlined > input,
+    //      .textfield-outlined > input + label,
+    //      .textfield-outlined > input + label::before,
+    //      .textfield-outlined > input + label::after{
+    //         transition-duration: .1s;
+    //     }
+    // }
+    // }
 
 
 }

@@ -554,6 +554,14 @@ makePayment.addEventListener('click', function(){
     document.querySelector('.thanku-wrap').classList.remove('d-none');
   }, 4000);
 });
+//WAITING PAYMENT
+const makePaymentOther = document.querySelector('#make-my-payment-footer');
+makePaymentOther.addEventListener('click', function(){
+  setTimeout(function() {
+    document.querySelector('.waiting-window').classList.add('d-none');
+    document.querySelector('.thanku-wrap').classList.remove('d-none');
+  }, 4000);
+});
 
 // const makePaymentFooter = document.querySelector('#make-my-payment-footer');
 // makePaymentFooter.addEventListener('click', function(){
@@ -683,4 +691,24 @@ otherPaymentOptions.forEach(option => {
 
 
 
+//DROPDOWN - WRAPPER
+const dropdownWrappers = document.querySelectorAll('.dropdown-wrapper');
+const dropdownLinks = document.querySelectorAll('.dropdown-list a');
+const dropdownDefaults = document.querySelectorAll('.dropdown-default');
 
+dropdownWrappers.forEach((dropdownWrapper) => {
+  dropdownWrapper.addEventListener('click', function() {
+    this.classList.toggle('is-active');
+  });
+});
+
+dropdownLinks.forEach((dropdownLink) => {
+  dropdownLink.addEventListener('click', function(evt) {
+    const dropdownDefault = this.closest('.dropdown-wrapper').querySelector('.dropdown-default');
+    dropdownDefault.innerHTML = evt.currentTarget.textContent;
+
+    if(evt.currentTarget.textContent === "All Orders") {
+      dropdownDefault.innerHTML = 'Filter Orders'
+    }
+  });
+});

@@ -265,6 +265,11 @@ textarea {
     font-weight: 400;
 }
 
+button, .swiper-button-next, .swiper-button-prev {
+    outline: none;
+    box-shadow: none;
+}
+
 button,
 a,
 input[type="checkbox"],

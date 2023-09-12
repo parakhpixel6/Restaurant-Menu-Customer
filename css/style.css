@@ -253,6 +253,11 @@ textarea {
   font-weight: 400;
 }
 
+button, .swiper-button-next, .swiper-button-prev {
+  outline: none;
+  box-shadow: none;
+}
+
 button,
 a,
 input[type=checkbox],
@@ -3252,6 +3257,7 @@ input[type=number] {
   height: 100%;
 }
 .swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .netbanking {
+  position: relative;
   height: 100%;
   width: 100%;
   transition: 0.3s ease-in-out;
@@ -3273,6 +3279,8 @@ input[type=number] {
   width: 80px;
   border-radius: 12px;
   height: 60px;
+  cursor: pointer;
+  border: 1px solid transparent;
 }
 .swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .netbanking .bank-option.active {
   border: 1px solid #FF4747;
@@ -3291,113 +3299,102 @@ input[type=number] {
   padding: 0px;
   text-transform: none;
 }
-.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .netbanking .textfield-outlined {
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .netbanking .dropdown-default, .swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .netbanking li, .swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .netbanking span {
+  font-size: 16px;
+  font-weight: 400;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .netbanking .dropdown-wrapper {
   position: relative;
-  margin-bottom: 20px;
-  padding-top: 6px;
-  font-size: 16px;
-  line-height: 1.5;
-  width: 357px;
-  letter-spacing: 0.4px;
-}
-.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .netbanking .textfield-outlined > input {
-  box-sizing: border-box;
-  width: 100%;
-  height: 48px;
-  padding: 7px 14px 0px 14px;
-  font-size: 15px;
-  line-height: inherit;
-  color: #222222;
-  border-style: solid;
-  border-width: 1px;
-  border-color: transparent #AAAAAA #AAAAAA;
-  border-radius: 12px;
-  -webkit-text-fill-color: currentColor;
-  background-color: transparent;
-  caret-color: #222222;
-  transition: border 0.2s, box-shadow 0.2s;
-}
-.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .netbanking .textfield-outlined > input:not(:focus):placeholder-shown {
-  border-top-color: #AAAAAA;
-}
-.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .netbanking .textfield-outlined > input + label {
-  display: flex;
-  width: 100%;
-  height: 48px;
-  position: absolute;
-  top: 4.5px;
-  left: 0;
-  font-size: 14px;
-  line-height: 8px;
-  color: #222222;
-  cursor: text;
-  transition: color 0.2s, font-size 0.2s, line-height 0.2s;
-}
-.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .netbanking .textfield-outlined > input:not(:focus):placeholder-shown + label {
-  font-size: 16px;
-  line-height: 54px;
-  text-transform: none;
-  color: #222222;
-}
-.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .netbanking .textfield-outlined > input + label::before,
-.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .netbanking .textfield-outlined > input + label::after {
-  content: "";
-  display: block;
-  box-sizing: border-box;
-  height: 48px;
-  min-width: 10px;
-  margin-top: 3px;
-  font-size: 14px;
-  border-top: solid 1px #AAAAAA;
-  pointer-events: none;
-  box-shadow: inset 0 1px transparent;
-  transition: border 0.2s, box-shadow 0.2s;
-}
-.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .netbanking .textfield-outlined > input + label::before {
-  margin-right: 4px;
-  border-left: solid 1px transparent;
-  border-radius: 12px 0;
-}
-.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .netbanking .textfield-outlined > input + label::after {
-  flex-grow: 1;
-  margin-left: 4px;
-  border-right: solid 1px transparent;
-  border-radius: 0 12px;
-}
-.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .netbanking .textfield-outlined > input:not(:focus):placeholder-shown + label::before,
-.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .netbanking .textfield-outlined > input:not(:focus):placeholder-shown + label::after {
-  border-top-color: transparent;
-}
-.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .netbanking .textfield-outlined ~ label:hover > input {
-  border-color: transparent #222222 #222222;
-}
-.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .netbanking .textfield-outlined label:hover > input + label::before,
-.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .netbanking .textfield-outlined label:hover > input + label::after {
-  border-top-color: #222222;
-}
-.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .netbanking .textfield-outlined label:hover > input:not(:focus):placeholder-shown {
-  border-color: #222222;
-}
-.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .netbanking .textfield-outlined > input:focus {
-  border-color: transparent #222222 #222222;
+  width: 365px;
+  padding: 8px 10px;
+  background: #fff;
+  border-radius: 8px;
+  cursor: pointer;
   outline: none;
+  color: #222;
+  border: 1px solid #ddd;
+  transition: all 0.3s ease-out;
 }
-.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .netbanking .textfield-outlined > input:focus + label {
-  color: #222222;
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .netbanking .dropdown-wrapper:after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  margin-top: -3px;
+  border-width: 6px 6px 0 6px;
+  border-style: solid;
+  border-color: #222 transparent;
 }
-.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .netbanking .textfield-outlined > input:focus + label::before,
-.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .netbanking .textfield-outlined > input:focus + label::after {
-  border-top-color: #222222 !important;
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .netbanking .dropdown-wrapper.is-active {
+  border: none;
+  background: #FF9898;
+  background: linear-gradient(90deg, #ffe5e5 0%, #ffd5d5 100%);
+  box-shadow: none;
+  border-bottom: none;
+  color: #222;
 }
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) {
-    .swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .netbanking .textfield-outlined > input,
-    .swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .netbanking .textfield-outlined > input + label,
-    .swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .netbanking .textfield-outlined > input + label::before,
-    .swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .netbanking .textfield-outlined > input + label::after {
-      transition-duration: 0.1s;
-    }
-  }
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .netbanking .dropdown-wrapper.is-active:after {
+  border-color: #222 transparent;
+  transform: rotate(180deg);
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .netbanking .dropdown-wrapper.is-active .dropdown-list {
+  height: 300px;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .netbanking .dropdown-list {
+  /* Size & position */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  /* Styles */
+  background: #fff;
+  border-radius: 0 0 12px 12px;
+  border-top: none;
+  border-bottom: none;
+  list-style: none;
+  transition: all 0.3s ease-out;
+  /* Hiding */
+  height: 0px;
+  overflow-y: auto;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .netbanking .dropdown-list::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .netbanking .dropdown-list::-webkit-scrollbar {
+  width: 2px;
+  background-color: #F5F5F5;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .netbanking .dropdown-list::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  -webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.3);
+  background-color: #555;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .netbanking .dropdown-list li {
+  padding: 0 10px;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .netbanking .dropdown-list li:hover a {
+  color: #FF4747;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .netbanking .dropdown-list li:last-of-type a {
+  border: none;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .netbanking .dropdown-list a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  padding: 10px 0;
+  transition: all 0.3s ease-out;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .netbanking .header-dropDown {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
 }
 .swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .cards {
   height: 94%;

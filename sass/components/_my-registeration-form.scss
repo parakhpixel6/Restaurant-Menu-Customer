@@ -184,8 +184,10 @@ $color-focused: $primary-black;
     margin-left: 23px;
     border: none;
     color: #fff;
-    background: rgb(255,102,102);
-    background: linear-gradient(90deg, rgba(255,102,102,1) 40%, rgba(255,150,136,1) 100%);
+    // background: rgb(255,102,102);
+    // background: linear-gradient(90deg, rgba(255,102,102,1) 40%, rgba(255,150,136,1) 100%);
+    background: #f86f6fe0;
+
 
     &::after {
       display: none;
@@ -202,7 +204,8 @@ $color-focused: $primary-black;
     }
 
     &:hover {
-      background: linear-gradient(90deg, rgba(255, 102, 102, 1) 40%, #f35555 100%);
+      // background: linear-gradient(90deg, rgba(255, 102, 102, 1) 40%, #f35555 100%);
+      background: #ff6565;
     }
   }
 

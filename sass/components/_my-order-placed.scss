@@ -214,8 +214,8 @@
                 cursor: pointer;
                 border-radius: 6px;
                 color: $widget-white;
-                background: rgb(255, 102, 102);
-                background: linear-gradient(90deg, rgba(255, 102, 102, 1) 40%, rgba(255, 150, 136, 1) 100%);
+                // background: linear-gradient(90deg, rgb(255, 102, 102) 40%, rgb(255, 150, 136) 100%);
+                background: #f86f6fe0;
 
                 & span {
                     font-size: 22px;
@@ -229,7 +229,8 @@
                 }
 
                 &:hover {
-                    background: linear-gradient(90deg, rgba(255, 102, 102, 1) 40%, #f35555 100%);
+                    // background: linear-gradient(90deg, rgba(255, 102, 102, 1) 40%, #f35555 100%);
+                    background: #ff6565;
                 }
             }
         }

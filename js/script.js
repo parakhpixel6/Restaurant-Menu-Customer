@@ -291,6 +291,7 @@ otherTipp.addEventListener('click', function() {
 
 // Call Waiter Popup
 const showCallWaiter = document.querySelectorAll('.showCallWaiter');
+const closeWaiterModal = document.querySelector('#closeWaiterModal');
 const closeCallWaiter = document.querySelector('#closeCallWaiter');
 const callWaiterPopup = document.querySelector('#call-waiter-popup');
 
@@ -303,6 +304,19 @@ showCallWaiter.forEach(waiter => {
     callWaiterPopup.style.opacity = '1';
   })
 })
+
+showCallWaiter.forEach(waiter => {
+  console.log(waiter);
+  waiter.addEventListener('click', function() {
+    callWaiterPopup.style.top = '0%';
+    callWaiterPopup.style.opacity = '1';
+  })
+})
+
+callWaiterPopup.addEventListener('click', function() {
+    callWaiterPopup.style.top = '-100%';
+    callWaiterPopup.style.opacity = '0';
+});
 
 closeCallWaiter.addEventListener('click', function() {
   callWaiterPopup.style.top = '-100%';
@@ -331,6 +345,7 @@ closeCallWaiter.addEventListener('click', function() {
 const showGetWater = document.querySelectorAll('.showGetWater');
 const closeGetWater = document.querySelector('#closeGetWater');
 const getWaterPopup = document.querySelector('#get-water-popup');
+const closeWaterModal = document.querySelector('#closeWaterModal');
 
 showGetWater.forEach(water => {
   water.addEventListener('click', function() {
@@ -338,6 +353,16 @@ showGetWater.forEach(water => {
     getWaterPopup.style.opacity = '1';
   })
 })
+
+getWaterPopup.addEventListener('click', function() {
+  getWaterPopup.style.top = '-100%';
+  getWaterPopup.style.opacity = '0';
+});
+
+closeWaterModal.addEventListener('click', function() {
+  getWaterPopup.style.top = '-100%';
+  getWaterPopup.style.opacity = '0';
+});
 
 closeGetWater.addEventListener('click', function() {
   getWaterPopup.style.top = '-100%';
@@ -365,6 +390,7 @@ closeGetWater.addEventListener('click', function() {
 const showNeedHelp = document.querySelectorAll('.showNeedHelp');
 const closeNeedHelp = document.querySelector('#closeNeedHelp');
 const needHelpPopup = document.querySelector('#need-help-popup');
+const closeHelpModal = document.querySelector('#closeHelpModal');
 
 showNeedHelp.forEach(help => {
   help.addEventListener('click', function() {
@@ -372,6 +398,16 @@ showNeedHelp.forEach(help => {
     needHelpPopup.style.opacity = '1';
   })
 })
+
+needHelpPopup.addEventListener('click', function() {
+  needHelpPopup.style.top = '-100%';
+  needHelpPopup.style.opacity = '0';
+});
+
+closeHelpModal.addEventListener('click', function() {
+  needHelpPopup.style.top = '-100%';
+  needHelpPopup.style.opacity = '0';
+});
 
 closeNeedHelp.addEventListener('click', function() {
   needHelpPopup.style.top = '-100%';
@@ -401,6 +437,7 @@ closeNeedHelp.addEventListener('click', function() {
 const applyCoupons = document.querySelector('#apply-coupons');
 const applyCouponsFooter = document.querySelector('#apply-coupons-footer');
 const couponClosed = document.querySelector('#coupon-closed');
+const closHelpModal = document.querySelector('#closHelpModal');                
 
 applyCoupons.addEventListener('click', function() {
   document.querySelector('.coupons-details').style.display = 'block';

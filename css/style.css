@@ -807,12 +807,16 @@ input[type=number] {
   padding: 3px;
   color: #FFF;
   border: none;
+  box-shadow: 2px 2px 4px 0px rgba(87, 87, 87, 0.431372549);
   background: linear-gradient(90deg, rgb(255, 102, 102) 40%, rgb(255, 150, 136) 100%);
   border-radius: 6px;
   right: 2%;
 }
 .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip .my-cart-btn span {
   font-weight: 200;
+}
+.swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip .my-cart-btn:hover {
+  background: linear-gradient(90deg, rgb(255, 102, 102) 40%, #f35555 100%);
 }
 .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip .swiper-button-next::after {
   display: none;
@@ -1559,14 +1563,18 @@ input[type=number] {
   font-size: 16px;
   color: #54BA54;
 }
-.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-cart .items-added .item-added-modify .item-added .item-remove, .swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-cart .items-added .item-added-modify .item-added .item-add {
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-cart .items-added .item-added-modify .item-added .item-remove,
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-cart .items-added .item-added-modify .item-added .item-add {
   height: 20px;
   width: 20px;
   background-color: transparent;
   border-radius: 8px;
   border: 1px solid #54BA54;
 }
-.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-cart .items-added .item-added-modify .item-added .item-remove .item-remove-btn, .swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-cart .items-added .item-added-modify .item-added .item-remove .item-add-btn, .swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-cart .items-added .item-added-modify .item-added .item-add .item-remove-btn, .swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-cart .items-added .item-added-modify .item-added .item-add .item-add-btn {
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-cart .items-added .item-added-modify .item-added .item-remove .item-remove-btn,
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-cart .items-added .item-added-modify .item-added .item-remove .item-add-btn,
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-cart .items-added .item-added-modify .item-added .item-add .item-remove-btn,
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-cart .items-added .item-added-modify .item-added .item-add .item-add-btn {
   color: #54BA54;
   font-size: 18px;
 }
@@ -1884,7 +1892,6 @@ input[type=number] {
   cursor: pointer;
   border-radius: 6px;
   color: #FFFFFF;
-  background: rgb(255, 102, 102);
   background: linear-gradient(90deg, rgb(255, 102, 102) 40%, rgb(255, 150, 136) 100%);
 }
 .swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-cart-footer-container .place-order span {
@@ -1895,6 +1902,9 @@ input[type=number] {
   padding: 0;
   color: #FFFFFF;
   font-size: 14px;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-cart-footer-container .place-order:hover {
+  background: linear-gradient(90deg, rgb(255, 102, 102) 40%, #f35555 100%);
 }
 .swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-registeration {
   height: 100%;
@@ -2088,6 +2098,9 @@ input[type=number] {
 .swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-registeration-form .registeration-form .register-btn #register-btn p {
   font-size: 16px;
   font-weight: 400;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-registeration-form .registeration-form .register-btn #register-btn:hover {
+  background: linear-gradient(90deg, rgb(255, 102, 102) 40%, #f35555 100%);
 }
 .swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-registeration-footer {
   height: 10%;
@@ -2312,6 +2325,9 @@ input[type=number] {
   padding: 0;
   color: #FFFFFF;
   font-size: 14px;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-order-footer-container .show-my-bill:hover {
+  background: linear-gradient(90deg, rgb(255, 102, 102) 40%, #f35555 100%);
 }
 .swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-order-footer .edit-my-order {
   margin-left: 26px;
@@ -2949,6 +2965,9 @@ input[type=number] {
   color: #FFFFFF;
   font-size: 14px;
   font-weight: 300;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-bill-footer-container .make-my-payment:hover {
+  background: linear-gradient(90deg, rgb(255, 102, 102) 40%, #f35555 100%);
 }
 .swiper-container .swiper-wrapper .swiper-slide .progress-section-right .edit-name-modal, .swiper-container .swiper-wrapper .swiper-slide .progress-section-right .add-gst-modal, .swiper-container .swiper-wrapper .swiper-slide .progress-section-right .other-tip-modal {
   position: absolute;
@@ -3795,6 +3814,9 @@ input[type=number] {
   color: #fff;
   width: auto;
 }
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment .payments-method .payment-options-details .payment-options-detail .cash .swiper-button-next:hover {
+  background: linear-gradient(90deg, rgb(255, 102, 102) 40%, #f35555 100%);
+}
 .swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment-footer {
   opacity: 1;
   height: 10%;
@@ -3836,6 +3858,9 @@ input[type=number] {
   color: #FFFFFF;
   font-size: 14px;
   font-weight: 300;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-payment-footer-container .make-my-payment:hover {
+  background: linear-gradient(90deg, rgb(255, 102, 102) 40%, #f35555 100%);
 }
 .swiper-container .swiper-wrapper .swiper-slide .progress-section-right .timer {
   height: 50%;
@@ -3976,7 +4001,6 @@ input[type=number] {
   cursor: pointer;
   border-radius: 6px;
   color: #FFFFFF;
-  background: rgb(255, 102, 102);
   background: linear-gradient(90deg, rgb(255, 102, 102) 40%, rgb(255, 150, 136) 100%);
 }
 .swiper-container .swiper-wrapper .swiper-slide .progress-section-right .thanku-payment-footer-container .rate-and-review span {
@@ -3988,6 +4012,9 @@ input[type=number] {
   color: #FFFFFF;
   font-size: 14px;
   font-weight: 300;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .thanku-payment-footer-container .rate-and-review:hover {
+  background: linear-gradient(90deg, rgb(255, 102, 102) 40%, #f35555 100%);
 }
 .swiper-container .swiper-wrapper .swiper-slide .progress-section-right .thanku-payment-footer-container .request-bill {
   cursor: pointer;
@@ -4388,6 +4415,9 @@ input[type=number] {
   font-size: 14px;
   font-weight: 300;
 }
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .my-review-footer-container .make-my-review:hover {
+  background: linear-gradient(90deg, rgb(255, 102, 102) 40%, #f35555 100%);
+}
 .swiper-container .swiper-wrapper .swiper-slide .progress-section-right .logout-section {
   height: 100%;
   width: 100%;
@@ -4509,6 +4539,9 @@ input[type=number] {
   transform: rotate(-180deg);
   font-size: 20px;
   font-weight: 200;
+}
+.swiper-container .swiper-wrapper .swiper-slide .progress-section-right .logout-section .logout-msg button:hover {
+  background: linear-gradient(90deg, rgb(255, 102, 102) 40%, #f35555 100%);
 }
 .swiper-container .swiper-wrapper .swiper-slide .progress-section-myPayment {
   width: 61% !important;

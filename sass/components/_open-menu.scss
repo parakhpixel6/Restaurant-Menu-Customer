@@ -246,6 +246,7 @@
                         padding: 3px;
                         color: #FFF;
                         border: none;
+                        box-shadow: 2px 2px 4px 0px #5757576e !important;
                         background: linear-gradient(90deg, rgb(255, 102, 102) 40%, rgb(255, 150, 136) 100%);
                         border-radius: 6px;
                         right: 2%;
@@ -254,6 +255,7 @@
                             font-weight: 200;
                         }
                     }
+
                     & .swiper-button-next::after {
                         display: none;
                     }
@@ -320,7 +322,7 @@
                                     width: 92.1%;
                                     // box-shadow: -9px 6px 47px -12px #888888;
                                 }
-                                
+
                                 &.menu-right-bf.active {
                                     z-index: $count - $i;
                                     // transition: transform 3s;
@@ -338,7 +340,7 @@
                     }
 
                 }
-                
+
                 &-ff {
                     z-index: 1;
                     -webkit-backface-visibility: hidden;

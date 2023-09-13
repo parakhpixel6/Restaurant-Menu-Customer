@@ -4,12 +4,13 @@
     border-radius: 24px;
     // background-color: rgba(140, 199, 199, 0.884);
 
-    &  header {
-        flex-shrink:  0;
+    & header {
+        flex-shrink: 0;
         width: 100%;
         height: 8%;
         background: $red;
-        background: linear-gradient(90deg, #ffe5e5 0%, #ffd5d5 100%);;
+        background: linear-gradient(90deg, #ffe5e5 0%, #ffd5d5 100%);
+        ;
         border-radius: 24px 24px 0px 0px;
         color: $primary-dark-grey;
 
@@ -24,7 +25,7 @@
         }
     }
 
-    & .items-added-heading{
+    & .items-added-heading {
         padding: 12px 16px 0px 16px;
         height: 8%;
         margin-bottom: -12px;
@@ -39,7 +40,7 @@
         overflow: hidden;
         overflow-y: auto;
 
-        &::-webkit-scrollbar{
+        &::-webkit-scrollbar {
             display: none;
         }
 
@@ -50,7 +51,7 @@
             &:last-child {
                 border-bottom: none;
             }
-            
+
 
             .item-added {
                 // height: 94px;
@@ -58,12 +59,12 @@
                 // padding: 0px 0px 12px 0px;
                 // margin-bottom: 12px;
                 // border-bottom: 1px solid  $off-white;
-    
+
                 &:last-child {
                     border-bottom: none;
-                    
+
                 }
-    
+
                 &-img {
                     height: 80px;
                     width: 80px;
@@ -71,7 +72,7 @@
                     object-position: center;
                     object-fit: cover;
                 }
-    
+
                 &-title {
                     & p {
                         padding: 0;
@@ -79,13 +80,14 @@
                         color: #222;
                     }
                 }
-    
+
                 &-speciality {
                     height: 14px;
-    
+
                     & .speciality-taste {
                         margin-top: -2px;
                     }
+
                     & .speciality-taste-text p {
                         height: 14px;
                         margin-top: 1px;
@@ -94,7 +96,7 @@
                         color: #222222;
                         padding: 0;
                     }
-    
+
                     & .speciality-vegNonveg::after {
                         margin-left: 8px;
                         content: "";
@@ -102,7 +104,7 @@
                         width: 1px;
                         background-color: #DDDDDD;
                     }
-    
+
                     & .speciality-rating::after {
                         margin-left: 8px;
                         content: "";
@@ -111,9 +113,10 @@
                         background-color: #DDDDDD;
                     }
                 }
-    
+
                 &-description {
                     width: 270px;
+
                     & p {
                         padding: 0;
                         font-size: 12px;
@@ -121,10 +124,11 @@
                         text-transform: none;
                     }
                 }
-    
+
                 &-quantity {
                     height: 56px;
                     width: 66px;
+
                     & p {
                         padding: 0;
                         font-weight: 600;
@@ -132,30 +136,33 @@
                         color: $primary-black;
                     }
                 }
-    
+
                 .item-add-remove {
                     height: 20px;
+
                     & p {
                         font-weight: 600;
                         font-size: 16px;
                         color: $green;
                     }
                 }
-    
-                .item-remove, .item-add {
+
+                .item-remove,
+                .item-add {
                     height: 20px;
                     width: 20px;
                     background-color: transparent;
                     border-radius: 8px;
                     border: 1px solid $green;
-                    
-                    .item-remove-btn, .item-add-btn {
+
+                    .item-remove-btn,
+                    .item-add-btn {
                         color: $green;
                         font-size: 18px;
                     }
                 }
             }
-    
+
             .item-modify {
                 padding: 0px 0px 12px 0px;
                 color: $dark-red;
@@ -168,6 +175,7 @@
                     font-size: 24px;
                     font-weight: 300;
                 }
+
                 & p {
                     font-size: 14px;
                     font-style: normal;
@@ -352,7 +360,7 @@
 
         height: 24%;
         margin: 0px 16px;
-        
+
 
         &-container {
             height: 48px;
@@ -360,11 +368,11 @@
             border-radius: 12px;
             padding: 0px 0px 0px 16px;
             border: 0.5px solid $light-grey;
-    
+
             // & input {
             //     display: none;
             // }
-           
+
             // & p {
             //     padding: 0;
             //     font-size: 16px;
@@ -377,142 +385,142 @@
             // }
         }
 
-            $color-default: $primary-black;
-            $color-active: $primary-black;
-            $color-focused: $primary-black;
+        $color-default: $primary-black;
+        $color-active: $primary-black;
+        $color-focused: $primary-black;
 
-            & .textfield-outlined {
-                position: relative;
-                margin-bottom: 20px;
-                width: 100%;
-                padding-top: 6px;
-                font-size: 16px;
-                line-height: 1.5;
-                letter-spacing: .4px;
-            }
+        & .textfield-outlined {
+            position: relative;
+            margin-bottom: 20px;
+            width: 100%;
+            padding-top: 6px;
+            font-size: 16px;
+            line-height: 1.5;
+            letter-spacing: .4px;
+        }
 
-            // Form elements
-           &  .textfield-outlined>input {
-                box-sizing: border-box;
-                width: 100%;
-                height: 48px;
-                padding: 7px 14px 0px 14px;
-                font-size: 15px;
-                line-height: inherit;
-                color: $color-active;
-                border-style: solid;
-                border-width: 1px;
-                border-color: transparent #AAAAAA #AAAAAA;
-                border-radius: 12px;
-                -webkit-text-fill-color: currentColor; // Safari
-                background-color: transparent;
-                caret-color: $color-focused;
-                transition: border .2s, box-shadow .2s;
-            }
+        // Form elements
+        & .textfield-outlined>input {
+            box-sizing: border-box;
+            width: 100%;
+            height: 48px;
+            padding: 7px 14px 0px 14px;
+            font-size: 15px;
+            line-height: inherit;
+            color: $color-active;
+            border-style: solid;
+            border-width: 1px;
+            border-color: transparent #AAAAAA #AAAAAA;
+            border-radius: 12px;
+            -webkit-text-fill-color: currentColor; // Safari
+            background-color: transparent;
+            caret-color: $color-focused;
+            transition: border .2s, box-shadow .2s;
+        }
 
-            & .textfield-outlined>input:not(:focus):placeholder-shown {
-                border-top-color: #AAAAAA;
-            }
+        & .textfield-outlined>input:not(:focus):placeholder-shown {
+            border-top-color: #AAAAAA;
+        }
 
-            // Label
-            & .textfield-outlined>input+label {
-                display: flex;
-                width: 100%;
-                height: 48px;
-                position: absolute;
-                top: 4.5px;
-                left: 0;
-                font-size: 14px;
-                line-height: 8px;
-                color: $color-default;
-                cursor: text;
-                transition: color .2s,
-                    font-size .2s,
-                    line-height .2s;
-            }
+        // Label
+        & .textfield-outlined>input+label {
+            display: flex;
+            width: 100%;
+            height: 48px;
+            position: absolute;
+            top: 4.5px;
+            left: 0;
+            font-size: 14px;
+            line-height: 8px;
+            color: $color-default;
+            cursor: text;
+            transition: color .2s,
+                font-size .2s,
+                line-height .2s;
+        }
 
-            & .textfield-outlined>input:not(:focus):placeholder-shown+label {
-                font-size: 14px;
-                line-height: 54px;
-                color: $primary-black;
-            }
+        & .textfield-outlined>input:not(:focus):placeholder-shown+label {
+            font-size: 14px;
+            line-height: 54px;
+            color: $primary-black;
+        }
 
-            // Corners
-            & .textfield-outlined>input+label::before,
-            .textfield-outlined>input+label::after {
-                content: "";
-                display: block;
-                box-sizing: border-box;
-                height: 48px;
-                min-width: 10px;
-                margin-top: 2.25px;
-                font-size: 14px;
-                border-top: solid 1px #AAAAAA;
-                pointer-events: none;
-                box-shadow: inset 0 1px transparent;
-                transition: border .2s,
-                    box-shadow .2s;
-            }
+        // Corners
+        & .textfield-outlined>input+label::before,
+        .textfield-outlined>input+label::after {
+            content: "";
+            display: block;
+            box-sizing: border-box;
+            height: 48px;
+            min-width: 10px;
+            margin-top: 2.25px;
+            font-size: 14px;
+            border-top: solid 1px #AAAAAA;
+            pointer-events: none;
+            box-shadow: inset 0 1px transparent;
+            transition: border .2s,
+                box-shadow .2s;
+        }
 
-            & .textfield-outlined>input+label::before {
-                margin-right: 4px;
-                border-left: solid 1px transparent;
-                border-radius: 12px 0;
-            }
+        & .textfield-outlined>input+label::before {
+            margin-right: 4px;
+            border-left: solid 1px transparent;
+            border-radius: 12px 0;
+        }
 
-           &  .textfield-outlined>input+label::after {
-                flex-grow: 1;
-                margin-left: 4px;
-                border-right: solid 1px transparent;
-                border-radius: 0 12px;
-            }
+        & .textfield-outlined>input+label::after {
+            flex-grow: 1;
+            margin-left: 4px;
+            border-right: solid 1px transparent;
+            border-radius: 0 12px;
+        }
 
-           &  .textfield-outlined>input:not(:focus):placeholder-shown+label::before,
-           &  .textfield-outlined>input:not(:focus):placeholder-shown+label::after {
-                border-top-color: transparent;
-            }
+        & .textfield-outlined>input:not(:focus):placeholder-shown+label::before,
+        & .textfield-outlined>input:not(:focus):placeholder-shown+label::after {
+            border-top-color: transparent;
+        }
 
-            // Hover
-           &  .textfield-outlined~label:hover>input {
-                border-color: transparent $color-active $color-active;
-            }
+        // Hover
+        & .textfield-outlined~label:hover>input {
+            border-color: transparent $color-active $color-active;
+        }
 
-           &  .textfield-outlined label:hover>input+label::before,
-           &  .textfield-outlined label:hover>input+label::after {
-                border-top-color: $color-active;
-            }
+        & .textfield-outlined label:hover>input+label::before,
+        & .textfield-outlined label:hover>input+label::after {
+            border-top-color: $color-active;
+        }
 
-           &  .textfield-outlined label:hover>input:not(:focus):placeholder-shown {
-                border-color: $color-active;
-            }
+        & .textfield-outlined label:hover>input:not(:focus):placeholder-shown {
+            border-color: $color-active;
+        }
 
-            // Focus
-           &  .textfield-outlined>input:focus {
-                border-color: transparent $color-focused $color-focused;
-                outline: none;
-            }
+        // Focus
+        & .textfield-outlined>input:focus {
+            border-color: transparent $color-focused $color-focused;
+            outline: none;
+        }
 
-           &  .textfield-outlined>input:focus+label {
-                color: $color-focused;
-            }
+        & .textfield-outlined>input:focus+label {
+            color: $color-focused;
+        }
 
-           &  .textfield-outlined>input:focus+label::before,
-           &  .textfield-outlined>input:focus+label::after {
-                border-top-color: $color-focused !important;
-            }
+        & .textfield-outlined>input:focus+label::before,
+        & .textfield-outlined>input:focus+label::after {
+            border-top-color: $color-focused !important;
+        }
 
-            // Faster transition in Safari due to fractional font-size issue
-            @media not all and (min-resolution: .001dpcm) {
-                @supports (-webkit-appearance: none) {
+        // Faster transition in Safari due to fractional font-size issue
+        @media not all and (min-resolution: .001dpcm) {
+            @supports (-webkit-appearance: none) {
 
-                    .textfield-outlined>input,
-                    .textfield-outlined>input+label,
-                    .textfield-outlined>input+label::before,
-                    .textfield-outlined>input+label::after {
-                        transition-duration: .1s;
-                    }
+                .textfield-outlined>input,
+                .textfield-outlined>input+label,
+                .textfield-outlined>input+label::before,
+                .textfield-outlined>input+label::after {
+                    transition-duration: .1s;
                 }
             }
+        }
     }
 
 
@@ -522,7 +530,7 @@
         width: calc(100% - 32px);
         padding: 0px 16px;
         border-radius: 0px 0px 24px 24px;
-        border-top:  1px solid $off-white;
+        border-top: 1px solid $off-white;
         // background-color: rgba(182, 127, 127, 0.767);
 
         &-container {
@@ -583,8 +591,7 @@
                 cursor: pointer;
                 border-radius: 6px;
                 color: $widget-white;
-                background: rgb(255,102,102);
-                background: linear-gradient(90deg, rgba(255,102,102,1) 40%, rgba(255,150,136,1) 100%);
+                background: linear-gradient(90deg, rgb(255, 102, 102) 40%, rgb(255, 150, 136) 100%);
 
                 & span {
                     font-size: 22px;
@@ -595,6 +602,10 @@
                     padding: 0;
                     color: $widget-white;
                     font-size: 14px;
+                }
+
+                &:hover {
+                    background: linear-gradient(90deg, rgba(255, 102, 102, 1) 40%, #f35555 100%);
                 }
             }
         }

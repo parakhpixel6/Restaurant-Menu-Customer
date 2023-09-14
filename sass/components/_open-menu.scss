@@ -208,7 +208,7 @@
                     }
 
                     &:first-child {
-                        // z-index: 12;
+                        z-index: 2;
                         width: 92%;
                         box-shadow: 9px 6px 47px -12px #888888;
                         -webkit-backface-visibility: hidden;
@@ -245,8 +245,8 @@
                         @for $i from 1 through $count {
                           &:nth-child(#{$i}) {
                             &.menu-right-flip.active {
-                                // z-index: $count - $i;
-                                -webkit-transform: rotateY(180deg);
+                                z-index: $count - $i;
+                                -webkit-transform:  rotateY(0deg) rotateY(45deg) rotateY(90deg) rotateY(180deg);
                                 -moz-transform: rotateY(180deg);
                                 -ms-transform: rotateY(180deg);
                                 -o-transform: rotateY(180deg);
@@ -284,19 +284,19 @@
                                 }
                             }
 
-                            &.menu-right-ff.active {
-                                // -webkit-transform: rotateY(180deg);
-                                // -moz-transform: rotateY(180deg);
-                                // -ms-transform: rotateY(180deg);
-                                // -o-transform: rotateY(180deg);
-                                // transform: rotateY(180deg);
-                                transform-origin: left center;
-                                transition: transform 3s;
-                                left: 0.05%;
-                                height: 100%;
-                                width: 92.1%;
-                                // box-shadow: -9px 6px 47px -12px #888888;
-                            }
+                            // &.menu-right-ff.active {
+                            //     // -webkit-transform: rotateY(180deg);
+                            //     // -moz-transform: rotateY(180deg);
+                            //     // -ms-transform: rotateY(180deg);
+                            //     // -o-transform: rotateY(180deg);
+                            //     // transform: rotateY(180deg);
+                            //     transform-origin: left center;
+                            //     transition: transform 3s;
+                            //     left: 0.05%;
+                            //     height: 100%;
+                            //     width: 92.1%;
+                            //     // box-shadow: -9px 6px 47px -12px #888888;
+                            // }
                           }
                         }
                     }

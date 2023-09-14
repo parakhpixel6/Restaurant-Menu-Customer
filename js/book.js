@@ -15,6 +15,8 @@ const categories = [
   { cat: document.querySelector('#south_indian'), class: 'south_indian' },
   { cat: document.querySelector('#beverages'), class: 'beverages' },
 ];
+
+
 let zIndex = 1;
 categories.forEach(category => {
   category.cat.addEventListener('click', () => {
@@ -28,7 +30,6 @@ categories.forEach(category => {
         console.log(element, index)
         if (category.class === cat.class) {
           element.classList.add('active');
-          // zIndex[cat.class] = zIndex[cat.class] ? zIndex[cat.class] + 1 : 1;
 
           if(index === 0){
             element.style.zIndex = zIndex++ + 2;
@@ -39,6 +40,7 @@ categories.forEach(category => {
           }
 
         } else {
+          
           
           setTimeout(() => {
             element.classList.remove('active');
@@ -59,6 +61,7 @@ categories.forEach(category => {
     });
   });
 });
+
 
 
 console.log(breakfast);

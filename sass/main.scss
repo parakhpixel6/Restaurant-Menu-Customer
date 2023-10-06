@@ -442,4 +442,11 @@ input[type=number] {
         left: 50%;
         transform: translate(-50%, -50%);
     }
+
+    p {
+        font-size: 24px;
+        color: #222;
+        text-transform: none;
+        margin-left: 0px;
+    }
 }

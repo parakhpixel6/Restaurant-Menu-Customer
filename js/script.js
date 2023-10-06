@@ -740,7 +740,7 @@ function simulateContentLoading() {
     setTimeout(function () {
       var overlay = document.querySelector('.overlay');
       overlay.style.top = '-100%';
-    }, 3000); // Change 2000 to the actual time it takes to load your content
+    }, 2000); // Change 2000 to the actual time it takes to load your content
   // });
 }
  

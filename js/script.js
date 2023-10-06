@@ -733,12 +733,20 @@ dropdownLinks.forEach((dropdownLink) => {
 });
 
 
+//LOADER
+//Simulate content loading for demonstration purposes
+function simulateContentLoading() {
+  // window.addEventListener('load', function() {
+    setTimeout(function () {
+      var overlay = document.querySelector('.overlay');
+      overlay.style.top = '-100%';
+    }, 3000); // Change 2000 to the actual time it takes to load your content
+  // });
+}
  
- window.onload = function () {
+window.onload = function () {
   var overlay = document.querySelector('.overlay');
   overlay.style.top = '0%';
-
-  window.addEventListener('load', function() {
-    overlay.style.top = '-100%';
-  });
- };
+  // Simulate content loading (replace with your actual loading logic)\
+  simulateContentLoading();
+};

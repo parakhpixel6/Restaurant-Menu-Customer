@@ -305,18 +305,10 @@ showCallWaiter.forEach(waiter => {
   })
 })
 
-showCallWaiter.forEach(waiter => {
-  console.log(waiter);
-  waiter.addEventListener('click', function() {
-    callWaiterPopup.style.top = '0%';
-    callWaiterPopup.style.opacity = '1';
-  })
-})
-
-callWaiterPopup.addEventListener('click', function() {
+closeWaiterModal.addEventListener('click', function() {
     callWaiterPopup.style.top = '-100%';
-    callWaiterPopup.style.opacity = '0';
-});
+    callWaiterPopup.style.opacity = '1';
+})
 
 closeCallWaiter.addEventListener('click', function() {
   callWaiterPopup.style.top = '-100%';
@@ -353,11 +345,6 @@ showGetWater.forEach(water => {
     getWaterPopup.style.opacity = '1';
   })
 })
-
-getWaterPopup.addEventListener('click', function() {
-  getWaterPopup.style.top = '-100%';
-  getWaterPopup.style.opacity = '0';
-});
 
 closeWaterModal.addEventListener('click', function() {
   getWaterPopup.style.top = '-100%';
@@ -398,11 +385,6 @@ showNeedHelp.forEach(help => {
     needHelpPopup.style.opacity = '1';
   })
 })
-
-needHelpPopup.addEventListener('click', function() {
-  needHelpPopup.style.top = '-100%';
-  needHelpPopup.style.opacity = '0';
-});
 
 closeHelpModal.addEventListener('click', function() {
   needHelpPopup.style.top = '-100%';
@@ -749,3 +731,14 @@ dropdownLinks.forEach((dropdownLink) => {
     }
   });
 });
+
+
+ 
+ window.onload = function () {
+  var overlay = document.querySelector('.overlay');
+  overlay.style.top = '0%';
+
+  window.addEventListener('load', function() {
+    overlay.style.top = '-100%';
+  });
+ };

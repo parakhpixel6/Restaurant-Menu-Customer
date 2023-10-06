@@ -18,7 +18,7 @@ body {
     text-transform: capitalize;
     overflow: hidden;
     -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
+    -moz-osx-font-smoothing: grayscale;
     //overflow-x: hidden;
 }
 
@@ -265,7 +265,9 @@ textarea {
     font-weight: 400;
 }
 
-button, .swiper-button-next, .swiper-button-prev {
+button,
+.swiper-button-next,
+.swiper-button-prev {
     outline: none;
     box-shadow: none;
 }
@@ -296,14 +298,14 @@ img {
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 /* Firefox */
 input[type=number] {
-  -moz-appearance: textfield;
-  appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
 }
 
 .customer-container {
@@ -340,16 +342,18 @@ input[type=number] {
             &::after {
                 display: none;
             }
+
             position: static;
-            top: 0; 
-            margin-top: 0; 
+            top: 0;
+            margin-top: 0;
             z-index: 10;
             cursor: pointer;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: var(--swiper-navigation-color,var(--swiper-theme-color));
+            color: var(--swiper-navigation-color, var(--swiper-theme-color));
         }
+
         .swiper-slide {
             height: 98%;
             position: relative;
@@ -395,13 +399,13 @@ input[type=number] {
                     @import './components/my-payment';
 
                     @import './components/thanku-payment';
-                    
+
                     @import './components/my-review';
 
                     @import './components/logout-page';
 
-                    
-                    
+
+
                 }
 
                 &-myPayment {
@@ -412,10 +416,30 @@ input[type=number] {
                     width: 61% !important;
                 }
             }
-            
-            
+
+
 
             @import './components/footer';
         }
+    }
+}
+
+
+.overlay {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    bottom: 0;
+    background-color: #d3d3d3;
+    z-index: 9;
+
+    & .gif-wrapper {
+        height: 392px;
+        width: 392px;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }

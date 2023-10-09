@@ -849,7 +849,6 @@ input[type=number] {
   }
 }
 .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(1).menu-right-flip.active {
-  z-index: 12;
   -webkit-transform: rotateY(0deg) rotateY(45deg) rotateY(90deg) rotateY(180deg);
   -moz-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
@@ -882,7 +881,6 @@ input[type=number] {
   overflow: hidden;
 }
 .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(2).menu-right-flip.active {
-  z-index: 11;
   -webkit-transform: rotateY(0deg) rotateY(45deg) rotateY(90deg) rotateY(180deg);
   -moz-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
@@ -915,7 +913,6 @@ input[type=number] {
   overflow: hidden;
 }
 .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(3).menu-right-flip.active {
-  z-index: 10;
   -webkit-transform: rotateY(0deg) rotateY(45deg) rotateY(90deg) rotateY(180deg);
   -moz-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
@@ -948,7 +945,6 @@ input[type=number] {
   overflow: hidden;
 }
 .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(4).menu-right-flip.active {
-  z-index: 9;
   -webkit-transform: rotateY(0deg) rotateY(45deg) rotateY(90deg) rotateY(180deg);
   -moz-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
@@ -981,7 +977,6 @@ input[type=number] {
   overflow: hidden;
 }
 .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(5).menu-right-flip.active {
-  z-index: 8;
   -webkit-transform: rotateY(0deg) rotateY(45deg) rotateY(90deg) rotateY(180deg);
   -moz-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
@@ -1014,7 +1009,6 @@ input[type=number] {
   overflow: hidden;
 }
 .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(6).menu-right-flip.active {
-  z-index: 7;
   -webkit-transform: rotateY(0deg) rotateY(45deg) rotateY(90deg) rotateY(180deg);
   -moz-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
@@ -1047,7 +1041,6 @@ input[type=number] {
   overflow: hidden;
 }
 .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(7).menu-right-flip.active {
-  z-index: 6;
   -webkit-transform: rotateY(0deg) rotateY(45deg) rotateY(90deg) rotateY(180deg);
   -moz-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
@@ -1080,7 +1073,6 @@ input[type=number] {
   overflow: hidden;
 }
 .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(8).menu-right-flip.active {
-  z-index: 5;
   -webkit-transform: rotateY(0deg) rotateY(45deg) rotateY(90deg) rotateY(180deg);
   -moz-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
@@ -1113,7 +1105,6 @@ input[type=number] {
   overflow: hidden;
 }
 .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(9).menu-right-flip.active {
-  z-index: 4;
   -webkit-transform: rotateY(0deg) rotateY(45deg) rotateY(90deg) rotateY(180deg);
   -moz-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
@@ -1146,7 +1137,6 @@ input[type=number] {
   overflow: hidden;
 }
 .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(10).menu-right-flip.active {
-  z-index: 3;
   -webkit-transform: rotateY(0deg) rotateY(45deg) rotateY(90deg) rotateY(180deg);
   -moz-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
@@ -1179,7 +1169,6 @@ input[type=number] {
   overflow: hidden;
 }
 .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(11).menu-right-flip.active {
-  z-index: 2;
   -webkit-transform: rotateY(0deg) rotateY(45deg) rotateY(90deg) rotateY(180deg);
   -moz-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
@@ -1212,7 +1201,6 @@ input[type=number] {
   overflow: hidden;
 }
 .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(12).menu-right-flip.active {
-  z-index: 1;
   -webkit-transform: rotateY(0deg) rotateY(45deg) rotateY(90deg) rotateY(180deg);
   -moz-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
@@ -1245,7 +1233,6 @@ input[type=number] {
   overflow: hidden;
 }
 .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-right-flip:nth-child(13).menu-right-flip.active {
-  z-index: 0;
   -webkit-transform: rotateY(0deg) rotateY(45deg) rotateY(90deg) rotateY(180deg);
   -moz-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);

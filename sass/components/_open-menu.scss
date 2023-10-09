@@ -190,7 +190,7 @@
                         padding: 3px;
                         color: #FFF;
                         border: none;
-                        box-shadow: 2px 2px 8px 0px rgba(87, 87, 87, 0.59);
+                        box-shadow: 3px 2px 10px 0px rgb(87 87 87 / 9%);
                         background: #f86f6fe0;
                         border-radius: 6px;
                         right: 2%;
@@ -245,7 +245,6 @@
                         @for $i from 1 through $count {
                           &:nth-child(#{$i}) {
                             &.menu-right-flip.active {
-                                z-index: $count - $i;
                                 -webkit-transform:  rotateY(0deg) rotateY(45deg) rotateY(90deg) rotateY(180deg);
                                 -moz-transform: rotateY(180deg);
                                 -ms-transform: rotateY(180deg);
@@ -274,7 +273,6 @@
                             }
                             
                             &.menu-right-bf.active {
-                                // z-index: $count - $i;
                                 height: 100%;
                                 width: 91.1%;
                                 // box-shadow: -29px 6px 47px -12px #888888;

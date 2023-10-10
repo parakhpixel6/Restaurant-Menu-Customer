@@ -24,7 +24,7 @@ var breakfastArr = [
     {
         img: './assets/customer-img/img/Rectangle 8 (1).png',
         name: 'Belgian Chocolate Waffels',
-        veg_NonVeg_Img: './assets/customer-svg/svg/veg.svg',
+        veg_NonVeg_Img: './assets/customer-svg/svg/Veg.svg',
         tasteImg: './assets/customer-svg/svg/sweet 2.svg',
         tasteText: 'Gluten Free',
         ratingImg: './assets/customer-svg/svg/5 star.svg',
@@ -35,7 +35,7 @@ var breakfastArr = [
     {
         img: './assets/customer-img/img/Rectangle-8-(2).png',
         name: 'Pancakes',
-        veg_NonVeg_Img: './assets/customer-svg/svg/veg.svg',
+        veg_NonVeg_Img: './assets/customer-svg/svg/Veg.svg',
         tasteImg: './assets/customer-svg/svg/Vegan.svg',
         tasteText: 'Vegan',
         ratingImg: './assets/customer-svg/svg/5 star.svg',
@@ -46,7 +46,7 @@ var breakfastArr = [
     {
         img: './assets/customer-img/img/Rectangle 9-1.png',
         name: 'Breakfast Burrito',
-        veg_NonVeg_Img: './assets/customer-svg/svg/veg.svg',
+        veg_NonVeg_Img: './assets/customer-svg/svg/Veg.svg',
         tasteImg: './assets/customer-svg/svg/Vegan.svg',
         tasteText: 'Vegan',
         ratingImg: './assets/customer-svg/svg/5 star.svg',
@@ -57,7 +57,7 @@ var breakfastArr = [
     {
         img: './assets/customer-img/img/poha.png',
         name: 'Poha',
-        veg_NonVeg_Img: './assets/customer-svg/svg/veg.svg',
+        veg_NonVeg_Img: './assets/customer-svg/svg/Veg.svg',
         tasteImg: './assets/customer-svg/svg/Vegan.svg',
         tasteText: 'Vegan',
         ratingImg: './assets/customer-svg/svg/5 star.svg',
@@ -68,7 +68,7 @@ var breakfastArr = [
     {
         img: './assets/customer-img/img/upma.png',
         name: 'Suji Upma',
-        veg_NonVeg_Img: './assets/customer-svg/svg/veg.svg',
+        veg_NonVeg_Img: './assets/customer-svg/svg/Veg.svg',
         tasteImg: './assets/customer-svg/svg/Vegan.svg',
         tasteText: 'Vegan',
         ratingImg: './assets/customer-svg/svg/5 star.svg',
@@ -79,7 +79,7 @@ var breakfastArr = [
     {
         img: './assets/customer-img/img/millet-upma.png',
         name: 'Millet Upma',
-        veg_NonVeg_Img: './assets/customer-svg/svg/veg.svg',
+        veg_NonVeg_Img: './assets/customer-svg/svg/Veg.svg',
         tasteImg: './assets/customer-svg/svg/Vegan.svg',
         tasteText: 'Vegan',
         ratingImg: './assets/customer-svg/svg/5 star.svg',

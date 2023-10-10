@@ -33,7 +33,7 @@ var northIndianArr = [
     },
 
     {
-        img: './assets/customer-img/img/Biryani.png',
+        img: './assets/customer-img/img/biryani.png',
         name: 'Chicken Biryani',
         veg_NonVeg_Img: './assets/customer-svg/svg/Non-veg.svg',
         tasteImg: './assets/customer-svg/svg/Gluten-free.svg',
@@ -44,9 +44,9 @@ var northIndianArr = [
     },
 
     {
-        img: './assets/customer-img/img/Biryani.png',
+        img: './assets/customer-img/img/biryani.png',
         name: 'Veg Biryani',
-        veg_NonVeg_Img: './assets/customer-svg/svg/veg.svg',
+        veg_NonVeg_Img: './assets/customer-svg/svg/Veg.svg',
         tasteImg: './assets/customer-svg/svg/Vegan.svg',
         tasteText: 'Vegan',
         ratingImg: './assets/customer-svg/svg/5 star.svg',
@@ -57,7 +57,7 @@ var northIndianArr = [
     {
         img: './assets/customer-img/img/palak-paneer.png',
         name: 'Palak Paneer',
-        veg_NonVeg_Img: './assets/customer-svg/svg/veg.svg',
+        veg_NonVeg_Img: './assets/customer-svg/svg/Veg.svg',
         tasteImg: './assets/customer-svg/svg/Vegan.svg',
         tasteText: 'Vegan',
         ratingImg: './assets/customer-svg/svg/5 star.svg',
@@ -79,7 +79,7 @@ var northIndianArr = [
     {
         img: './assets/customer-img/img/malai-kofta.png',
         name: 'Malai Kofta',
-        veg_NonVeg_Img: './assets/customer-svg/svg/veg.svg',
+        veg_NonVeg_Img: './assets/customer-svg/svg/Veg.svg',
         tasteImg: './assets/customer-svg/svg/Vegan.svg',
         tasteText: 'Vegan',
         ratingImg: './assets/customer-svg/svg/5 star.svg',

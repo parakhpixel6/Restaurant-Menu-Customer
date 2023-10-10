@@ -79,7 +79,7 @@ var continentalArr = [
     {
         img: './assets/customer-img/img/spring-rolls.png',
         name: 'Korean Wraps',
-        veg_NonVeg_Img: './assets/customer-svg/svg/veg.svg',
+        veg_NonVeg_Img: './assets/customer-svg/svg/Veg.svg',
         tasteImg: './assets/customer-svg/svg/Vegan.svg',
         tasteText: 'Vegan',
         ratingImg: './assets/customer-svg/svg/5 star.svg',

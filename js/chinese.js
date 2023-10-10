@@ -11,7 +11,7 @@ var chineseArr = [
     },
 
     {
-        img: './assets/customer-img/img/dumplings.png',
+        img: './assets/customer-img/img/Dumplings.png',
         name: 'Dumplings',
         veg_NonVeg_Img: './assets/customer-svg/svg/Veg.svg',
         tasteImg: './assets/customer-svg/svg/Gluten-Free.svg',
@@ -46,7 +46,7 @@ var chineseArr = [
     {
         img: './assets/customer-img/img/Chow-mein.png',
         name: 'Chowmein',
-        veg_NonVeg_Img: './assets/customer-svg/svg/veg.svg',
+        veg_NonVeg_Img: './assets/customer-svg/svg/Veg.svg',
         tasteImg: './assets/customer-svg/svg/Vegan.svg',
         tasteText: 'Vegan',
         ratingImg: './assets/customer-svg/svg/5 star.svg',
@@ -57,7 +57,7 @@ var chineseArr = [
     {
         img: './assets/customer-img/img/soup.png',
         name: 'Chinese Schzewan Soup',
-        veg_NonVeg_Img: './assets/customer-svg/svg/veg.svg',
+        veg_NonVeg_Img: './assets/customer-svg/svg/Veg.svg',
         tasteImg: './assets/customer-svg/svg/Vegan.svg',
         tasteText: 'Vegan',
         ratingImg: './assets/customer-svg/svg/5 star.svg',
@@ -79,7 +79,7 @@ var chineseArr = [
     {
         img: './assets/customer-img/img/corodon-bleau.png',
         name: 'Corodon Bleau',
-        veg_NonVeg_Img: './assets/customer-svg/svg/veg.svg',
+        veg_NonVeg_Img: './assets/customer-svg/svg/Veg.svg',
         tasteImg: './assets/customer-svg/svg/Vegan.svg',
         tasteText: 'Vegan',
         ratingImg: './assets/customer-svg/svg/5 star.svg',

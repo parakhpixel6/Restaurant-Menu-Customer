@@ -46,7 +46,7 @@ var maharashtrianArr = [
     {
         img: './assets/customer-img/img/vendakkai-poriyal.png',
         name: 'Bhindi',
-        veg_NonVeg_Img: './assets/customer-svg/svg/veg.svg',
+        veg_NonVeg_Img: './assets/customer-svg/svg/Veg.svg',
         tasteImg: './assets/customer-svg/svg/Vegan.svg',
         tasteText: 'Vegan',
         ratingImg: './assets/customer-svg/svg/5 star.svg',
@@ -57,7 +57,7 @@ var maharashtrianArr = [
     {
         img: './assets/customer-img/img/methi-chi-bhaji.png',
         name: 'Methi Chi Bhaji',
-        veg_NonVeg_Img: './assets/customer-svg/svg/veg.svg',
+        veg_NonVeg_Img: './assets/customer-svg/svg/Veg.svg',
         tasteImg: './assets/customer-svg/svg/Vegan.svg',
         tasteText: 'Vegan',
         ratingImg: './assets/customer-svg/svg/5 star.svg',
@@ -79,7 +79,7 @@ var maharashtrianArr = [
     {
         img: './assets/customer-img/img/vangi-bhaat.png',
         name: 'Dal Bhaat',
-        veg_NonVeg_Img: './assets/customer-svg/svg/veg.svg',
+        veg_NonVeg_Img: './assets/customer-svg/svg/Veg.svg',
         tasteImg: './assets/customer-svg/svg/Vegan.svg',
         tasteText: 'Vegan',
         ratingImg: './assets/customer-svg/svg/5 star.svg',

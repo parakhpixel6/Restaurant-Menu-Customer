@@ -46,7 +46,7 @@ var beveragesArr = [
     {
         img: './assets/customer-img/img/iced-tea.png',
         name: 'Iced Tea',
-        veg_NonVeg_Img: './assets/customer-svg/svg/veg.svg',
+        veg_NonVeg_Img: './assets/customer-svg/svg/Veg.svg',
         tasteImg: './assets/customer-svg/svg/Vegan.svg',
         tasteText: 'Vegan',
         ratingImg: './assets/customer-svg/svg/5 star.svg',
@@ -57,7 +57,7 @@ var beveragesArr = [
     {
         img: './assets/customer-img/img/coffee.png',
         name: 'Coffee',
-        veg_NonVeg_Img: './assets/customer-svg/svg/veg.svg',
+        veg_NonVeg_Img: './assets/customer-svg/svg/Veg.svg',
         tasteImg: './assets/customer-svg/svg/Vegan.svg',
         tasteText: 'Vegan',
         ratingImg: './assets/customer-svg/svg/5 star.svg',
@@ -68,7 +68,7 @@ var beveragesArr = [
     {
         img: './assets/customer-img/img/Rectangle 8 (4).png',
         name: 'Berry Chiller',
-        veg_NonVeg_Img: './assets/customer-svg/svg/veg.svg',
+        veg_NonVeg_Img: './assets/customer-svg/svg/Veg.svg',
         tasteImg: './assets/customer-svg/svg/Gluten-Free.svg',
         tasteText: 'Vegan',
         ratingImg: './assets/customer-svg/svg/5 star.svg',
@@ -79,7 +79,7 @@ var beveragesArr = [
     {
         img: './assets/customer-img/img/Rectangle 8 (5).png',
         name: 'Black Tea',
-        veg_NonVeg_Img: './assets/customer-svg/svg/veg.svg',
+        veg_NonVeg_Img: './assets/customer-svg/svg/Veg.svg',
         tasteImg: './assets/customer-svg/svg/Vegan.svg',
         tasteText: 'Vegan',
         ratingImg: './assets/customer-svg/svg/5 star.svg',

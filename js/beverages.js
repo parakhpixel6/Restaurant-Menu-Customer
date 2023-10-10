@@ -24,7 +24,7 @@ var beveragesArr = [
     {
         img: './assets/customer-img/img/Rectangle 9.png',
         name: 'Green Tea',
-        veg_NonVeg_Img: './assets/customer-svg/svg/veg.svg',
+        veg_NonVeg_Img: './assets/customer-svg/svg/Veg.svg',
         tasteImg: './assets/customer-svg/svg/hot 1.svg',
         tasteText: 'Gluten Free',
         ratingImg: './assets/customer-svg/svg/5 star.svg',
@@ -35,7 +35,7 @@ var beveragesArr = [
     {
         img: './assets/customer-img/img/Rectangle 9 (1).png',
         name: 'Hot Chocolate',
-        veg_NonVeg_Img: './assets/customer-svg/svg/veg.svg',
+        veg_NonVeg_Img: './assets/customer-svg/svg/Veg.svg',
         tasteImg: './assets/customer-svg/svg/Gluten-Free.svg',
         tasteText: 'Gluten Free',
         ratingImg: './assets/customer-svg/svg/5 star.svg',

@@ -36,7 +36,7 @@ var continentalArr = [
         img: './assets/customer-img/img/lobster.png',
         name: 'Roasted Lobster',
         veg_NonVeg_Img: './assets/customer-svg/svg/Non-veg.svg',
-        tasteImg: './assets/customer-svg/svg/Gluten-free.svg',
+        tasteImg: './assets/customer-svg/svg/Gluten-Free.svg',
         tasteText: 'Gluten Free',
         ratingImg: './assets/customer-svg/svg/5 star.svg',
         description: 'Three fluffy pancakes served with syrup and butter.',

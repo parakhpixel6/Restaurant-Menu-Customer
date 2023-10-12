@@ -40,15 +40,23 @@ const categories = [
                 element.classList.remove('seen');
 
             } else {
-              setTimeout(() => {
+
+              let flag = false;
+              if(category.class === 'breakfast'){
+                setTimeout(() => {
+                  element.classList.remove('active');
+                }, 2000);
+                flag = true;
+              } else {
+
                 element.classList.remove('active');
-              }, 2000);
+              }
               element.classList.add('seen');
             }
         });
       });
     });
-  });
+    });
   
   
   // console.log(breakfast);

@@ -1116,7 +1116,7 @@ input[type=number] {
 .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-book .page.odd.active > .menu-content-wrap {
   transform: scaleX(-1);
 }
-.swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-book .page.even.active {
+.swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .menu-book .page.even {
   backface-visibility: hidden;
 }
 .swiper-container .swiper-wrapper .swiper-slide .open-menu .page-open .menu-items .item-status {

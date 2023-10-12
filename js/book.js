@@ -12,7 +12,7 @@ window.addEventListener('click', () => {
     breakfast.dispatchEvent(clickEvent);
     breakFastClicked = true;
   }
-  document.querySelector('#food-navigation').classList.remove('opac-0');
+  // document.querySelector('#food-navigation').classList.remove('opac-0');
  });
 
 
@@ -38,7 +38,8 @@ const categories = [
                 element.classList.add('active');
                 element.classList.remove('indexReset');
                 element.classList.remove('seen');
-            } else {ut = (cat.class === 'breakfast') ? 3000 : 2000;
+
+            } else {
               setTimeout(() => {
                 element.classList.remove('active');
               }, 2000);

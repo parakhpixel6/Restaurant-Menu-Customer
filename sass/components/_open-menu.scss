@@ -240,9 +240,9 @@
                     
                     
                     &.even{
-                        &.active {
+                        // &.active {
                             backface-visibility: hidden;
-                        }
+                        // }
                     }
 
                 }

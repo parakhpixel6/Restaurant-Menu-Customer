@@ -1,0 +1,22 @@
+$show-numbers: true;
+$count: 15;
+
+@if $show-numbers {
+    @for $i from 1 through $count {
+      &:nth-child(#{$i}) {
+        &.menu-flip.active {
+            -webkit-transform:  rotateY(0deg) rotateY(45deg) rotateY(90deg) rotateY(180deg);
+            -moz-transform: rotateY(180deg);
+            -ms-transform: rotateY(180deg);
+            -o-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+            transform-origin: left center;
+            // transition: transform 3s;
+            top: -2.6%;
+            left: -2.5%;
+            height: 100%;
+            width: 91.1%;
+        }
+      }
+    }
+}

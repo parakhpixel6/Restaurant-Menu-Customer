@@ -18,7 +18,7 @@ var breakfastArr = [
         tasteText: 'Gluten Free',
         ratingImg: './assets/customer-svg/svg/3 star.svg',
         description: 'Two eggs any style, choice of bacon or sausage, toast, and home fries.',
-        rate: 210,
+        rate: 219,
     },
 
     {
@@ -29,7 +29,7 @@ var breakfastArr = [
         tasteText: 'Gluten Free',
         ratingImg: './assets/customer-svg/svg/5 star.svg',
         description: 'Two golden brown chocolate waffles served with whipped cream and fresh berries.',
-        rate: 210,
+        rate: 189,
     },
 
     {

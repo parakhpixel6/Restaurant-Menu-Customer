@@ -18,32 +18,10 @@
 			<div class="container-wrapper h-100 w-100">
 				<div class="swiper-container h-100 w-100">
 					<div class="swiper-wrapper h-100 w-100 d-flex">
-						<!--==== First Slide - MENU FRONT PAGE ====-->
-						<div class="swiper-button-next swiper-slide justify-center ai-center d-flex">
-							<div class="close-menu h-100 w-100 d-flex justify-center ai-center">
-								<div class="page-0 h-100">
-								</div>
-								<div class="page-2 h-100 w-50 pos-relative  d-flex justify-center ai-center">
-									<!-- <img class="menu-cover h-100 w-100" src="./assets/customer-img/img/first-page.png"
-										alt="menu-cover">  -->
-									<div
-										class="menu-cover-content pos-absolute transform-50-50 left-50 top-50 d-flex ai-center flex-d-col justify-space-around g-76">
-										<h1>Food and Beverages Menu</h1>
-										<div class="restaurant-logo d-flex ai-center flex-d-col justify-center g-16">
-											<img src="assets/customer-img/img/image 15.png" alt="">
-											<p>Pride Restaurant</p>
-										</div>
-										<p class="swipe-navigation">"Click or Tap" anywhere to open our menu
-											and explore our delicious
-											selection of dishes</p>
-									</div>
-								</div>
-							</div>
-						</div>
 
-						<!--==== Second Slide - MENU OPENED ====-->
+						<!--==== FIRST Slide - MENU BOOK ====-->
 						<div class="swiper-slide justify-center ai-center d-flex">
-							<nav class="accomplishments w-100 d-flex ai-center justify-flex-end">
+							<nav id="header" class="accomplishments w-100 d-none ai-center justify-flex-end">
 								<button id="showCallWaiter"
 									class="showCallWaiter accomplishment justify-center ai-center d-flex">
 									<a class="d-flex g-4" href="#target">
@@ -68,52 +46,68 @@
 							</nav>
 							<div class="open-menu h-100 w-100 d-flex justify-center ai-center">
 								<div class="page-open h-100 d-flex justify-center ai-center">
-									<!-- <img class="menu-open h-100 w-100" src="./assets/customer-img/img/menu-page.png" alt="menu-open"> -->
 									<div class="menu-items d-flex ai-center justify-flex-end h-100">
-										<div class="menu-left d-flex flex-d-col g-12">
-											<div class="menu-title d-flex ai-center justify-space-between">
-												<div class="menu-title-text d-flex ai-center justify-flex-start">
-													<p>Breakfast Items</p>
-												</div>
-												<div class="toggle-btns d-flex g-16">
-													<label class="switch switch-red">
-														<input type="checkbox" class="switch-input switch-input-red"
-															checked>
-														<span class="switch-label switch-label-red" data-on="Non-Veg"
-															data-off="Non-Veg"></span>
-														<span class="switch-handle"></span>
-													</label>
-													<label class="switch switch-green">
-														<input type="checkbox" class="switch-input switch-input-green"
-															checked>
-														<span class="switch-label switch-label-green" data-on="Veg"
-															data-off="Veg"></span>
-														<span class="switch-handle"></span>
-													</label>
+										<div id="menu-book wrapper-id" class="menu-book d-flex ai-center justify-center">
+											<div id="landing" class="menu-flip page landing even active">
+												<div class="justify-center ai-center d-flex">
+													<div class="close-menu h-100 w-100 d-flex justify-center ai-center">
+														<div class="page-2 h-100 w-100 d-flex justify-center ai-center">
+															<div
+																class="menu-cover-content pos-absolute transform-50-50 left-50 top-50 d-flex ai-center flex-d-col justify-space-around g-76">
+																<h1>Food and Beverages Menu</h1>
+																<div class="restaurant-logo d-flex ai-center flex-d-col justify-center g-16">
+																	<img src="assets/customer-img/img/image 15.png" alt="">
+																	<p>Pride Restaurant</p>
+																</div>
+																<p class="swipe-navigation">"Click or Tap" anywhere to open our menu
+																	and explore our delicious
+																	selection of dishes</p>
+															</div>
+														</div>
+													</div>
 												</div>
 											</div>
-											<div class="menu-content margin-bot--20 d-flex flex-d-col g-12">
-												<div id="breakfastPg1" class="menu-content-items d-flex flex-d-col">
-
-												</div>
-											</div>
-											<span
-												class="material-symbols-rounded transform-rotate-90 margin-6-50 w-0">arrow_forward_ios</span>
-										</div>
-										<div id="menu-right-book" class="menu-right d-flex ai-center justify-center">
-											<div class="menu-right-flip breakfast menu-right-first menu-right-ff">
+											<div class="menu-flip page breakfast odd">
 												<div class="menu-content-wrap d-flex flex-d-col g-12 h-100 w-100">
+													<div class="menu-title d-flex ai-center justify-space-between">
+														<div class="menu-title-text d-flex ai-center justify-flex-start">
+															<p>Breakfast Items</p>
+														</div>
+														<div class="toggle-btns d-flex g-16">
+															<label class="switch switch-red">
+																<input type="checkbox" class="switch-input switch-input-red"
+																	checked>
+																<span class="switch-label switch-label-red" data-on="Non-Veg"
+																	data-off="Non-Veg"></span>
+																<span class="switch-handle"></span>
+															</label>
+															<label class="switch switch-green">
+																<input type="checkbox" class="switch-input switch-input-green"
+																	checked>
+																<span class="switch-label switch-label-green" data-on="Veg"
+																	data-off="Veg"></span>
+																<span class="switch-handle"></span>
+															</label>
+														</div>
+													</div>
 													<div class="menu-content d-flex flex-d-col g-12">
-														<div id="breakfastPg2"
-															class="menu-content-items d-flex flex-d-col">
+														<div id="breakfastPg1" class="menu-content-items d-flex flex-d-col">
 
 														</div>
 													</div>
 												</div>
 											</div>
-											<div class="menu-right-flip continental menu-right-bf">
-												<div class="menu-content-wrap d-flex flex-d-col g-12 h-100 w-100"
-													data-point="01">
+											<div class="lazy-div menu-flip page breakfast even">
+												<div class="menu-content-wrap d-flex flex-d-col g-12 h-100 w-100">
+													<div class="menu-content d-flex flex-d-col g-12">
+														<div id="breakfastPg2" class="menu-content-items d-flex flex-d-col">
+
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="lazy-div menu-flip page continental odd">
+												<div class="menu-content-wrap d-flex flex-d-col g-12 h-100 w-100">
 													<div class="menu-title d-flex ai-center justify-space-between">
 														<div
 															class="menu-title-text d-flex ai-center justify-flex-start">
@@ -144,9 +138,8 @@
 													</div>
 												</div>
 											</div>
-											<div class="menu-right-flip continental menu-right-ff">
-												<div class="menu-content-wrap d-flex flex-d-col g-12 h-100 w-100"
-													data-point="Continental">
+											<div class="lazy-div menu-flip page continental even">
+												<div class="menu-content-wrap d-flex flex-d-col g-12 h-100 w-100">
 													<div class="menu-content d-flex flex-d-col g-12">
 														<div id="continentalPg2" class="menu-content-items d-flex flex-d-col">
 
@@ -154,8 +147,8 @@
 													</div>
 												</div>
 											</div>
-											<div class="menu-right-flip chinese menu-right-bf">
-												<div class="menu-content-wrap d-flex flex-d-col g-12 h-100 w-100" data-point="02">
+											<div class="lazy-div menu-flip page chinese odd">
+												<div class="menu-content-wrap d-flex flex-d-col g-12 h-100 w-100">
 													<div class="menu-title d-flex ai-center justify-space-between">
 														<div
 															class="menu-title-text d-flex ai-center justify-flex-start">
@@ -186,7 +179,7 @@
 													</div>
 												</div>
 											</div>
-											<div class="menu-right-flip chinese menu-right-ff ">
+											<div class="lazy-div menu-flip page chinese even ">
 												<div class="menu-content-wrap d-flex flex-d-col g-12 h-100 w-100"
 													data-point="Chinese">
 													<div class="menu-content d-flex flex-d-col g-12">
@@ -197,9 +190,8 @@
 													</div>
 												</div>
 											</div>
-											<div class="menu-right-flip north_indian menu-right-bf">
-												<div class="menu-content-wrap d-flex flex-d-col g-12 h-100 w-100"
-													data-point="03">
+											<div class="lazy-div menu-flip page north_indian odd">
+												<div class="menu-content-wrap d-flex flex-d-col g-12 h-100 w-100">
 													<div class="menu-title d-flex ai-center justify-space-between">
 														<div
 															class="menu-title-text d-flex ai-center justify-flex-start">
@@ -231,9 +223,8 @@
 													</div>
 												</div>
 											</div>
-											<div class="menu-right-flip north_indian menu-right-ff ">
-												<div class="menu-content-wrap d-flex flex-d-col g-12 h-100 w-100"
-													data-point="North-Indian">
+											<div class="lazy-div menu-flip page north_indian even ">
+												<div class="menu-content-wrap d-flex flex-d-col g-12 h-100 w-100">
 													<div class="menu-content d-flex flex-d-col g-12">
 														<div id="northIndianPg2"
 															class="menu-content-items d-flex flex-d-col">
@@ -242,9 +233,8 @@
 													</div>
 												</div>
 											</div>
-											<div class="menu-right-flip maharashtrian menu-right-bf">
-												<div class="menu-content-wrap d-flex flex-d-col g-12 h-100 w-100"
-													data-point="04">
+											<div class="lazy-div menu-flip page maharashtrian odd">
+												<div class="menu-content-wrap d-flex flex-d-col g-12 h-100 w-100">
 													<div class="menu-title d-flex ai-center justify-space-between">
 														<div
 															class="menu-title-text d-flex ai-center justify-flex-start">
@@ -276,9 +266,8 @@
 													</div>
 												</div>
 											</div>
-											<div class="menu-right-flip maharashtrian menu-right-ff ">
-												<div class="menu-content-wrap d-flex flex-d-col g-12 h-100 w-100"
-													data-point="Maharashtrian">
+											<div class="lazy-div menu-flip page maharashtrian even ">
+												<div class="menu-content-wrap d-flex flex-d-col g-12 h-100 w-100">
 													<div class="menu-content d-flex flex-d-col g-12">
 														<div id="maharashtrianPg2"
 															class="menu-content-items d-flex flex-d-col">
@@ -287,9 +276,8 @@
 													</div>
 												</div>
 											</div>
-											<div class="menu-right-flip south_indian menu-right-bf">
-												<div class="menu-content-wrap d-flex flex-d-col g-12 h-100 w-100"
-													data-point="05">
+											<div class="lazy-div menu-flip page south_indian odd">
+												<div class="menu-content-wrap d-flex flex-d-col g-12 h-100 w-100">
 													<div class="menu-title d-flex ai-center justify-space-between">
 														<div
 															class="menu-title-text d-flex ai-center justify-flex-start">
@@ -321,9 +309,8 @@
 													</div>
 												</div>
 											</div>
-											<div class="menu-right-flip south_indian menu-right-ff ">
-												<div class="menu-content-wrap d-flex flex-d-col g-12 h-100 w-100"
-													data-point="South-Indian">
+											<div class="lazy-div menu-flip page south_indian even ">
+												<div class="menu-content-wrap d-flex flex-d-col g-12 h-100 w-100">
 													<div class="menu-content d-flex flex-d-col g-12">
 														<div id="southIndianPg2"
 															class="menu-content-items d-flex flex-d-col">
@@ -332,9 +319,8 @@
 													</div>
 												</div>
 											</div>
-											<div class="menu-right-flip beverages menu-right-bf">
-												<div class="menu-content-wrap d-flex flex-d-col g-12 h-100 w-100"
-													data-point="06">
+											<div class="lazy-div menu-flip page beverages odd">
+												<div class="menu-content-wrap d-flex flex-d-col g-12 h-100 w-100">
 													<div class="menu-title d-flex ai-center justify-space-between">
 														<div
 															class="menu-title-text d-flex ai-center justify-flex-start">
@@ -349,9 +335,8 @@
 													</div>
 												</div>
 											</div>
-											<div class="menu-right-flip beverages menu-right-ff ">
-												<div class="menu-content-wrap d-flex flex-d-col g-12 h-100 w-100"
-													data-point="Beverages">
+											<div class="lazy-div menu-flip page beverages even ">
+												<div class="menu-content-wrap d-flex flex-d-col g-12 h-100 w-100">
 													<div class="menu-content d-flex flex-d-col g-12">
 														<div id="beveragesPg2"
 															class="menu-content-items d-flex flex-d-col">
@@ -371,46 +356,46 @@
 										</div>
 									</div>
 								</div>
-								<div class="food-navigation d-flex flex-d-col justify-flex-start ai-center">
+								<div id="food-navigation" class=" opac-0 food-navigation d-flex flex-d-col justify-flex-start ai-center">
 									<!-- <img class="menu-links" src="./assets/customer-img/img/category.png" alt="menu-navigation"> -->
-									<div id="breakfast" class="food-navigation-title" data-point="Breakfast">
+									<div id="breakfast" class="food-navigation-title">
 										<p class="active">
 											Breakfast
 										</p>
 									</div>
-									<div id="continental" class="food-navigation-title" data-point="Continental">
+									<div id="continental" class="food-navigation-title">
 										<p>
 											Continental
 										</p>
 									</div>
-									<div id="chinese" class="food-navigation-title" data-point="Chinese">
+									<div id="chinese" class="food-navigation-title">
 										<p>
 											Chinese
 										</p>
 									</div>
-									<div id="north_indian" class="food-navigation-title" data-point="North-Indian">
+									<div id="north_indian" class="food-navigation-title">
 										<p>
 											North Indian
 										</p>
 									</div>
-									<div id="maharashtrian" class="food-navigation-title" data-point="Maharashtrian">
+									<div id="maharashtrian" class="food-navigation-title">
 										<p>
 											Maharashtrian
 										</p>
 									</div>
-									<div id="south_indian" class="food-navigation-title" data-point="South-Indian">
+									<div id="south_indian" class="food-navigation-title">
 										<p>
 											South Indian
 										</p>
 									</div>
-									<div id="beverages" class="food-navigation-title" data-point="Beverages">
+									<div id="beverages" class="food-navigation-title">
 										<p>
 											Beverages
 										</p>
 									</div>
 								</div>
 							</div>
-							<footer class="progress d-flex ai-center justify-space-around">
+							<footer id="footer" class="progress d-none ai-center justify-space-around">
 								<!-- <div class="swiper-button-next">
 									<span class="material-symbols-rounded">arrow_forward_ios</span>
 								</div> -->
@@ -430,7 +415,7 @@
 											<div class="progress-step-icon d-flex ai-center justify-center next-active">
 												<span class="material-symbols-rounded next-active">shopping_cart</span>
 												<div class="showUp">
-													<p>3 Items</p>
+													<p>0 Items</p>
 												</div>
 											</div>
 											<div class="progress-step-text d-flex ai-center justify-center active">
@@ -443,7 +428,7 @@
 											<div class="progress-step-icon d-flex ai-center justify-center ">
 												<span class="material-symbols-rounded">file_download_done</span>
 												<div class="showUp">
-													<p>&#8377; 768/-</p>
+													<p>&#8377; 000/-</p>
 												</div>
 											</div>
 											<div class="progress-step-text d-flex ai-center justify-center">
@@ -488,7 +473,7 @@
 							</footer>
 						</div>
 
-						<!--==== Third Slide - MY CART ====-->
+						<!--==== SECOND Slide - MY CART ====-->
 						<div class="swiper-slide justify-center ai-center d-flex">
 							<nav class="accomplishments w-100 d-flex ai-center justify-flex-end">
 								<button id="showCallWaiter"
@@ -526,633 +511,9 @@
 											<p>My Cart</p>
 										</header>
 										<p class="items-added-heading">Items Added</p>
-										<div class="items-added">
-											<div class="item-added-modify d-flex flex-d-col">
-												<div
-													class="item-added d-flex ai-center justify-space-between h-fit-content">
-													<div
-														class="item-added-details d-flex ai-flex-start h-fit-content w-fit-content g-12">
-														<div class="item-added-img">
-															<img src="./assets/customer-img/img/Rectangle-8.png"
-																alt="item-added-1">
-														</div>
-														<div
-															class="item-added-content d-flex flex-d-col ai-flex-start g-8">
-															<div
-																class="item-added-title d-flex flex-d-col ai-flex-start g-4">
-																<p>French Toast</p>
-																<div
-																	class="item-added-speciality w-fit-content d-flex ai-center justify-flex-start g-8">
-																	<div
-																		class="speciality-vegNonveg d-flex ai-center justify-center">
-																		<svg width="14" height="14" viewBox="0 0 14 14"
-																			fill="none"
-																			xmlns="http://www.w3.org/2000/svg">
-																			<path
-																				d="M4.85373 12.0304H8.1699C10.9334 12.0304 12.0388 10.925 12.0388 8.16154V4.8454C12.0388 2.08194 10.9334 0.976562 8.1699 0.976562H4.85373C2.09025 0.976562 0.984863 2.08194 0.984863 4.8454V8.16154C0.984863 10.925 2.09025 12.0304 4.85373 12.0304Z"
-																				stroke="#54BA54" stroke-width="0.916066"
-																				stroke-linecap="round"
-																				stroke-linejoin="round" />
-																			<ellipse cx="6.55199" cy="6.53822"
-																				rx="2.94457" ry="2.94447"
-																				fill="#54BA54" />
-																		</svg>
-																	</div>
-																	<div
-																		class="speciality-rating d-flex ai-center justify-center">
-																		<svg width="77" height="14" viewBox="0 0 77 14"
-																			fill="none"
-																			xmlns="http://www.w3.org/2000/svg">
-																			<path
-																				d="M5.54433 1.19657C5.80541 0.568887 6.69459 0.568888 6.95567 1.19657L7.98837 3.6794C8.09844 3.94402 8.34729 4.12482 8.63297 4.14772L11.3134 4.36261C11.9911 4.41693 12.2659 5.26262 11.7496 5.70488L9.70737 7.45418C9.4897 7.64063 9.39464 7.93318 9.46114 8.21196L10.0851 10.8275C10.2428 11.4888 9.52345 12.0115 8.94328 11.6571L6.64837 10.2554C6.4038 10.1061 6.0962 10.1061 5.85163 10.2554L3.55671 11.6571C2.97655 12.0115 2.25718 11.4888 2.41493 10.8275L3.03886 8.21196C3.10536 7.93318 3.0103 7.64063 2.79263 7.45418L0.750437 5.70488C0.234126 5.26262 0.508902 4.41693 1.18656 4.36261L3.86703 4.14772C4.15271 4.12482 4.40156 3.94402 4.51163 3.6794L5.54433 1.19657Z"
-																				fill="#FFE559" />
-																			<path
-																				d="M21.5443 1.19657C21.8054 0.568887 22.6946 0.568888 22.9557 1.19657L23.9884 3.6794C24.0984 3.94402 24.3473 4.12482 24.633 4.14772L27.3134 4.36261C27.9911 4.41693 28.2659 5.26262 27.7496 5.70488L25.7074 7.45418C25.4897 7.64063 25.3946 7.93318 25.4611 8.21196L26.0851 10.8275C26.2428 11.4888 25.5234 12.0115 24.9433 11.6571L22.6484 10.2554C22.4038 10.1061 22.0962 10.1061 21.8516 10.2554L19.5567 11.6571C18.9765 12.0115 18.2572 11.4888 18.4149 10.8275L19.0389 8.21196C19.1054 7.93318 19.0103 7.64063 18.7926 7.45418L16.7504 5.70488C16.2341 5.26262 16.5089 4.41693 17.1866 4.36261L19.867 4.14772C20.1527 4.12482 20.4016 3.94402 20.5116 3.6794L21.5443 1.19657Z"
-																				fill="#FFE559" />
-																			<path
-																				d="M37.5443 1.19657C37.8054 0.568887 38.6946 0.568888 38.9557 1.19657L39.9884 3.6794C40.0984 3.94402 40.3473 4.12482 40.633 4.14772L43.3134 4.36261C43.9911 4.41693 44.2659 5.26262 43.7496 5.70488L41.7074 7.45418C41.4897 7.64063 41.3946 7.93318 41.4611 8.21196L42.0851 10.8275C42.2428 11.4888 41.5234 12.0115 40.9433 11.6571L38.6484 10.2554C38.4038 10.1061 38.0962 10.1061 37.8516 10.2554L35.5567 11.6571C34.9765 12.0115 34.2572 11.4888 34.4149 10.8275L35.0389 8.21196C35.1054 7.93318 35.0103 7.64063 34.7926 7.45418L32.7504 5.70488C32.2341 5.26262 32.5089 4.41693 33.1866 4.36261L35.867 4.14772C36.1527 4.12482 36.4016 3.94402 36.5116 3.6794L37.5443 1.19657Z"
-																				fill="#FFE559" />
-																			<path
-																				d="M53.5443 1.19657C53.8054 0.568887 54.6946 0.568888 54.9557 1.19657L55.9884 3.6794C56.0984 3.94402 56.3473 4.12482 56.633 4.14772L59.3134 4.36261C59.9911 4.41693 60.2659 5.26262 59.7496 5.70488L57.7074 7.45418C57.4897 7.64063 57.3946 7.93318 57.4611 8.21196L58.0851 10.8275C58.2428 11.4888 57.5234 12.0115 56.9433 11.6571L54.6484 10.2554C54.4038 10.1061 54.0962 10.1061 53.8516 10.2554L51.5567 11.6571C50.9765 12.0115 50.2572 11.4888 50.4149 10.8275L51.0389 8.21196C51.1054 7.93318 51.0103 7.64063 50.7926 7.45418L48.7504 5.70488C48.2341 5.26262 48.5089 4.41693 49.1866 4.36261L51.867 4.14772C52.1527 4.12482 52.4016 3.94402 52.5116 3.6794L53.5443 1.19657Z"
-																				fill="#FFE559" />
-																			<path
-																				d="M70.8087 1.25772L71.8414 3.74055C71.9744 4.0603 72.2751 4.27876 72.6202 4.30644L75.3007 4.52132C75.8372 4.56433 76.0547 5.23383 75.646 5.58396L73.6038 7.33325C73.3408 7.55854 73.2259 7.91205 73.3063 8.24891L73.9302 10.8645C74.0551 11.388 73.4856 11.8018 73.0263 11.5212L70.7314 10.1196C70.4358 9.93905 70.0642 9.93906 69.7686 10.1196L67.4737 11.5212C67.0144 11.8018 66.4449 11.388 66.5698 10.8645L67.1937 8.24891C67.2741 7.91205 67.1592 7.55854 66.8962 7.33325L64.854 5.58396C64.4453 5.23383 64.6628 4.56433 65.1993 4.52132L67.8798 4.30644C68.2249 4.27876 68.5256 4.0603 68.6586 3.74055L69.6913 1.25772C69.898 0.760803 70.602 0.760804 70.8087 1.25772Z"
-																				stroke="#888888"
-																				stroke-width="0.318449" />
-																		</svg>
-																	</div>
-																	<div
-																		class="speciality-taste d-flex ai-center justify-center g-4">
-																		<div
-																			class="speciality-taste-icon  d-flex ai-center justify-center">
-																			<svg width="13" height="13"
-																				viewBox="0 0 13 13" fill="none"
-																				xmlns="http://www.w3.org/2000/svg">
-																				<g clip-path="url(#clip0_2053_10311)">
-																					<path
-																						d="M1.35356 0.646447C1.15829 0.451184 0.841709 0.451184 0.646447 0.646447C0.451184 0.841709 0.451184 1.15829 0.646447 1.35356L3.98465 4.69176L3.75543 4.91689C3.62127 5.94581 3.90215 7.01896 4.59907 7.86486L5.87841 6.58551L6.40876 7.11586L5.12939 8.39521C5.97561 9.09236 7.04916 9.37326 8.07841 9.23876L8.30301 9.01016L9.97474 10.6819L11.6465 12.3536C11.8417 12.5488 12.1583 12.5488 12.3536 12.3536C12.5488 12.1583 12.5488 11.8417 12.3536 11.6465L9.00391 8.29676L8.74361 8.03541L8.74231 8.03521L7.48996 6.78286L7.49276 6.78456L7.11636 6.40821L6.58551 5.87841L6.58606 5.87786L6.20981 5.50161L6.21151 5.5044L4.95912 4.25202L4.95891 4.25071L4.69868 3.99048L4.69813 3.99102L1.35356 0.646447Z"
-																						fill="url(#paint0_linear_2053_10311)" />
-																					<path
-																						d="M8.43086 4.56016C8.09071 2.33493 9.57271 0.852907 11.798 1.19307C12.1381 3.41831 10.6561 4.90033 8.43086 4.56016Z"
-																						fill="url(#paint1_linear_2053_10311)" />
-																					<path
-																						d="M1.18356 11.1039L2.26805 10.0194C1.39882 8.81123 1.51501 7.11498 2.61165 6.03793L2.98034 5.67578C3.03497 6.64858 3.39683 7.60753 4.06673 8.39488L3.28249 9.17914C3.13605 9.32559 3.13605 9.56299 3.2825 9.70944C3.42894 9.85589 3.66638 9.85589 3.81283 9.70944L4.59706 8.92518C5.38456 9.59529 6.34375 9.95719 7.31675 10.0117L6.95395 10.3809C5.87765 11.4764 4.18338 11.5931 2.97554 10.7261L1.89066 11.811C1.6954 12.0063 1.37882 12.0063 1.18356 11.811C0.988294 11.6157 0.988294 11.2991 1.18356 11.1039Z"
-																						fill="url(#paint2_linear_2053_10311)" />
-																					<path
-																						d="M9.09655 7.32348L7.64795 5.87493L8.39505 5.12781C8.4648 5.1114 8.5353 5.09676 8.60645 5.08407C9.44335 4.93472 10.4019 5.05023 11.1467 5.79508C11.2342 5.88263 11.2349 6.02433 11.1481 6.11263L9.96495 7.31688C9.6767 7.35163 9.38525 7.35383 9.09655 7.32348Z"
-																						fill="url(#paint3_linear_2053_10311)" />
-																					<path
-																						d="M7.11563 5.34398L5.66718 3.89551C5.63693 3.60734 5.63908 3.31644 5.67358 3.02872L6.87793 1.84588C6.96623 1.75915 7.10798 1.75979 7.19548 1.84732C7.94034 2.59215 8.05589 3.55011 7.90649 4.38656C7.89389 4.45721 7.87934 4.52727 7.86304 4.59657L7.11563 5.34398Z"
-																						fill="url(#paint4_linear_2053_10311)" />
-																				</g>
-																				<defs>
-																					<linearGradient
-																						id="paint0_linear_2053_10311"
-																						x1="6.5" y1="0.5" x2="6.5"
-																						y2="12.5"
-																						gradientUnits="userSpaceOnUse">
-																						<stop stop-color="#FFD67C" />
-																						<stop offset="1"
-																							stop-color="#D5950C" />
-																					</linearGradient>
-																					<linearGradient
-																						id="paint1_linear_2053_10311"
-																						x1="10.1144" y1="1.14453"
-																						x2="10.1144" y2="4.6087"
-																						gradientUnits="userSpaceOnUse">
-																						<stop stop-color="#FFD67C" />
-																						<stop offset="1"
-																							stop-color="#D5950C" />
-																					</linearGradient>
-																					<linearGradient
-																						id="paint2_linear_2053_10311"
-																						x1="4.17693" y1="5.67578"
-																						x2="4.17693" y2="11.9575"
-																						gradientUnits="userSpaceOnUse">
-																						<stop stop-color="#FFD67C" />
-																						<stop offset="1"
-																							stop-color="#D5950C" />
-																					</linearGradient>
-																					<linearGradient
-																						id="paint3_linear_2053_10311"
-																						x1="9.43035" y1="5.02734"
-																						x2="9.43035" y2="7.3447"
-																						gradientUnits="userSpaceOnUse">
-																						<stop stop-color="#FFD67C" />
-																						<stop offset="1"
-																							stop-color="#D5950C" />
-																					</linearGradient>
-																					<linearGradient
-																						id="paint4_linear_2053_10311"
-																						x1="6.80462" y1="1.78125"
-																						x2="6.80462" y2="5.34398"
-																						gradientUnits="userSpaceOnUse">
-																						<stop stop-color="#FFD67C" />
-																						<stop offset="1"
-																							stop-color="#D5950C" />
-																					</linearGradient>
-																					<clipPath id="clip0_2053_10311">
-																						<rect width="13" height="13"
-																							fill="white" />
-																					</clipPath>
-																				</defs>
-																			</svg>
-																		</div>
-																		<div class="speciality-taste-text">
-																			<p>Glutten Free</p>
-																		</div>
-																	</div>
-																</div>
-															</div>
-															<div class="item-added-description d-flex flex-d-col">
-																<p>Thick slices of bread dipped in a cinnamon batter,
-																	made
-																	with soya milk and mashed bananas</p>
-															</div>
-														</div>
-													</div>
-													<div
-														class="item-added-quantity d-flex flex-d-col ai-center justify-center g-8">
-														<p>&#8377;189</p>
-														<div
-															class="item-add-remove d-flex ai-center justify-space-evenly g-6">
-															<button class="item-remove d-flex justify-center ai-center">
-																<span
-																	class="item-remove-btn material-symbols-rounded">remove</span>
-															</button>
-															<p>1</p>
-															<button class="item-add d-flex justify-center ai-center">
-																<span
-																	class="item-add-btn material-symbols-rounded">add</span>
-															</button>
-														</div>
-													</div>
-												</div>
-												<div class="item-modify d-flex g-4 justify-flex-end ai-center">
-													<span class="material-symbols-rounded">edit_note</span>
-													<p>Add Instructions</p>
-												</div>
-												<div class="add-instruction">
-													<form action=""
-														class="coupon-input d-flex justify-center ai-center g-16">
-														<div class="textfield-outlined">
-															<input id="input-instruction-1" type="text" placeholder=" ">
-															<label for="input-instruction-1">
-																<p>
-																	Add your instructions here
-																</p>
-															</label>
-														</div>
-														<button type="button" disabled
-															class="add-instruction-btn d-flex ai-center justify-center g-6">
-															Add Instruction
-														</button>
-													</form>
-												</div>
-											</div>
-											<div class="item-added-modify d-flex flex-d-col">
-												<div
-													class="item-added d-flex ai-center justify-space-between h-fit-content">
-													<div
-														class="item-added-details d-flex ai-flex-start h-fit-content w-fit-content g-12">
-														<div class="item-added-img">
-															<img src="./assets/customer-img/img/Rectangle-7.png"
-																alt="item-added-1">
-														</div>
-														<div
-															class="item-added-content d-flex flex-d-col ai-flex-start g-8">
-															<div
-																class="item-added-title d-flex flex-d-col ai-flex-start g-4">
-																<p>Classic American Breakfast</p>
-																<div
-																	class="item-added-speciality w-fit-content d-flex ai-center justify-flex-start g-8">
-																	<div
-																		class="speciality-vegNonveg d-flex ai-center justify-center">
-																		<svg width="14" height="14" viewBox="0 0 14 14"
-																			fill="none"
-																			xmlns="http://www.w3.org/2000/svg">
-																			<path
-																				d="M4.85373 12.0382H8.1699C10.9334 12.0382 12.0388 10.9328 12.0388 8.16935V4.85321C12.0388 2.08976 10.9334 0.984375 8.1699 0.984375H4.85373C2.09025 0.984375 0.984863 2.08976 0.984863 4.85321V8.16935C0.984863 10.9328 2.09025 12.0382 4.85373 12.0382Z"
-																				stroke="#B44C25" stroke-width="0.916066"
-																				stroke-linecap="round"
-																				stroke-linejoin="round" />
-																			<path
-																				d="M6.0867 3.48787C6.28373 3.11818 6.81358 3.11818 7.01061 3.48787L9.53855 8.2311C9.72438 8.57978 9.47171 9.00077 9.0766 9.00077H4.02071C3.6256 9.00077 3.37293 8.57978 3.55876 8.2311L6.0867 3.48787Z"
-																				fill="#B44C25" />
-																		</svg>
-																	</div>
-																	<div
-																		class="speciality-rating d-flex ai-center justify-center">
-																		<svg width="77" height="14" viewBox="0 0 77 14"
-																			fill="none"
-																			xmlns="http://www.w3.org/2000/svg">
-																			<path
-																				d="M5.54433 1.19657C5.80541 0.568887 6.69459 0.568888 6.95567 1.19657L7.98837 3.6794C8.09844 3.94402 8.34729 4.12482 8.63297 4.14772L11.3134 4.36261C11.9911 4.41693 12.2659 5.26262 11.7496 5.70488L9.70737 7.45418C9.4897 7.64063 9.39464 7.93318 9.46114 8.21196L10.0851 10.8275C10.2428 11.4888 9.52345 12.0115 8.94328 11.6571L6.64837 10.2554C6.4038 10.1061 6.0962 10.1061 5.85163 10.2554L3.55671 11.6571C2.97655 12.0115 2.25718 11.4888 2.41493 10.8275L3.03886 8.21196C3.10536 7.93318 3.0103 7.64063 2.79263 7.45418L0.750437 5.70488C0.234126 5.26262 0.508902 4.41693 1.18656 4.36261L3.86703 4.14772C4.15271 4.12482 4.40156 3.94402 4.51163 3.6794L5.54433 1.19657Z"
-																				fill="#FFE559" />
-																			<path
-																				d="M21.5443 1.19657C21.8054 0.568887 22.6946 0.568888 22.9557 1.19657L23.9884 3.6794C24.0984 3.94402 24.3473 4.12482 24.633 4.14772L27.3134 4.36261C27.9911 4.41693 28.2659 5.26262 27.7496 5.70488L25.7074 7.45418C25.4897 7.64063 25.3946 7.93318 25.4611 8.21196L26.0851 10.8275C26.2428 11.4888 25.5234 12.0115 24.9433 11.6571L22.6484 10.2554C22.4038 10.1061 22.0962 10.1061 21.8516 10.2554L19.5567 11.6571C18.9765 12.0115 18.2572 11.4888 18.4149 10.8275L19.0389 8.21196C19.1054 7.93318 19.0103 7.64063 18.7926 7.45418L16.7504 5.70488C16.2341 5.26262 16.5089 4.41693 17.1866 4.36261L19.867 4.14772C20.1527 4.12482 20.4016 3.94402 20.5116 3.6794L21.5443 1.19657Z"
-																				fill="#FFE559" />
-																			<path
-																				d="M37.5443 1.19657C37.8054 0.568887 38.6946 0.568888 38.9557 1.19657L39.9884 3.6794C40.0984 3.94402 40.3473 4.12482 40.633 4.14772L43.3134 4.36261C43.9911 4.41693 44.2659 5.26262 43.7496 5.70488L41.7074 7.45418C41.4897 7.64063 41.3946 7.93318 41.4611 8.21196L42.0851 10.8275C42.2428 11.4888 41.5234 12.0115 40.9433 11.6571L38.6484 10.2554C38.4038 10.1061 38.0962 10.1061 37.8516 10.2554L35.5567 11.6571C34.9765 12.0115 34.2572 11.4888 34.4149 10.8275L35.0389 8.21196C35.1054 7.93318 35.0103 7.64063 34.7926 7.45418L32.7504 5.70488C32.2341 5.26262 32.5089 4.41693 33.1866 4.36261L35.867 4.14772C36.1527 4.12482 36.4016 3.94402 36.5116 3.6794L37.5443 1.19657Z"
-																				fill="#FFE559" />
-																			<path
-																				d="M53.5443 1.19657C53.8054 0.568887 54.6946 0.568888 54.9557 1.19657L55.9884 3.6794C56.0984 3.94402 56.3473 4.12482 56.633 4.14772L59.3134 4.36261C59.9911 4.41693 60.2659 5.26262 59.7496 5.70488L57.7074 7.45418C57.4897 7.64063 57.3946 7.93318 57.4611 8.21196L58.0851 10.8275C58.2428 11.4888 57.5234 12.0115 56.9433 11.6571L54.6484 10.2554C54.4038 10.1061 54.0962 10.1061 53.8516 10.2554L51.5567 11.6571C50.9765 12.0115 50.2572 11.4888 50.4149 10.8275L51.0389 8.21196C51.1054 7.93318 51.0103 7.64063 50.7926 7.45418L48.7504 5.70488C48.2341 5.26262 48.5089 4.41693 49.1866 4.36261L51.867 4.14772C52.1527 4.12482 52.4016 3.94402 52.5116 3.6794L53.5443 1.19657Z"
-																				fill="#FFE559" />
-																			<path
-																				d="M70.8087 1.25772L71.8414 3.74055C71.9744 4.0603 72.2751 4.27876 72.6202 4.30644L75.3007 4.52132C75.8372 4.56433 76.0547 5.23383 75.646 5.58396L73.6038 7.33325C73.3408 7.55854 73.2259 7.91205 73.3063 8.24891L73.9302 10.8645C74.0551 11.388 73.4856 11.8018 73.0263 11.5212L70.7314 10.1196C70.4358 9.93905 70.0642 9.93906 69.7686 10.1196L67.4737 11.5212C67.0144 11.8018 66.4449 11.388 66.5698 10.8645L67.1937 8.24891C67.2741 7.91205 67.1592 7.55854 66.8962 7.33325L64.854 5.58396C64.4453 5.23383 64.6628 4.56433 65.1993 4.52132L67.8798 4.30644C68.2249 4.27876 68.5256 4.0603 68.6586 3.74055L69.6913 1.25772C69.898 0.760803 70.602 0.760804 70.8087 1.25772Z"
-																				stroke="#888888"
-																				stroke-width="0.318449" />
-																		</svg>
-																	</div>
-																	<div
-																		class="speciality-taste d-flex ai-center justify-center g-4">
-																		<div
-																			class="speciality-taste-icon  d-flex ai-center justify-center">
-																			<svg width="13" height="13"
-																				viewBox="0 0 13 13" fill="none"
-																				xmlns="http://www.w3.org/2000/svg">
-																				<g clip-path="url(#clip0_2053_10311)">
-																					<path
-																						d="M1.35356 0.646447C1.15829 0.451184 0.841709 0.451184 0.646447 0.646447C0.451184 0.841709 0.451184 1.15829 0.646447 1.35356L3.98465 4.69176L3.75543 4.91689C3.62127 5.94581 3.90215 7.01896 4.59907 7.86486L5.87841 6.58551L6.40876 7.11586L5.12939 8.39521C5.97561 9.09236 7.04916 9.37326 8.07841 9.23876L8.30301 9.01016L9.97474 10.6819L11.6465 12.3536C11.8417 12.5488 12.1583 12.5488 12.3536 12.3536C12.5488 12.1583 12.5488 11.8417 12.3536 11.6465L9.00391 8.29676L8.74361 8.03541L8.74231 8.03521L7.48996 6.78286L7.49276 6.78456L7.11636 6.40821L6.58551 5.87841L6.58606 5.87786L6.20981 5.50161L6.21151 5.5044L4.95912 4.25202L4.95891 4.25071L4.69868 3.99048L4.69813 3.99102L1.35356 0.646447Z"
-																						fill="url(#paint0_linear_2053_10311)" />
-																					<path
-																						d="M8.43086 4.56016C8.09071 2.33493 9.57271 0.852907 11.798 1.19307C12.1381 3.41831 10.6561 4.90033 8.43086 4.56016Z"
-																						fill="url(#paint1_linear_2053_10311)" />
-																					<path
-																						d="M1.18356 11.1039L2.26805 10.0194C1.39882 8.81123 1.51501 7.11498 2.61165 6.03793L2.98034 5.67578C3.03497 6.64858 3.39683 7.60753 4.06673 8.39488L3.28249 9.17914C3.13605 9.32559 3.13605 9.56299 3.2825 9.70944C3.42894 9.85589 3.66638 9.85589 3.81283 9.70944L4.59706 8.92518C5.38456 9.59529 6.34375 9.95719 7.31675 10.0117L6.95395 10.3809C5.87765 11.4764 4.18338 11.5931 2.97554 10.7261L1.89066 11.811C1.6954 12.0063 1.37882 12.0063 1.18356 11.811C0.988294 11.6157 0.988294 11.2991 1.18356 11.1039Z"
-																						fill="url(#paint2_linear_2053_10311)" />
-																					<path
-																						d="M9.09655 7.32348L7.64795 5.87493L8.39505 5.12781C8.4648 5.1114 8.5353 5.09676 8.60645 5.08407C9.44335 4.93472 10.4019 5.05023 11.1467 5.79508C11.2342 5.88263 11.2349 6.02433 11.1481 6.11263L9.96495 7.31688C9.6767 7.35163 9.38525 7.35383 9.09655 7.32348Z"
-																						fill="url(#paint3_linear_2053_10311)" />
-																					<path
-																						d="M7.11563 5.34398L5.66718 3.89551C5.63693 3.60734 5.63908 3.31644 5.67358 3.02872L6.87793 1.84588C6.96623 1.75915 7.10798 1.75979 7.19548 1.84732C7.94034 2.59215 8.05589 3.55011 7.90649 4.38656C7.89389 4.45721 7.87934 4.52727 7.86304 4.59657L7.11563 5.34398Z"
-																						fill="url(#paint4_linear_2053_10311)" />
-																				</g>
-																				<defs>
-																					<linearGradient
-																						id="paint0_linear_2053_10311"
-																						x1="6.5" y1="0.5" x2="6.5"
-																						y2="12.5"
-																						gradientUnits="userSpaceOnUse">
-																						<stop stop-color="#FFD67C" />
-																						<stop offset="1"
-																							stop-color="#D5950C" />
-																					</linearGradient>
-																					<linearGradient
-																						id="paint1_linear_2053_10311"
-																						x1="10.1144" y1="1.14453"
-																						x2="10.1144" y2="4.6087"
-																						gradientUnits="userSpaceOnUse">
-																						<stop stop-color="#FFD67C" />
-																						<stop offset="1"
-																							stop-color="#D5950C" />
-																					</linearGradient>
-																					<linearGradient
-																						id="paint2_linear_2053_10311"
-																						x1="4.17693" y1="5.67578"
-																						x2="4.17693" y2="11.9575"
-																						gradientUnits="userSpaceOnUse">
-																						<stop stop-color="#FFD67C" />
-																						<stop offset="1"
-																							stop-color="#D5950C" />
-																					</linearGradient>
-																					<linearGradient
-																						id="paint3_linear_2053_10311"
-																						x1="9.43035" y1="5.02734"
-																						x2="9.43035" y2="7.3447"
-																						gradientUnits="userSpaceOnUse">
-																						<stop stop-color="#FFD67C" />
-																						<stop offset="1"
-																							stop-color="#D5950C" />
-																					</linearGradient>
-																					<linearGradient
-																						id="paint4_linear_2053_10311"
-																						x1="6.80462" y1="1.78125"
-																						x2="6.80462" y2="5.34398"
-																						gradientUnits="userSpaceOnUse">
-																						<stop stop-color="#FFD67C" />
-																						<stop offset="1"
-																							stop-color="#D5950C" />
-																					</linearGradient>
-																					<clipPath id="clip0_2053_10311">
-																						<rect width="13" height="13"
-																							fill="white" />
-																					</clipPath>
-																				</defs>
-																			</svg>
-																		</div>
-																		<div class="speciality-taste-text">
-																			<p>Glutten Free</p>
-																		</div>
-																	</div>
-																</div>
-															</div>
-															<div class="item-added-description d-flex flex-d-col">
-																<p>Two eggs any style, choice of bacon or sausage,
-																	toast, and home fries.</p>
-															</div>
-														</div>
-													</div>
-													<div
-														class="item-added-quantity d-flex flex-d-col ai-center justify-center g-8">
-														<p>&#8377;219</p>
-														<div
-															class="item-add-remove d-flex ai-center justify-space-evenly g-6">
-															<button class="item-remove d-flex justify-center ai-center">
-																<span
-																	class="item-remove-btn material-symbols-rounded">remove</span>
-															</button>
-															<p>1</p>
-															<button class="item-add d-flex justify-center ai-center">
-																<span
-																	class="item-add-btn material-symbols-rounded">add</span>
-															</button>
-														</div>
-													</div>
-												</div>
-												<div class="item-modify d-flex g-4 justify-flex-end ai-center">
-													<span class="material-symbols-rounded">edit_note</span>
-													<p>Add Instructions</p>
-												</div>
-												<div class="add-instruction">
-													<form action=""
-														class="coupon-input d-flex justify-center ai-center g-16">
-														<div class="textfield-outlined">
-															<input id="input-instruction-2" type="text" placeholder=" ">
-															<label for="input-instruction-2">
-																<p>
-																	Add your instructions here
-																</p>
-															</label>
-														</div>
-														<button type="button" disabled
-															class="add-instruction-btn d-flex ai-center justify-center g-6">
-															Add Instruction
-														</button>
-													</form>
-												</div>
-											</div>
-											<div class="item-added-modify d-flex flex-d-col">
-												<div
-													class="item-added d-flex ai-center justify-space-between h-fit-content">
-													<div
-														class="item-added-details d-flex ai-flex-start h-fit-content w-fit-content g-12">
-														<div class="item-added-img">
-															<img src="./assets/customer-img/img/Rectangle 344-2.png"
-																alt="item-added-1">
-														</div>
-														<div
-															class="item-added-content d-flex flex-d-col ai-flex-start g-8">
-															<div
-																class="item-added-title d-flex flex-d-col ai-flex-start g-4">
-																<p>Belgian Chocolate Waffles</p>
-																<div
-																	class="item-added-speciality w-fit-content d-flex ai-center justify-flex-start g-8">
-																	<div
-																		class="speciality-vegNonveg d-flex ai-center justify-center">
-																		<svg width="14" height="14" viewBox="0 0 14 14"
-																			fill="none"
-																			xmlns="http://www.w3.org/2000/svg">
-																			<path
-																				d="M4.85373 12.0304H8.1699C10.9334 12.0304 12.0388 10.925 12.0388 8.16154V4.8454C12.0388 2.08194 10.9334 0.976562 8.1699 0.976562H4.85373C2.09025 0.976562 0.984863 2.08194 0.984863 4.8454V8.16154C0.984863 10.925 2.09025 12.0304 4.85373 12.0304Z"
-																				stroke="#54BA54" stroke-width="0.916066"
-																				stroke-linecap="round"
-																				stroke-linejoin="round" />
-																			<ellipse cx="6.55199" cy="6.53822"
-																				rx="2.94457" ry="2.94447"
-																				fill="#54BA54" />
-																		</svg>
-																	</div>
-																	<div
-																		class="speciality-rating d-flex ai-center justify-center">
-																		<svg width="77" height="14" viewBox="0 0 77 14"
-																			fill="none"
-																			xmlns="http://www.w3.org/2000/svg">
-																			<path
-																				d="M5.54433 1.19657C5.80541 0.568887 6.69459 0.568888 6.95567 1.19657L7.98837 3.6794C8.09844 3.94402 8.34729 4.12482 8.63297 4.14772L11.3134 4.36261C11.9911 4.41693 12.2659 5.26262 11.7496 5.70488L9.70737 7.45418C9.4897 7.64063 9.39464 7.93318 9.46114 8.21196L10.0851 10.8275C10.2428 11.4888 9.52345 12.0115 8.94328 11.6571L6.64837 10.2554C6.4038 10.1061 6.0962 10.1061 5.85163 10.2554L3.55671 11.6571C2.97655 12.0115 2.25718 11.4888 2.41493 10.8275L3.03886 8.21196C3.10536 7.93318 3.0103 7.64063 2.79263 7.45418L0.750437 5.70488C0.234126 5.26262 0.508902 4.41693 1.18656 4.36261L3.86703 4.14772C4.15271 4.12482 4.40156 3.94402 4.51163 3.6794L5.54433 1.19657Z"
-																				fill="#FFE559" />
-																			<path
-																				d="M21.5443 1.19657C21.8054 0.568887 22.6946 0.568888 22.9557 1.19657L23.9884 3.6794C24.0984 3.94402 24.3473 4.12482 24.633 4.14772L27.3134 4.36261C27.9911 4.41693 28.2659 5.26262 27.7496 5.70488L25.7074 7.45418C25.4897 7.64063 25.3946 7.93318 25.4611 8.21196L26.0851 10.8275C26.2428 11.4888 25.5234 12.0115 24.9433 11.6571L22.6484 10.2554C22.4038 10.1061 22.0962 10.1061 21.8516 10.2554L19.5567 11.6571C18.9765 12.0115 18.2572 11.4888 18.4149 10.8275L19.0389 8.21196C19.1054 7.93318 19.0103 7.64063 18.7926 7.45418L16.7504 5.70488C16.2341 5.26262 16.5089 4.41693 17.1866 4.36261L19.867 4.14772C20.1527 4.12482 20.4016 3.94402 20.5116 3.6794L21.5443 1.19657Z"
-																				fill="#FFE559" />
-																			<path
-																				d="M37.5443 1.19657C37.8054 0.568887 38.6946 0.568888 38.9557 1.19657L39.9884 3.6794C40.0984 3.94402 40.3473 4.12482 40.633 4.14772L43.3134 4.36261C43.9911 4.41693 44.2659 5.26262 43.7496 5.70488L41.7074 7.45418C41.4897 7.64063 41.3946 7.93318 41.4611 8.21196L42.0851 10.8275C42.2428 11.4888 41.5234 12.0115 40.9433 11.6571L38.6484 10.2554C38.4038 10.1061 38.0962 10.1061 37.8516 10.2554L35.5567 11.6571C34.9765 12.0115 34.2572 11.4888 34.4149 10.8275L35.0389 8.21196C35.1054 7.93318 35.0103 7.64063 34.7926 7.45418L32.7504 5.70488C32.2341 5.26262 32.5089 4.41693 33.1866 4.36261L35.867 4.14772C36.1527 4.12482 36.4016 3.94402 36.5116 3.6794L37.5443 1.19657Z"
-																				fill="#FFE559" />
-																			<path
-																				d="M53.5443 1.19657C53.8054 0.568887 54.6946 0.568888 54.9557 1.19657L55.9884 3.6794C56.0984 3.94402 56.3473 4.12482 56.633 4.14772L59.3134 4.36261C59.9911 4.41693 60.2659 5.26262 59.7496 5.70488L57.7074 7.45418C57.4897 7.64063 57.3946 7.93318 57.4611 8.21196L58.0851 10.8275C58.2428 11.4888 57.5234 12.0115 56.9433 11.6571L54.6484 10.2554C54.4038 10.1061 54.0962 10.1061 53.8516 10.2554L51.5567 11.6571C50.9765 12.0115 50.2572 11.4888 50.4149 10.8275L51.0389 8.21196C51.1054 7.93318 51.0103 7.64063 50.7926 7.45418L48.7504 5.70488C48.2341 5.26262 48.5089 4.41693 49.1866 4.36261L51.867 4.14772C52.1527 4.12482 52.4016 3.94402 52.5116 3.6794L53.5443 1.19657Z"
-																				fill="#FFE559" />
-																			<path
-																				d="M70.8087 1.25772L71.8414 3.74055C71.9744 4.0603 72.2751 4.27876 72.6202 4.30644L75.3007 4.52132C75.8372 4.56433 76.0547 5.23383 75.646 5.58396L73.6038 7.33325C73.3408 7.55854 73.2259 7.91205 73.3063 8.24891L73.9302 10.8645C74.0551 11.388 73.4856 11.8018 73.0263 11.5212L70.7314 10.1196C70.4358 9.93905 70.0642 9.93906 69.7686 10.1196L67.4737 11.5212C67.0144 11.8018 66.4449 11.388 66.5698 10.8645L67.1937 8.24891C67.2741 7.91205 67.1592 7.55854 66.8962 7.33325L64.854 5.58396C64.4453 5.23383 64.6628 4.56433 65.1993 4.52132L67.8798 4.30644C68.2249 4.27876 68.5256 4.0603 68.6586 3.74055L69.6913 1.25772C69.898 0.760803 70.602 0.760804 70.8087 1.25772Z"
-																				stroke="#888888"
-																				stroke-width="0.318449" />
-																		</svg>
-																	</div>
-																	<div
-																		class="speciality-taste d-flex ai-center justify-center g-4">
-																		<div
-																			class="speciality-taste-icon  d-flex ai-center justify-center">
-																			<svg width="51" height="13"
-																				viewBox="0 0 51 13" fill="none"
-																				xmlns="http://www.w3.org/2000/svg">
-																				<g clip-path="url(#clip0_2054_10450)">
-																					<path
-																						d="M12.2802 11.2212L6.89719 5.83719C6.75519 5.69519 6.56719 5.61719 6.36719 5.61719C6.16719 5.61719 5.97819 5.69519 5.83719 5.83719C5.69519 5.97919 5.61719 6.16719 5.61719 6.36719C5.61719 6.56719 5.69519 6.75619 5.83719 6.89719L11.2202 12.2802C11.3622 12.4222 11.5502 12.5002 11.7502 12.5002C11.9502 12.5002 12.1392 12.4222 12.2802 12.2802C12.4222 12.1382 12.5002 11.9502 12.5002 11.7502C12.5002 11.5502 12.4222 11.3622 12.2802 11.2212Z"
-																						fill="url(#paint0_linear_2054_10450)" />
-																					<path opacity="0.2"
-																						d="M6.36719 5.91719C6.48719 5.91719 6.60019 5.96419 6.68519 6.04919L12.0682 11.4322C12.1532 11.5172 12.2002 11.6302 12.2002 11.7502C12.2002 11.8702 12.1532 11.9832 12.0682 12.0682C11.9832 12.1532 11.8702 12.2002 11.7502 12.2002C11.6302 12.2002 11.5172 12.1532 11.4322 12.0682L6.04819 6.68519C5.96319 6.60019 5.91619 6.48719 5.91619 6.36719C5.91619 6.24719 5.96319 6.13419 6.04819 6.04919C6.13319 5.96419 6.24619 5.91719 6.36719 5.91719ZM6.36719 5.61719C6.16719 5.61719 5.97819 5.69519 5.83719 5.83719C5.69519 5.97919 5.61719 6.16719 5.61719 6.36719C5.61719 6.56719 5.69519 6.75619 5.83719 6.89719L11.2202 12.2802C11.3622 12.4222 11.5502 12.5002 11.7502 12.5002C11.9502 12.5002 12.1392 12.4222 12.2802 12.2802C12.4222 12.1382 12.5002 11.9502 12.5002 11.7502C12.5002 11.5502 12.4222 11.3612 12.2802 11.2202L6.89719 5.83619C6.75519 5.69519 6.56719 5.61719 6.36719 5.61719Z"
-																						fill="#434343" />
-																					<path
-																						d="M5 9.5C7.48528 9.5 9.5 7.48528 9.5 5C9.5 2.51472 7.48528 0.5 5 0.5C2.51472 0.5 0.5 2.51472 0.5 5C0.5 7.48528 2.51472 9.5 5 9.5Z"
-																						fill="url(#paint1_linear_2054_10450)" />
-																					<path opacity="0.2"
-																						d="M5 0.8C7.316 0.8 9.2 2.684 9.2 5C9.2 7.316 7.316 9.2 5 9.2C2.684 9.2 0.8 7.316 0.8 5C0.8 2.684 2.684 0.8 5 0.8ZM5 0.5C2.515 0.5 0.5 2.515 0.5 5C0.5 7.485 2.515 9.5 5 9.5C7.485 9.5 9.5 7.485 9.5 5C9.5 2.515 7.485 0.5 5 0.5Z"
-																						fill="#434343" />
-																					<path
-																						d="M7.95424 2.49312C7.02924 1.43212 4.57924 0.397116 2.48124 2.00012C1.71424 2.58612 1.07324 3.92512 1.07324 5.18812C1.07324 5.85112 1.22324 6.47812 1.49024 7.03912C1.30624 6.57512 1.20524 6.07312 1.20524 5.55212C1.20524 3.67412 2.71024 1.77712 4.72224 1.74012C7.07824 1.69712 8.12324 3.30412 8.12324 4.80612C8.12324 5.91912 7.64524 6.73112 6.92424 7.18812C6.48024 7.47012 5.94324 7.61612 5.36924 7.61412C4.09824 7.60912 3.13424 6.72812 3.13424 5.43112C3.13424 4.24512 4.09724 3.55512 5.02424 3.51612C6.21324 3.46612 6.63424 4.42712 6.62624 5.04312C6.61624 5.81912 5.92224 6.26612 5.30024 6.21912C4.75824 6.17812 4.43124 5.83112 4.44924 5.25512C4.46224 4.86712 4.82524 4.57912 5.16224 4.57912C5.53724 4.57912 5.78924 4.84312 5.82524 5.09212C5.85924 5.32212 5.78824 5.68012 5.28724 5.68012C5.08424 5.68012 4.92924 5.51112 4.90524 5.38212C4.88224 5.25412 4.90024 5.02012 5.11524 5.02012C5.11524 5.02012 4.91424 5.13512 5.01424 5.32712C5.06824 5.43012 5.14624 5.45312 5.23724 5.45512C5.39024 5.44212 5.51024 5.32412 5.51024 5.17812C5.51024 4.98512 5.34224 4.82812 5.13524 4.82812C4.87624 4.82812 4.66724 5.02412 4.66724 5.26512C4.66724 5.56712 4.90424 5.93012 5.32024 5.94712C5.80624 5.96712 6.30224 5.51112 6.21324 4.96512C6.13724 4.50012 5.89424 4.03912 5.08424 4.03912C4.45224 4.03912 3.72124 4.43412 3.72124 5.34212C3.72124 6.33612 4.53524 6.96912 5.32424 6.96912C6.53824 6.96912 7.50124 6.33212 7.50124 4.95412C7.50124 4.62412 7.45124 4.28812 7.33324 3.97612C7.12624 3.42812 6.47124 2.50512 4.85424 2.48612C3.30424 2.46712 2.04724 3.74312 2.04724 5.29312C2.04724 7.11812 3.48624 8.48812 5.46924 8.49712C7.86724 8.50912 10.3472 5.23612 7.95424 2.49312Z"
-																						fill="url(#paint2_linear_2054_10450)" />
-																				</g>
-																				<g clip-path="url(#clip1_2054_10450)">
-																					<path
-																						d="M31.2802 11.2212L25.8972 5.83719C25.7552 5.69519 25.5672 5.61719 25.3672 5.61719C25.1672 5.61719 24.9782 5.69519 24.8372 5.83719C24.6952 5.97919 24.6172 6.16719 24.6172 6.36719C24.6172 6.56719 24.6952 6.75619 24.8372 6.89719L30.2202 12.2802C30.3622 12.4222 30.5502 12.5002 30.7502 12.5002C30.9502 12.5002 31.1392 12.4222 31.2802 12.2802C31.4222 12.1382 31.5002 11.9502 31.5002 11.7502C31.5002 11.5502 31.4222 11.3622 31.2802 11.2212Z"
-																						fill="url(#paint3_linear_2054_10450)" />
-																					<path opacity="0.2"
-																						d="M25.3672 5.91719C25.4872 5.91719 25.6002 5.96419 25.6852 6.04919L31.0682 11.4322C31.1532 11.5172 31.2002 11.6302 31.2002 11.7502C31.2002 11.8702 31.1532 11.9832 31.0682 12.0682C30.9832 12.1532 30.8702 12.2002 30.7502 12.2002C30.6302 12.2002 30.5172 12.1532 30.4322 12.0682L25.0482 6.68519C24.9632 6.60019 24.9162 6.48719 24.9162 6.36719C24.9162 6.24719 24.9632 6.13419 25.0482 6.04919C25.1332 5.96419 25.2462 5.91719 25.3672 5.91719ZM25.3672 5.61719C25.1672 5.61719 24.9782 5.69519 24.8372 5.83719C24.6952 5.97919 24.6172 6.16719 24.6172 6.36719C24.6172 6.56719 24.6952 6.75619 24.8372 6.89719L30.2202 12.2802C30.3622 12.4222 30.5502 12.5002 30.7502 12.5002C30.9502 12.5002 31.1392 12.4222 31.2802 12.2802C31.4222 12.1382 31.5002 11.9502 31.5002 11.7502C31.5002 11.5502 31.4222 11.3612 31.2802 11.2202L25.8972 5.83619C25.7552 5.69519 25.5672 5.61719 25.3672 5.61719Z"
-																						fill="#434343" />
-																					<path
-																						d="M24 9.5C26.4853 9.5 28.5 7.48528 28.5 5C28.5 2.51472 26.4853 0.5 24 0.5C21.5147 0.5 19.5 2.51472 19.5 5C19.5 7.48528 21.5147 9.5 24 9.5Z"
-																						fill="url(#paint4_linear_2054_10450)" />
-																					<path opacity="0.2"
-																						d="M24 0.8C26.316 0.8 28.2 2.684 28.2 5C28.2 7.316 26.316 9.2 24 9.2C21.684 9.2 19.8 7.316 19.8 5C19.8 2.684 21.684 0.8 24 0.8ZM24 0.5C21.515 0.5 19.5 2.515 19.5 5C19.5 7.485 21.515 9.5 24 9.5C26.485 9.5 28.5 7.485 28.5 5C28.5 2.515 26.485 0.5 24 0.5Z"
-																						fill="#434343" />
-																					<path
-																						d="M26.9542 2.49312C26.0292 1.43212 23.5792 0.397116 21.4812 2.00012C20.7142 2.58612 20.0732 3.92512 20.0732 5.18812C20.0732 5.85112 20.2232 6.47812 20.4902 7.03912C20.3062 6.57512 20.2052 6.07312 20.2052 5.55212C20.2052 3.67412 21.7102 1.77712 23.7222 1.74012C26.0782 1.69712 27.1232 3.30412 27.1232 4.80612C27.1232 5.91912 26.6452 6.73112 25.9242 7.18812C25.4802 7.47012 24.9432 7.61612 24.3692 7.61412C23.0982 7.60912 22.1342 6.72812 22.1342 5.43112C22.1342 4.24512 23.0972 3.55512 24.0242 3.51612C25.2132 3.46612 25.6342 4.42712 25.6262 5.04312C25.6162 5.81912 24.9222 6.26612 24.3002 6.21912C23.7582 6.17812 23.4312 5.83112 23.4492 5.25512C23.4622 4.86712 23.8252 4.57912 24.1622 4.57912C24.5372 4.57912 24.7892 4.84312 24.8252 5.09212C24.8592 5.32212 24.7882 5.68012 24.2872 5.68012C24.0842 5.68012 23.9292 5.51112 23.9052 5.38212C23.8822 5.25412 23.9002 5.02012 24.1152 5.02012C24.1152 5.02012 23.9142 5.13512 24.0142 5.32712C24.0682 5.43012 24.1462 5.45312 24.2372 5.45512C24.3902 5.44212 24.5102 5.32412 24.5102 5.17812C24.5102 4.98512 24.3422 4.82812 24.1352 4.82812C23.8762 4.82812 23.6672 5.02412 23.6672 5.26512C23.6672 5.56712 23.9042 5.93012 24.3202 5.94712C24.8062 5.96712 25.3022 5.51112 25.2132 4.96512C25.1372 4.50012 24.8942 4.03912 24.0842 4.03912C23.4522 4.03912 22.7212 4.43412 22.7212 5.34212C22.7212 6.33612 23.5352 6.96912 24.3242 6.96912C25.5382 6.96912 26.5012 6.33212 26.5012 4.95412C26.5012 4.62412 26.4512 4.28812 26.3332 3.97612C26.1262 3.42812 25.4712 2.50512 23.8542 2.48612C22.3042 2.46712 21.0472 3.74312 21.0472 5.29312C21.0472 7.11812 22.4862 8.48812 24.4692 8.49712C26.8672 8.50912 29.3472 5.23612 26.9542 2.49312Z"
-																						fill="url(#paint5_linear_2054_10450)" />
-																				</g>
-																				<g clip-path="url(#clip2_2054_10450)">
-																					<path
-																						d="M50.2802 11.2212L44.8972 5.83719C44.7552 5.69519 44.5672 5.61719 44.3672 5.61719C44.1672 5.61719 43.9782 5.69519 43.8372 5.83719C43.6952 5.97919 43.6172 6.16719 43.6172 6.36719C43.6172 6.56719 43.6952 6.75619 43.8372 6.89719L49.2202 12.2802C49.3622 12.4222 49.5502 12.5002 49.7502 12.5002C49.9502 12.5002 50.1392 12.4222 50.2802 12.2802C50.4222 12.1382 50.5002 11.9502 50.5002 11.7502C50.5002 11.5502 50.4222 11.3622 50.2802 11.2212Z"
-																						fill="url(#paint6_linear_2054_10450)" />
-																					<path opacity="0.2"
-																						d="M44.3672 5.91719C44.4872 5.91719 44.6002 5.96419 44.6852 6.04919L50.0682 11.4322C50.1532 11.5172 50.2002 11.6302 50.2002 11.7502C50.2002 11.8702 50.1532 11.9832 50.0682 12.0682C49.9832 12.1532 49.8702 12.2002 49.7502 12.2002C49.6302 12.2002 49.5172 12.1532 49.4322 12.0682L44.0482 6.68519C43.9632 6.60019 43.9162 6.48719 43.9162 6.36719C43.9162 6.24719 43.9632 6.13419 44.0482 6.04919C44.1332 5.96419 44.2462 5.91719 44.3672 5.91719ZM44.3672 5.61719C44.1672 5.61719 43.9782 5.69519 43.8372 5.83719C43.6952 5.97919 43.6172 6.16719 43.6172 6.36719C43.6172 6.56719 43.6952 6.75619 43.8372 6.89719L49.2202 12.2802C49.3622 12.4222 49.5502 12.5002 49.7502 12.5002C49.9502 12.5002 50.1392 12.4222 50.2802 12.2802C50.4222 12.1382 50.5002 11.9502 50.5002 11.7502C50.5002 11.5502 50.4222 11.3612 50.2802 11.2202L44.8972 5.83619C44.7552 5.69519 44.5672 5.61719 44.3672 5.61719Z"
-																						fill="#434343" />
-																					<path
-																						d="M43 9.5C45.4853 9.5 47.5 7.48528 47.5 5C47.5 2.51472 45.4853 0.5 43 0.5C40.5147 0.5 38.5 2.51472 38.5 5C38.5 7.48528 40.5147 9.5 43 9.5Z"
-																						fill="url(#paint7_linear_2054_10450)" />
-																					<path opacity="0.2"
-																						d="M43 0.8C45.316 0.8 47.2 2.684 47.2 5C47.2 7.316 45.316 9.2 43 9.2C40.684 9.2 38.8 7.316 38.8 5C38.8 2.684 40.684 0.8 43 0.8ZM43 0.5C40.515 0.5 38.5 2.515 38.5 5C38.5 7.485 40.515 9.5 43 9.5C45.485 9.5 47.5 7.485 47.5 5C47.5 2.515 45.485 0.5 43 0.5Z"
-																						fill="#434343" />
-																					<path
-																						d="M45.9542 2.49312C45.0292 1.43212 42.5792 0.397116 40.4812 2.00012C39.7142 2.58612 39.0732 3.92512 39.0732 5.18812C39.0732 5.85112 39.2232 6.47812 39.4902 7.03912C39.3062 6.57512 39.2052 6.07312 39.2052 5.55212C39.2052 3.67412 40.7102 1.77712 42.7222 1.74012C45.0782 1.69712 46.1232 3.30412 46.1232 4.80612C46.1232 5.91912 45.6452 6.73112 44.9242 7.18812C44.4802 7.47012 43.9432 7.61612 43.3692 7.61412C42.0982 7.60912 41.1342 6.72812 41.1342 5.43112C41.1342 4.24512 42.0972 3.55512 43.0242 3.51612C44.2132 3.46612 44.6342 4.42712 44.6262 5.04312C44.6162 5.81912 43.9222 6.26612 43.3002 6.21912C42.7582 6.17812 42.4312 5.83112 42.4492 5.25512C42.4622 4.86712 42.8252 4.57912 43.1622 4.57912C43.5372 4.57912 43.7892 4.84312 43.8252 5.09212C43.8592 5.32212 43.7882 5.68012 43.2872 5.68012C43.0842 5.68012 42.9292 5.51112 42.9052 5.38212C42.8822 5.25412 42.9002 5.02012 43.1152 5.02012C43.1152 5.02012 42.9142 5.13512 43.0142 5.32712C43.0682 5.43012 43.1462 5.45312 43.2372 5.45512C43.3902 5.44212 43.5102 5.32412 43.5102 5.17812C43.5102 4.98512 43.3422 4.82812 43.1352 4.82812C42.8762 4.82812 42.6672 5.02412 42.6672 5.26512C42.6672 5.56712 42.9042 5.93012 43.3202 5.94712C43.8062 5.96712 44.3022 5.51112 44.2132 4.96512C44.1372 4.50012 43.8942 4.03912 43.0842 4.03912C42.4522 4.03912 41.7212 4.43412 41.7212 5.34212C41.7212 6.33612 42.5352 6.96912 43.3242 6.96912C44.5382 6.96912 45.5012 6.33212 45.5012 4.95412C45.5012 4.62412 45.4512 4.28812 45.3332 3.97612C45.1262 3.42812 44.4712 2.50512 42.8542 2.48612C41.3042 2.46712 40.0472 3.74312 40.0472 5.29312C40.0472 7.11812 41.4862 8.48812 43.4692 8.49712C45.8672 8.50912 48.3472 5.23612 45.9542 2.49312Z"
-																						fill="url(#paint8_linear_2054_10450)" />
-																				</g>
-																				<defs>
-																					<linearGradient
-																						id="paint0_linear_2054_10450"
-																						x1="3.10569" y1="3.10679"
-																						x2="11.1162" y2="11.1172"
-																						gradientUnits="userSpaceOnUse">
-																						<stop stop-color="#FAA629" />
-																						<stop offset="1"
-																							stop-color="#FECC81" />
-																					</linearGradient>
-																					<linearGradient
-																						id="paint1_linear_2054_10450"
-																						x1="0.5" y1="5" x2="9.5" y2="5"
-																						gradientUnits="userSpaceOnUse">
-																						<stop offset="0.2047"
-																							stop-color="#F48FB1" />
-																						<stop offset="0.8442"
-																							stop-color="#EC407A" />
-																					</linearGradient>
-																					<linearGradient
-																						id="paint2_linear_2054_10450"
-																						x1="2.15774" y1="2.19742"
-																						x2="8.30024" y2="8.33992"
-																						gradientUnits="userSpaceOnUse">
-																						<stop stop-color="#FCE4EB" />
-																						<stop offset="1"
-																							stop-color="#F48FB1" />
-																					</linearGradient>
-																					<linearGradient
-																						id="paint3_linear_2054_10450"
-																						x1="22.1057" y1="3.10679"
-																						x2="30.1162" y2="11.1172"
-																						gradientUnits="userSpaceOnUse">
-																						<stop stop-color="#FAA629" />
-																						<stop offset="1"
-																							stop-color="#FECC81" />
-																					</linearGradient>
-																					<linearGradient
-																						id="paint4_linear_2054_10450"
-																						x1="19.5" y1="5" x2="28.5"
-																						y2="5"
-																						gradientUnits="userSpaceOnUse">
-																						<stop offset="0.2047"
-																							stop-color="#F48FB1" />
-																						<stop offset="0.8442"
-																							stop-color="#EC407A" />
-																					</linearGradient>
-																					<linearGradient
-																						id="paint5_linear_2054_10450"
-																						x1="21.1577" y1="2.19742"
-																						x2="27.3002" y2="8.33992"
-																						gradientUnits="userSpaceOnUse">
-																						<stop stop-color="#FCE4EB" />
-																						<stop offset="1"
-																							stop-color="#F48FB1" />
-																					</linearGradient>
-																					<linearGradient
-																						id="paint6_linear_2054_10450"
-																						x1="41.1057" y1="3.10679"
-																						x2="49.1162" y2="11.1172"
-																						gradientUnits="userSpaceOnUse">
-																						<stop stop-color="#FAA629" />
-																						<stop offset="1"
-																							stop-color="#FECC81" />
-																					</linearGradient>
-																					<linearGradient
-																						id="paint7_linear_2054_10450"
-																						x1="38.5" y1="5" x2="47.5"
-																						y2="5"
-																						gradientUnits="userSpaceOnUse">
-																						<stop offset="0.2047"
-																							stop-color="#F48FB1" />
-																						<stop offset="0.8442"
-																							stop-color="#EC407A" />
-																					</linearGradient>
-																					<linearGradient
-																						id="paint8_linear_2054_10450"
-																						x1="40.1577" y1="2.19742"
-																						x2="46.3002" y2="8.33992"
-																						gradientUnits="userSpaceOnUse">
-																						<stop stop-color="#FCE4EB" />
-																						<stop offset="1"
-																							stop-color="#F48FB1" />
-																					</linearGradient>
-																					<clipPath id="clip0_2054_10450">
-																						<rect width="13" height="13"
-																							fill="white" />
-																					</clipPath>
-																					<clipPath id="clip1_2054_10450">
-																						<rect width="13" height="13"
-																							fill="white"
-																							transform="translate(19)" />
-																					</clipPath>
-																					<clipPath id="clip2_2054_10450">
-																						<rect width="13" height="13"
-																							fill="white"
-																							transform="translate(38)" />
-																					</clipPath>
-																				</defs>
-																			</svg>
-																		</div>
-																	</div>
-																</div>
-															</div>
-															<div class="item-added-description d-flex flex-d-col">
-																<p>Two golden brown chocolate waffles served with
-																	whipped cream and fresh berries.</p>
-															</div>
-														</div>
-													</div>
-													<div
-														class="item-added-quantity d-flex flex-d-col ai-center justify-center g-8">
-														<p>&#8377;189</p>
-														<div
-															class="item-add-remove d-flex ai-center justify-space-evenly g-6">
-															<button class="item-remove d-flex justify-center ai-center">
-																<span
-																	class="item-remove-btn material-symbols-rounded">remove</span>
-															</button>
-															<p>2</p>
-															<button class="item-add d-flex justify-center ai-center">
-																<span
-																	class="item-add-btn material-symbols-rounded">add</span>
-															</button>
-														</div>
-													</div>
-												</div>
-												<div class="item-modify d-flex g-4 justify-flex-end ai-center">
-													<span class="material-symbols-rounded">edit_note</span>
-													<p>Add Instructions</p>
-												</div>
-												<div class="add-instruction">
-													<form action=""
-														class="coupon-input d-flex justify-center ai-center g-16">
-														<div class="textfield-outlined">
-															<input id="input-instruction-3" type="text" placeholder=" ">
-															<label for="input-instruction-3">
-																<p>
-																	Add your instructions here
-																</p>
-															</label>
-														</div>
-														<button type="button" disabled
-															class="add-instruction-btn d-flex ai-center justify-center g-6">
-															Add Instruction
-														</button>
-													</form>
-												</div>
-											</div>
+										<div id="items-added" class="items-added">
+							
+							
 										</div>
 										<div class="my-cart-footer d-flex justify-center ai-center">
 											<div class="my-cart-footer-container d-flex justify-flex-end ai-center">
@@ -1243,7 +604,7 @@
 							</footer>
 						</div>
 
-						<!--====Fourth Slide - MY ORDERS (1/2) (Registration Process)====-->
+						<!--====THIRD Slide - MY ORDERS (1/2) (Registration Process)====-->
 						<div class="swiper-slide justify-center ai-center d-flex">
 							<nav class="accomplishments w-100 d-flex ai-center justify-flex-end">
 								<button id="showCallWaiter"
@@ -1649,7 +1010,7 @@
 							</footer>
 						</div>
 						
-						<!--====MY BILL====-->
+						<!--====FIFTH Slide MY BILL====-->
 						<div class="swiper-slide justify-center ai-center d-flex">
 							<nav class="accomplishments w-100 d-flex ai-center justify-flex-end">
 								<button id="showCallWaiter"
@@ -2114,7 +1475,7 @@
 							</footer>
 						</div>
 
-						<!--==== Make My Payment ====-->
+						<!--====SIXTH Slide Make My Payment ====-->
 						<div class="swiper-slide justify-center ai-center d-flex">
 							<nav class="accomplishments w-100 d-flex ai-center justify-flex-end">
 								<button id="showCallWaiter"
@@ -2622,7 +1983,7 @@
 							</footer>
 						</div>
 
-						<!--==== Thank u for Payment ====-->
+						<!--====Seventh Slide Thank u for Payment ====-->
 						<div class="swiper-slide justify-center ai-center d-flex">
 							<nav class="accomplishments w-100 d-flex ai-center justify-flex-end">
 								<button id="showCallWaiter"
@@ -2780,7 +2141,7 @@
 							</footer>
 						</div>
 
-						<!--==== My Review ====-->
+						<!--====EIGHT Slide My Review ====-->
 						<div class="swiper-slide justify-center ai-center d-flex">
 							<nav class="accomplishments w-100 d-flex ai-center justify-flex-end">
 								<button id="showCallWaiter"
@@ -2855,8 +2216,7 @@
 													<div id="reviewFood"
 														class="review-food w-100 h-100  d-flex flex-d-col justify-flex-start g-16 ">
 														<p>Please rate the quality of our cuisine.</p>
-														<div
-															class="food-review-container w-100 d-flex flex-d-col g-12 justify-flex-start">
+														<div class="food-review-container w-100 d-flex flex-d-col g-12 justify-flex-start">
 															<div
 																class="food-review d-flex justify-space-between ai-flex-start">
 																<div
@@ -2876,13 +2236,6 @@
 																</div>
 																<div
 																	class="food-rating d-flex ai-center justify-center g-8">
-																	<!-- <svg width="30" height="29" viewBox="0 0 30 29"
-																			fill="none"
-																			xmlns="http://www.w3.org/2000/svg">
-																			<path id="Star 5"
-																				d="M13.3555 1.49149C13.9706 0.0139113 16.0638 0.0139093 16.679 1.49148L19.3604 7.93228C19.6198 8.55525 20.2058 8.98084 20.8785 9.03471L27.8354 9.59191C29.4319 9.71978 30.0789 11.7124 28.8621 12.7537L23.5641 17.2876C23.051 17.7268 22.8268 18.4163 22.9837 19.0732L24.6027 25.8542C24.9745 27.4113 23.2809 28.6426 21.9144 27.8087L15.9548 24.1721C15.3791 23.8208 14.6553 23.8208 14.0796 24.1721L8.12013 27.8087C6.75355 28.6426 5.05994 27.4113 5.43173 25.8542L7.05078 19.0732C7.20764 18.4163 6.98351 17.7268 6.47035 17.2876L1.17243 12.7537C-0.0443929 11.7124 0.602612 9.71978 2.19907 9.59191L9.15602 9.03471C9.82867 8.98084 10.4147 8.55526 10.6741 7.93228L13.3555 1.49149Z"
-																				fill="#FFD700" />
-																		</svg> -->
 																	<form
 																		class="star d-flex ai-center justify-space-evenly g-8">
 																		<!-- <input type="radio" name="note" value="1" id="aze"> -->
@@ -2909,47 +2262,6 @@
 																			<input type="radio" name="note" value="5">
 																		</label>
 																	</form>
-
-																	<!-- <div
-																		class="star-container d-flex ai-center justify-center">
-																		<svg width="30" height="29" viewBox="0 0 30 29"
-																			fill="none"
-																			xmlns="http://www.w3.org/2000/svg">
-																			<path id="Star 5"
-																				d="M13.3555 1.49149C13.9706 0.0139113 16.0638 0.0139093 16.679 1.49148L19.3604 7.93228C19.6198 8.55525 20.2058 8.98084 20.8785 9.03471L27.8354 9.59191C29.4319 9.71978 30.0789 11.7124 28.8621 12.7537L23.5641 17.2876C23.051 17.7268 22.8268 18.4163 22.9837 19.0732L24.6027 25.8542C24.9745 27.4113 23.2809 28.6426 21.9144 27.8087L15.9548 24.1721C15.3791 23.8208 14.6553 23.8208 14.0796 24.1721L8.12013 27.8087C6.75355 28.6426 5.05994 27.4113 5.43173 25.8542L7.05078 19.0732C7.20764 18.4163 6.98351 17.7268 6.47035 17.2876L1.17243 12.7537C-0.0443929 11.7124 0.602612 9.71978 2.19907 9.59191L9.15602 9.03471C9.82867 8.98084 10.4147 8.55526 10.6741 7.93228L13.3555 1.49149Z"
-																				fill="#FFD700" />
-																		</svg>
-																	</div>
-																	<div
-																		class="star-container d-flex ai-center justify-center">
-																		<svg width="30" height="29" viewBox="0 0 30 29"
-																			fill="none"
-																			xmlns="http://www.w3.org/2000/svg">
-																			<path id="Star 5"
-																				d="M13.3555 1.49149C13.9706 0.0139113 16.0638 0.0139093 16.679 1.49148L19.3604 7.93228C19.6198 8.55525 20.2058 8.98084 20.8785 9.03471L27.8354 9.59191C29.4319 9.71978 30.0789 11.7124 28.8621 12.7537L23.5641 17.2876C23.051 17.7268 22.8268 18.4163 22.9837 19.0732L24.6027 25.8542C24.9745 27.4113 23.2809 28.6426 21.9144 27.8087L15.9548 24.1721C15.3791 23.8208 14.6553 23.8208 14.0796 24.1721L8.12013 27.8087C6.75355 28.6426 5.05994 27.4113 5.43173 25.8542L7.05078 19.0732C7.20764 18.4163 6.98351 17.7268 6.47035 17.2876L1.17243 12.7537C-0.0443929 11.7124 0.602612 9.71978 2.19907 9.59191L9.15602 9.03471C9.82867 8.98084 10.4147 8.55526 10.6741 7.93228L13.3555 1.49149Z"
-																				fill="#FFD700" />
-																		</svg>
-																	</div>
-																	<div
-																		class="star-container d-flex ai-center justify-center">
-																		<svg width="30" height="29" viewBox="0 0 30 29"
-																			fill="none"
-																			xmlns="http://www.w3.org/2000/svg">
-																			<path id="Star 5"
-																				d="M13.3555 1.49149C13.9706 0.0139113 16.0638 0.0139093 16.679 1.49148L19.3604 7.93228C19.6198 8.55525 20.2058 8.98084 20.8785 9.03471L27.8354 9.59191C29.4319 9.71978 30.0789 11.7124 28.8621 12.7537L23.5641 17.2876C23.051 17.7268 22.8268 18.4163 22.9837 19.0732L24.6027 25.8542C24.9745 27.4113 23.2809 28.6426 21.9144 27.8087L15.9548 24.1721C15.3791 23.8208 14.6553 23.8208 14.0796 24.1721L8.12013 27.8087C6.75355 28.6426 5.05994 27.4113 5.43173 25.8542L7.05078 19.0732C7.20764 18.4163 6.98351 17.7268 6.47035 17.2876L1.17243 12.7537C-0.0443929 11.7124 0.602612 9.71978 2.19907 9.59191L9.15602 9.03471C9.82867 8.98084 10.4147 8.55526 10.6741 7.93228L13.3555 1.49149Z"
-																				fill="#FFD700" />
-																		</svg>
-																	</div>
-																	<div
-																		class="star-container d-flex ai-center justify-center">
-																		<svg width="30" height="29" viewBox="0 0 30 29"
-																			fill="none"
-																			xmlns="http://www.w3.org/2000/svg">
-																			<path id="Star 5"
-																				d="M13.3555 1.49149C13.9706 0.0139113 16.0638 0.0139093 16.679 1.49148L19.3604 7.93228C19.6198 8.55525 20.2058 8.98084 20.8785 9.03471L27.8354 9.59191C29.4319 9.71978 30.0789 11.7124 28.8621 12.7537L23.5641 17.2876C23.051 17.7268 22.8268 18.4163 22.9837 19.0732L24.6027 25.8542C24.9745 27.4113 23.2809 28.6426 21.9144 27.8087L15.9548 24.1721C15.3791 23.8208 14.6553 23.8208 14.0796 24.1721L8.12013 27.8087C6.75355 28.6426 5.05994 27.4113 5.43173 25.8542L7.05078 19.0732C7.20764 18.4163 6.98351 17.7268 6.47035 17.2876L1.17243 12.7537C-0.0443929 11.7124 0.602612 9.71978 2.19907 9.59191L9.15602 9.03471C9.82867 8.98084 10.4147 8.55526 10.6741 7.93228L13.3555 1.49149Z"
-																				fill="#FFD700" />
-																		</svg>
-																	</div> -->
 																</div>
 															</div>
 															<div
@@ -2971,13 +2283,6 @@
 																</div>
 																<div
 																	class="food-rating d-flex ai-center justify-center g-8">
-																	<!-- <svg width="30" height="29" viewBox="0 0 30 29"
-																			fill="none"
-																			xmlns="http://www.w3.org/2000/svg">
-																			<path id="Star 5"
-																				d="M13.3555 1.49149C13.9706 0.0139113 16.0638 0.0139093 16.679 1.49148L19.3604 7.93228C19.6198 8.55525 20.2058 8.98084 20.8785 9.03471L27.8354 9.59191C29.4319 9.71978 30.0789 11.7124 28.8621 12.7537L23.5641 17.2876C23.051 17.7268 22.8268 18.4163 22.9837 19.0732L24.6027 25.8542C24.9745 27.4113 23.2809 28.6426 21.9144 27.8087L15.9548 24.1721C15.3791 23.8208 14.6553 23.8208 14.0796 24.1721L8.12013 27.8087C6.75355 28.6426 5.05994 27.4113 5.43173 25.8542L7.05078 19.0732C7.20764 18.4163 6.98351 17.7268 6.47035 17.2876L1.17243 12.7537C-0.0443929 11.7124 0.602612 9.71978 2.19907 9.59191L9.15602 9.03471C9.82867 8.98084 10.4147 8.55526 10.6741 7.93228L13.3555 1.49149Z"
-																				fill="#FFD700" />
-																		</svg> -->
 																	<form
 																		class="star d-flex ai-center justify-space-evenly g-8">
 																		<!-- <input type="radio" name="note" value="1" id="aze"> -->
@@ -3004,68 +2309,22 @@
 																			<input type="radio" name="note" value="5">
 																		</label>
 																	</form>
-
-																	<!-- <div
-																		class="star-container d-flex ai-center justify-center">
-																		<svg width="30" height="29" viewBox="0 0 30 29"
-																			fill="none"
-																			xmlns="http://www.w3.org/2000/svg">
-																			<path id="Star 5"
-																				d="M13.3555 1.49149C13.9706 0.0139113 16.0638 0.0139093 16.679 1.49148L19.3604 7.93228C19.6198 8.55525 20.2058 8.98084 20.8785 9.03471L27.8354 9.59191C29.4319 9.71978 30.0789 11.7124 28.8621 12.7537L23.5641 17.2876C23.051 17.7268 22.8268 18.4163 22.9837 19.0732L24.6027 25.8542C24.9745 27.4113 23.2809 28.6426 21.9144 27.8087L15.9548 24.1721C15.3791 23.8208 14.6553 23.8208 14.0796 24.1721L8.12013 27.8087C6.75355 28.6426 5.05994 27.4113 5.43173 25.8542L7.05078 19.0732C7.20764 18.4163 6.98351 17.7268 6.47035 17.2876L1.17243 12.7537C-0.0443929 11.7124 0.602612 9.71978 2.19907 9.59191L9.15602 9.03471C9.82867 8.98084 10.4147 8.55526 10.6741 7.93228L13.3555 1.49149Z"
-																				fill="#FFD700" />
-																		</svg>
-																	</div>
-																	<div
-																		class="star-container d-flex ai-center justify-center">
-																		<svg width="30" height="29" viewBox="0 0 30 29"
-																			fill="none"
-																			xmlns="http://www.w3.org/2000/svg">
-																			<path id="Star 5"
-																				d="M13.3555 1.49149C13.9706 0.0139113 16.0638 0.0139093 16.679 1.49148L19.3604 7.93228C19.6198 8.55525 20.2058 8.98084 20.8785 9.03471L27.8354 9.59191C29.4319 9.71978 30.0789 11.7124 28.8621 12.7537L23.5641 17.2876C23.051 17.7268 22.8268 18.4163 22.9837 19.0732L24.6027 25.8542C24.9745 27.4113 23.2809 28.6426 21.9144 27.8087L15.9548 24.1721C15.3791 23.8208 14.6553 23.8208 14.0796 24.1721L8.12013 27.8087C6.75355 28.6426 5.05994 27.4113 5.43173 25.8542L7.05078 19.0732C7.20764 18.4163 6.98351 17.7268 6.47035 17.2876L1.17243 12.7537C-0.0443929 11.7124 0.602612 9.71978 2.19907 9.59191L9.15602 9.03471C9.82867 8.98084 10.4147 8.55526 10.6741 7.93228L13.3555 1.49149Z"
-																				fill="#FFD700" />
-																		</svg>
-																	</div>
-																	<div
-																		class="star-container d-flex ai-center justify-center">
-																		<svg width="30" height="29" viewBox="0 0 30 29"
-																			fill="none"
-																			xmlns="http://www.w3.org/2000/svg">
-																			<path id="Star 5"
-																				d="M13.3555 1.49149C13.9706 0.0139113 16.0638 0.0139093 16.679 1.49148L19.3604 7.93228C19.6198 8.55525 20.2058 8.98084 20.8785 9.03471L27.8354 9.59191C29.4319 9.71978 30.0789 11.7124 28.8621 12.7537L23.5641 17.2876C23.051 17.7268 22.8268 18.4163 22.9837 19.0732L24.6027 25.8542C24.9745 27.4113 23.2809 28.6426 21.9144 27.8087L15.9548 24.1721C15.3791 23.8208 14.6553 23.8208 14.0796 24.1721L8.12013 27.8087C6.75355 28.6426 5.05994 27.4113 5.43173 25.8542L7.05078 19.0732C7.20764 18.4163 6.98351 17.7268 6.47035 17.2876L1.17243 12.7537C-0.0443929 11.7124 0.602612 9.71978 2.19907 9.59191L9.15602 9.03471C9.82867 8.98084 10.4147 8.55526 10.6741 7.93228L13.3555 1.49149Z"
-																				fill="#FFD700" />
-																		</svg>
-																	</div>
-																	<div
-																		class="star-container d-flex ai-center justify-center">
-																		<svg width="30" height="29" viewBox="0 0 30 29"
-																			fill="none"
-																			xmlns="http://www.w3.org/2000/svg">
-																			<path id="Star 5"
-																				d="M13.3555 1.49149C13.9706 0.0139113 16.0638 0.0139093 16.679 1.49148L19.3604 7.93228C19.6198 8.55525 20.2058 8.98084 20.8785 9.03471L27.8354 9.59191C29.4319 9.71978 30.0789 11.7124 28.8621 12.7537L23.5641 17.2876C23.051 17.7268 22.8268 18.4163 22.9837 19.0732L24.6027 25.8542C24.9745 27.4113 23.2809 28.6426 21.9144 27.8087L15.9548 24.1721C15.3791 23.8208 14.6553 23.8208 14.0796 24.1721L8.12013 27.8087C6.75355 28.6426 5.05994 27.4113 5.43173 25.8542L7.05078 19.0732C7.20764 18.4163 6.98351 17.7268 6.47035 17.2876L1.17243 12.7537C-0.0443929 11.7124 0.602612 9.71978 2.19907 9.59191L9.15602 9.03471C9.82867 8.98084 10.4147 8.55526 10.6741 7.93228L13.3555 1.49149Z"
-																				fill="#FFD700" />
-																		</svg>
-																	</div> -->
 																</div>
 															</div>
-															<div
-																class="food-review d-flex justify-space-between ai-flex-start">
-																<div
-																	class="food-review-info d-flex justify-center ai-flex-start g-12">
+															<div class="food-review d-flex justify-space-between ai-flex-start">
+																<div class="food-review-info d-flex justify-center ai-flex-start g-12">
 																	<div class="food-review-img">
-																		<img src="./assets/customer-img/img/Rectangle 8 (1).png"
-																			alt="food-review-img">
+																		<img src="./assets/customer-img/img/Rectangle 8 (1).png" alt="food-review-img">
 																	</div>
 																	<div class="food-review-content">
 																		<p>Belgian Chocolate Waffles</p>
 																		<p class="review-food-description">
 																			Two golden brown chocolate waffles
 																			servedwith whipped cream and fresh berries.
-
 																		</p>
 																	</div>
 																</div>
-																<div
-																	class="food-rating d-flex ai-center justify-center g-8">
+																<div class="food-rating d-flex ai-center justify-center g-8">
 																	<form
 																		class="star d-flex ai-center justify-space-evenly g-8">
 																		<label class="star-label">
@@ -3097,8 +2356,7 @@
 													<div id="reviewServices"
 														class="review-service w-100 h-100 d-flex flex-d-col justify-flex-start g-16">
 														<p>Rate our services and ambience</p>
-														<div
-															class="services-review-container w-100 d-flex flex-d-col g-12 justify-flex-start">
+														<div class="services-review-container w-100 d-flex flex-d-col g-12 justify-flex-start">
 															<div
 																class="service-review d-flex justify-space-between ai-flex-start">
 																<div
@@ -3222,8 +2480,7 @@
 																	</form>
 																</div>
 															</div>
-															<div
-																class="service-review d-flex justify-space-between ai-flex-start">
+															<div class="service-review d-flex justify-space-between ai-flex-start">
 																<div
 																	class="service-review-info d-flex justify-center ai-flex-start g-12">
 																	<div class="service-review-img">
@@ -3235,8 +2492,7 @@
 																			restaurant?</p>
 																	</div>
 																</div>
-																<div
-																	class="service-rating d-flex ai-center justify-center g-8">
+																<div class="service-rating d-flex ai-center justify-center g-8">
 																	<form
 																		class="star d-flex ai-center justify-space-evenly g-8">
 																		<label class="star-label">
@@ -3267,37 +2523,17 @@
 													</div>
 													<div id="reviewExperience" class="review-experience w-100 h-100">
 														<p>Please tell us about your experience</p>
-														<div
-															class="review-experience-textarea d-flex justify-center ai-center">
-															<!-- <div class="cooking-instructions-container d-flex g-4 ai-center justify-flex-start">
-																<span class="material-symbols-rounded">edit_note</span>
-																<p>Add Cooking Instructions</p>
-															</div> -->
+														<div class="review-experience-textarea d-flex justify-center ai-center">
 															<div class="textfield-outlined">
-																<textarea name="" id="input-instruction" cols="30"
-																	rows="10"></textarea>
-																<!-- <input id="input-instruction" type="textarea" placeholder=" " required> -->
+																<textarea name="" id="input-instruction" cols="30" rows="10"></textarea>
 																<label for="input-instruction">
-																	<p>
-																		<!-- <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-																			<mask id="mask0_2048_9808" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
-																				<rect width="24" height="24" fill="#D9D9D9" />
-																			</mask>
-																			<g mask="url(#mask0_2048_9808)">
-																				<path
-																					d="M8 17C8.28333 17 8.52083 16.9042 8.7125 16.7125C8.90417 16.5208 9 16.2833 9 16C9 15.7167 8.90417 15.4792 8.7125 15.2875C8.52083 15.0958 8.28333 15 8 15C7.71667 15 7.47917 15.0958 7.2875 15.2875C7.09583 15.4792 7 15.7167 7 16C7 16.2833 7.09583 16.5208 7.2875 16.7125C7.47917 16.9042 7.71667 17 8 17ZM8 13C8.28333 13 8.52083 12.9042 8.7125 12.7125C8.90417 12.5208 9 12.2833 9 12C9 11.7167 8.90417 11.4792 8.7125 11.2875C8.52083 11.0958 8.28333 11 8 11C7.71667 11 7.47917 11.0958 7.2875 11.2875C7.09583 11.4792 7 11.7167 7 12C7 12.2833 7.09583 12.5208 7.2875 12.7125C7.47917 12.9042 7.71667 13 8 13ZM8 9C8.28333 9 8.52083 8.90417 8.7125 8.7125C8.90417 8.52083 9 8.28333 9 8C9 7.71667 8.90417 7.47917 8.7125 7.2875C8.52083 7.09583 8.28333 7 8 7C7.71667 7 7.47917 7.09583 7.2875 7.2875C7.09583 7.47917 7 7.71667 7 8C7 8.28333 7.09583 8.52083 7.2875 8.7125C7.47917 8.90417 7.71667 9 8 9ZM12 17H16C16.2833 17 16.5208 16.9042 16.7125 16.7125C16.9042 16.5208 17 16.2833 17 16C17 15.7167 16.9042 15.4792 16.7125 15.2875C16.5208 15.0958 16.2833 15 16 15H12C11.7167 15 11.4792 15.0958 11.2875 15.2875C11.0958 15.4792 11 15.7167 11 16C11 16.2833 11.0958 16.5208 11.2875 16.7125C11.4792 16.9042 11.7167 17 12 17ZM12 13H16C16.2833 13 16.5208 12.9042 16.7125 12.7125C16.9042 12.5208 17 12.2833 17 12C17 11.7167 16.9042 11.4792 16.7125 11.2875C16.5208 11.0958 16.2833 11 16 11H12C11.7167 11 11.4792 11.0958 11.2875 11.2875C11.0958 11.4792 11 11.7167 11 12C11 12.2833 11.0958 12.5208 11.2875 12.7125C11.4792 12.9042 11.7167 13 12 13ZM12 9H16C16.2833 9 16.5208 8.90417 16.7125 8.7125C16.9042 8.52083 17 8.28333 17 8C17 7.71667 16.9042 7.47917 16.7125 7.2875C16.5208 7.09583 16.2833 7 16 7H12C11.7167 7 11.4792 7.09583 11.2875 7.2875C11.0958 7.47917 11 7.71667 11 8C11 8.28333 11.0958 8.52083 11.2875 8.7125C11.4792 8.90417 11.7167 9 12 9ZM5 21C4.45 21 3.97917 20.8042 3.5875 20.4125C3.19583 20.0208 3 19.55 3 19V5C3 4.45 3.19583 3.97917 3.5875 3.5875C3.97917 3.19583 4.45 3 5 3H19C19.55 3 20.0208 3.19583 20.4125 3.5875C20.8042 3.97917 21 4.45 21 5V19C21 19.55 20.8042 20.0208 20.4125 20.4125C20.0208 20.8042 19.55 21 19 21H5ZM5 19H19V5H5V19Z"
-																					fill="#222222" />
-																			</g>
-																		</svg> -->
-																		Add Cooking Instructions
-																	</p>
+																	<p>Add your feedback here</p>
 																</label>
 															</div>
 														</div>
 													</div>
 												</div>
 											</div>
-
 										</div>
 										<div class="my-review-footer d-flex flex-d-col justify-space-evenly ai-center">
 											<div class="my-review-footer-container d-flex justify-flex-end ai-center">
@@ -3377,7 +2613,7 @@
 							</footer>
 						</div>
 
-						<!--==== Logout Page ====-->
+						<!--====NINTH Slide Logout Page ====-->
 						<div class="swiper-slide justify-center ai-center d-flex">
 							<nav class="accomplishments w-100 d-flex ai-center justify-flex-end">
 								<button id="showCallWaiter"
@@ -3444,11 +2680,6 @@
 							</div>
 						</div>
 					</div>
-					<!-- Add Pagination -->
-					<!-- <div class="swiper-pagination"></div> -->
-					<!-- Add Arrows -->
-					<!-- <div class="swiper-button-next"></div>
-					<div class="swiper-button-prev"></div> -->
 				</div>
 			</div>
 			<div id="call-waiter-popup" class="accomplishment-modal d-flex justify-center ai-center h-100 w-100">
@@ -3522,6 +2753,7 @@
 			</div>
 		</div>
 	</main>
+	<script src="./js/book.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 	<script src="./js/breakfast.js"></script>
 	<script src="./js/continental.js"></script>
@@ -3531,6 +2763,6 @@
 	<script src="./js/south_indian.js"></script>
 	<script src="./js/beverages.js"></script>
 	<script src="./js/script.js"></script>
-	<script src="./js/book.js"></script>
+	<script src="./js/my_cart.js"></script>
 </body>
 </html>

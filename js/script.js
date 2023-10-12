@@ -18,6 +18,17 @@ const swiper = new Swiper('.swiper-container', {
 });
 
 
+//SHOW HEADER FOOTER ON BOOK OPEN
+const showHeadFoot = document.querySelectorAll('.food-navigation-title');
+showHeadFoot.forEach( (val) => {
+  val.addEventListener('click', function() {
+    document.querySelector('#header').classList.remove('d-none');
+    document.querySelector('#header').classList.add('d-flex');
+    document.querySelector('#footer').classList.remove('d-none');
+    document.querySelector('#footer').classList.add('d-flex');
+  });
+});
+
 
 
 

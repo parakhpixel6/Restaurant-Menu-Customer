@@ -1,19 +1,19 @@
-let breakFastClicked = false;
+// let breakFastClicked = false;
 
-window.addEventListener('click', () => {
+// window.addEventListener('click', () => {
 
-  if(!breakFastClicked) {
-    // Trigger a click event on the breakfast element
-    const clickEvent = new MouseEvent('click', {
-      bubbles: true,
-      cancelable: true,
-      view: window
-    });
-    breakfast.dispatchEvent(clickEvent);
-    breakFastClicked = true;
-  }
-  // document.querySelector('#food-navigation').classList.remove('opac-0');
- });
+//   if(!breakFastClicked) {
+//     // Trigger a click event on the breakfast element
+//     const clickEvent = new MouseEvent('click', {
+//       bubbles: true,
+//       cancelable: true,
+//       view: window
+//     });
+//     breakfast.dispatchEvent(clickEvent);
+//     breakFastClicked = true;
+//   }
+//   // document.querySelector('#food-navigation').classList.remove('opac-0');
+//  });
 
 
 const categories = [

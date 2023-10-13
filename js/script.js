@@ -93,28 +93,7 @@ addRemoveElements.forEach(addRemoveElement => {
 
 
 
-//My Cart remove the div
-document.addEventListener('DOMContentLoaded', () => {
-  const itemAddedContainers = document.querySelectorAll('.item-added-modify');
-  itemAddedContainers.forEach(container => {
-    const quantityElement = container.querySelector('.item-add-remove p');
-    const removeButton = container.querySelector('.item-remove-btn');
-    const addButton = container.querySelector('.item-add-btn');
-    removeButton.addEventListener('click', () => {
-      let currentQuantity = parseInt(quantityElement.textContent);
-      if (currentQuantity > 1) {
-        quantityElement.textContent = currentQuantity - 1;
-      } else {
-        container.style.display = 'none';
-        // Hide the container      
-      }
-    });
-    addButton.addEventListener('click', () => {
-      let currentQuantity = parseInt(quantityElement.textContent);
-      quantityElement.textContent = currentQuantity + 1;
-    });
-  });
-});
+
 
 
 //My Bill Tip Amount
@@ -502,48 +481,6 @@ reviewNav.addEventListener('click', function (event) {
     // Add active class to the clicked link
     event.target.classList.add('active');
   }
-});
-
-
-// Get all elements with class "item-modify"
-const itemModifyElements = document.querySelectorAll('.item-modify');
-
-// Attach click event listener to each "item-modify" element
-itemModifyElements.forEach((element) => {
-  element.addEventListener('click', function () {
-    // Get the next sibling element with class "add-instruction"
-    const addInstructionElement = this.nextElementSibling;
-
-    // Reset changes made to the previously clicked element
-    const previouslyClickedElement = document.querySelector('.item-modify.clicked');
-    if (previouslyClickedElement) {
-      const previousAddInstructionElement = previouslyClickedElement.nextElementSibling;
-      previouslyClickedElement.querySelector('.material-symbols-rounded').innerText = 'edit_note';
-      previouslyClickedElement.querySelector('p').innerText = 'Add Instructions';
-      previouslyClickedElement.classList.remove('clicked');
-    }
-
-    // Check if "add-instruction" element is currently hidden
-    if (addInstructionElement.style.display === 'block') {
-      // Hide the clicked "add-instruction" element
-      this.querySelector('.material-symbols-rounded').innerText = 'edit_note';
-      this.querySelector('p').innerText = 'Add Instructions';
-      addInstructionElement.style.display = 'none';
-      this.classList.remove('clicked');
-    } else {
-
-      const allAddInstructionElements = document.querySelectorAll('.add-instruction');
-      allAddInstructionElements.forEach((element) => {
-        element.style.display = 'none';
-      });
-
-      // Show the clicked "add-instruction" element
-      this.querySelector('.material-symbols-rounded').innerText = 'close';
-      this.querySelector('p').innerText = 'Cancel';
-      addInstructionElement.style.display = 'block';
-      this.classList.add('clicked');
-    }
-  });
 });
 
 

@@ -19,9 +19,11 @@ const swiper = new Swiper('.swiper-container', {
 
 const goToCart = document.querySelector('#goToCart');
 const registration  = document.querySelector('#registration');
+const prevOrder = document.querySelector('.my-order-footer-container')
 goToCart.addEventListener('click', function() {
   registration.style.display = 'none';
-  console.log('jaa yaha se')
+  const prevButton = prevOrder.querySelector('.swiper-button-prev');
+  prevButton.click();
 })
 
 

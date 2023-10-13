@@ -182,7 +182,7 @@
                 /* top: 80%; */
                 // left: -2.75%;
                 /* transform: translate(0%, -50%); */
-                margin: -16px -10px;
+                margin: -17px -10px;
                 border: none;
 
                 &::after {
@@ -191,7 +191,9 @@
             }
 
             & .add-more {
-
+                // height: 26px;
+                // width: 152px;
+                
                 // padding: 3px 12px;
                 border-radius: 6px;
                 border: 1px solid $dark-red;

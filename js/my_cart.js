@@ -117,22 +117,39 @@ document.getElementById('items-added').innerHTML = clutter;
 document.addEventListener('DOMContentLoaded', () => {
     const itemAddedContainers = document.querySelectorAll('.item-added-modify');
     itemAddedContainers.forEach(container => {
-      const quantityElement = container.querySelector('.item-add-remove p');
-      const removeButton = container.querySelector('.item-remove-btn');
-      const addButton = container.querySelector('.item-add-btn');
-      removeButton.addEventListener('click', () => {
-        let currentQuantity = parseInt(quantityElement.textContent);
-        if (currentQuantity > 1) {
-          quantityElement.textContent = currentQuantity - 1;
-        } else {
-          container.style.display = 'none';
-          // Hide the container      
-        }
-      });
-      addButton.addEventListener('click', () => {
-        let currentQuantity = parseInt(quantityElement.textContent);
-        quantityElement.textContent = currentQuantity + 1;
-      });
+        const quantityElement = container.querySelector('.item-add-remove p');
+        const removeButton = container.querySelector('.item-remove-btn');
+        const addButton = container.querySelector('.item-add-btn');
+        const itemModify = container.querySelector('.item-modify');
+        const itemAdded = container.querySelector('.item-added');
+        removeButton.addEventListener('click', () => {
+            let currentQuantity = parseInt(quantityElement.textContent);
+            if (currentQuantity > 1) {
+            quantityElement.textContent = currentQuantity - 1;
+            } else {
+                quantityElement.textContent = 0; 
+            }
+            if(quantityElement.textContent === '0')  {
+                quantityElement.style.color = '#888';
+                removeButton.style.color = '#888';
+                removeButton.parentElement.style.border = '1px solid #888';
+                addButton.style.color = '#888';
+                addButton.parentElement.style.border = '1px solid #888';
+                itemModify.style.display = 'none';
+                itemAdded.style.paddingBottom = '20px';
+            }
+        });
+        addButton.addEventListener('click', () => {
+            let currentQuantity = parseInt(quantityElement.textContent);
+            itemAdded.style.paddingBottom = '0px';
+            itemModify.style.display = 'flex';
+            quantityElement.textContent = currentQuantity + 1;
+            quantityElement.style.color = '#54ba54';
+            removeButton.style.color = '#54ba54';
+            removeButton.parentElement.style.border = '1px solid #54ba54';
+            addButton.style.color = '#54ba54';
+            addButton.parentElement.style.border = '1px solid #54ba54';
+        });
     });
   });
 

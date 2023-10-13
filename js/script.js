@@ -17,6 +17,13 @@ const swiper = new Swiper('.swiper-container', {
   },
 });
 
+const goToCart = document.querySelector('#goToCart');
+const registration  = document.querySelector('#registration');
+goToCart.addEventListener('click', function() {
+  registration.style.display = 'none';
+  console.log('jaa yaha se')
+})
+
 
 //SHOW HEADER FOOTER ON BOOK OPEN
 const showHeadFoot = document.querySelectorAll('.food-navigation-title');

@@ -42,9 +42,9 @@ categories.forEach(category => {
         } else {
           
           
-          setTimeout(() => {
+          // setTimeout(() => {
             element.classList.remove('active');
-          },2000);
+          // },2000);
           // element.style.zIndex = zIndex--;
         }
         element.classList.add('seen');

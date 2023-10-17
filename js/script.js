@@ -133,7 +133,7 @@ tipAmounts.forEach(amount => {
       // Update the image source when the selected amount is clicked                
       tipImage.src = './assets/customer-svg/svg/thank you.svg';
       tipAdd.classList.remove('d-none');
-      tipBomb.style.backgroundImage = 'url(/assets/customer-img/img/bomb.gif)';
+      tipBomb.style.backgroundImage = 'url(../assets/customer-img/img/bomb.gif)';
     }
   });
 });
